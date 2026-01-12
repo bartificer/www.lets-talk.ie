@@ -1,0 +1,12 @@
+# Site Settings
+title: PBS Jekyll Demo Site
+
+# Build Settings
+plugins:
+  - jekyll-autoprefixer
+
+# Settings for the autoprefixer plugin
+autoprefixer:
+  browsers:
+    - last 4 versions
+    - Safari > 2
