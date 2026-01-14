@@ -10,3 +10,10 @@ autoprefixer:
   browsers:
     - last 4 versions
     - Safari > 2
+
+# Configure collections
+collections:
+  lta:
+    output: true
+    # note that :title defauts to the slug in the front matter
+    permalink: /:title/
