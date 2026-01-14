@@ -12,8 +12,11 @@ autoprefixer:
     - Safari > 2
 
 # Configure collections
+# Note: in collection permalinks, :title defaults to the slug from the front matter
 collections:
   lta:
     output: true
-    # note that :title defauts to the slug in the front matter
+    permalink: /:title/
+  ltp:
+    output: true
     permalink: /:title/
