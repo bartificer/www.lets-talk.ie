@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  {%- comment %}Include the snippet with the standard content for the head tag{% endcomment %}
+  {%  include html_head_common.html %}
+
+  {%- comment %}Just use the site title{% endcomment %}
+  <title>{{ site.title }}</title>
+</head>
+<body>
+  <div class="container">
+    {%- comment %}The page header region{% endcomment %}
+    <header class="row">
+      <div class="col-12 my-3">
+        <h1 class="display-1">{{ site.title }}</h1>
+      </div>
+    </header>
+
+    {%- comment %}The main content region{% endcomment %}
+    <main>
+      <div class="row">
+        <div class="col-12">
+          {{ content }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h1>Let's Talk Apple</h1>
+          <ul>
+            {%- for p in site.lta reversed %}
+            <li><a href="{{ p.url | relative_url }}">{{ p.slug | upcase }} — {{ p.title }}</a></li>
+            {%- endfor %}
+          </ul>
+        </div>
+        <div class="col-6">
+          <h1>Let's Talk Photography</h1>
+          {%- for p in site.ltp reversed %}
+            <li><a href="{{ p.url | relative_url }}">{{ p.slug | upcase }} — {{ p.title }}</a> ({{ p.date | date: "%b %e %Y" }})</li>
+            {%- endfor %}
+        </div>
+    </main>
+  </div>
+
+  {%- comment %}Include the standard body-end snippet{% endcomment %}
+  {% include html_body_end.html %}
+</body>
+</html>
