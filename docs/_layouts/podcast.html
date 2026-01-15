@@ -1,0 +1,30 @@
+---
+layout: default_base
+---
+    <main>
+      <div class="row">
+        <div class="col-12">
+          {{ content }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Subscribe</h1>
+          <a href="{{ page.subscription_links.rss }}" class="btn btn-outline-primary">RSS Feed</a>
+          <a href="{{ page.subscription_links.apple_podcasts }}" class="btn btn-outline-primary">Apple Podcasts</a>
+          <a href="{{ page.subscription_links.podcast_index }}" class="btn btn-outline-primary">Podcast Index</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h1>All Episodes</h1>
+          {%- assign podcast_slug = page.slug %}
+          {%- assign podcast_collection = site.collections | where: "label", podcast_slug | first %}
+          <ul>
+            {%- for p in podcast_collection.docs reversed %}
+            <li><a href="{{ p.url | relative_url }}">{{ p.slug | upcase }} — {{ p.title }}</a> ({{ p.date | date: "%b %e %Y" }})</li>
+            {%- endfor %}
+          </ul>
+        </div>
+      </div>
+    </main>

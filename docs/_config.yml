@@ -11,15 +11,30 @@ autoprefixer:
     - last 4 versions
     - Safari > 2
 
-# Configure collections
+# Define collections
 # Note: in collection permalinks, :title defaults to the slug from the front matter
 collections:
   contributors:
     output: true
     permalink: /contributor/:title/
+    sort_by: slug
+  podcasts:
+    output: true
+    permalink: /:title/
+    sort_by: slug
   lta:
     output: true
     permalink: /:title/
+    sort_by: slug
   ltp:
     output: true
     permalink: /:title/
+    sort_by: slug
+
+# Configure front matter defaults
+defaults:
+  - scope:
+      path: ""
+      type: podcasts
+    values:
+      layout: podcast
