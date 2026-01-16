@@ -48,3 +48,8 @@ defaults:
       type: ltp
     values:
       layout: podcast_episode
+  - scope:
+      path: ""
+      type: contributors
+    values:
+      layout: contributor

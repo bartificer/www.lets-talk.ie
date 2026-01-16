@@ -1,0 +1,60 @@
+---
+layout: default_base
+---
+    <main>
+      <div class="row">
+        <div class="col-6">
+          <h1>Links</h1>
+          <ul>
+            {%- for link in page.links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a>{% if link.role %} ({{ link.role }}){% endif %}</li>
+            {%- endfor %}
+          </ul>
+        </div>
+        <div class="col-6">
+          <h1>Social Media</h1>
+          <ul>
+            {%- for profile in page.social_media_profiles %}
+            <li>{{ profile.platform }}: <code>{{ profile.handle }}</code></li>
+            {%- endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          {{ content }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Appearances</h1>
+          <ul>
+            <li> Let's Talk Apple Episodes:
+              <ul>
+                {%- assign contributor_slug = page.slug %}
+                {%- assign lta_host_episodes = site.lta | where: "host", contributor_slug %}
+                {%- for episode in lta_host_episodes %}
+                <li>Host: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
+                {%- endfor %}
+                {%- assign lta_guest_episodes = site.lta | where_exp: "item", "item.guests contains contributor_slug" %}
+                {%- for episode in lta_guest_episodes %}
+                <li>Guest: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
+                {%- endfor %}
+              </ul>
+            </li>
+            <li> Let's Talk Photography Episodes:
+              <ul>
+                {%- assign ltp_host_episodes = site.ltp | where: "host", contributor_slug %}
+                {%- for episode in ltp_host_episodes %}
+                <li>Host: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
+                {%- endfor %}
+                {%- assign ltp_guest_episodes = site.ltp | where_exp: "item", "item.guests contains contributor_slug" %}
+                {%- for episode in ltp_guest_episodes %}
+                <li>Guest: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
+                {%- endfor %}
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>

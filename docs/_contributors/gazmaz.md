@@ -1,6 +1,6 @@
 ---
 title: Gazmaz
-slug: agazmaz
+slug: gazmaz
 date: 2026-01-14
 links:
   - url: https://www.mymacpodcast.com/
