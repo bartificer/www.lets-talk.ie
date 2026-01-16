@@ -33,7 +33,7 @@
       <div class="row">
         <div class="col-12">
           <p>{{ page.blurb | markdownify }}</p>
-          <p><audio controls src="{{ page.mp3_url }}"></audio> (<a href="{{ page.mp3_url }}">Download MP3</a>)</p>
+          <p><audio controls preload="metadata" src="{{ page.mp3_url }}"></audio> (<a href="{{ page.mp3_url }}">Download MP3</a>)</p>
         </div>
       </div>
       <div class="row">
