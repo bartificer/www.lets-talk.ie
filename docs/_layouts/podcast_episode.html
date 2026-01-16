@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  {%- comment %}Include the snippet with the standard content for the head tag{% endcomment %}
+  {%  include html_head_common.html %}
+
+  {%- comment %}Default to a title consisting of the page title and site title{% endcomment %}
+  <title>{{ page.slug }}: {{ page.title }}</title>
+</head>
+<body>
+  <div class="container">
+    {%- comment %}The page header region{% endcomment %}
+    <header class="row">
+      <div class="col-12 my-3">
+        <h1 class="display-1"><a href="{{ '/' | relative_url }}">{{ page.slug | upcase }}: {{ page.title }}</a></h1>
+        <p class="small">Published: {{ page.date | date: "%b %e %Y" }}</p>
+        {%- assign host_profile = site.contributors | where: "slug", page.host | first -%}
+        <p class="small">Host: <a href="{{ host_profile.url | relative_url }}">{{ host_profile.title }}</a></p>
+        {% if page.guests -%}
+          <p class="small">
+            Guests:
+            {%- for guest in page.guests %}
+              {%- assign guest_profile = site.contributors | where: "slug", guest | first %}
+              <a href="{{ guest_profile.url | relative_url }}">{{ guest_profile.title }}</a>{%- if forloop.last == false %}, {% endif %}
+            {%- endfor %}
+          </p>
+        {%- endif %}
+      </div>
+    </header>
+
+    {%- comment %}The main content region{% endcomment %}
+    <main>
+      <div class="row">
+        <div class="col-12">
+          <p>{{ page.blurb | markdownify }}</p>
+          <p><audio controls src="{{ page.mp3_url }}"></audio> (<a href="{{ page.mp3_url }}">Download MP3</a>)</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          {{ content }}
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {%- comment %}Include the standard body-end snippet{% endcomment %}
+  {% include html_body_end.html %}
+</body>
+</html>

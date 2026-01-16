@@ -16,19 +16,19 @@ autoprefixer:
 collections:
   contributors:
     output: true
-    permalink: /contributor/:title/
+    permalink: /contributor/:title
     sort_by: slug
   podcasts:
     output: true
-    permalink: /:title/
+    permalink: /:title
     sort_by: slug
   lta:
     output: true
-    permalink: /:title/
+    permalink: /:title
     sort_by: slug
   ltp:
     output: true
-    permalink: /:title/
+    permalink: /:title
     sort_by: slug
 
 # Configure front matter defaults
@@ -38,3 +38,13 @@ defaults:
       type: podcasts
     values:
       layout: podcast
+  - scope:
+      path: ""
+      type: lta
+    values:
+      layout: podcast_episode
+  - scope:
+      path: ""
+      type: ltp
+    values:
+      layout: podcast_episode
