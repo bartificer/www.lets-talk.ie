@@ -26,17 +26,23 @@
       <div class="row">
         <div class="col-6">
           <h1>Let's Talk Apple</h1>
+          {%- assign lta_recent_episodes = site.lta | reverse | slice: 0, 3 %}
           <ul>
-            {%- for p in site.lta reversed %}
+            {%- for p in lta_recent_episodes %}
             <li><a href="{{ p.url | relative_url }}">{{ p.slug | upcase }} — {{ p.title }}</a></li>
             {%- endfor %}
+            <li><a href="{{ '/lta/' | relative_url }}">more …</a></li>
           </ul>
         </div>
         <div class="col-6">
           <h1>Let's Talk Photography</h1>
-          {%- for p in site.ltp reversed %}
+          {%- assign ltp_recent_episodes = site.ltp | reverse | slice: 0, 3 %}
+          <ul>
+            {%- for p in ltp_recent_episodes %}
             <li><a href="{{ p.url | relative_url }}">{{ p.slug | upcase }} — {{ p.title }}</a> ({{ p.date | date: "%b %e %Y" }})</li>
             {%- endfor %}
+            <li><a href="{{ '/ltp/' | relative_url }}">more …</a></li>
+          </ul>
         </div>
     </main>
   </div>
