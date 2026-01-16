@@ -1,3 +1,102 @@
 ---
 ---
+; /* stop VS Code kvetching about the front matter */
+
+/*
+ === Define Bartificer Theme Variables ===
+ TO DO: Move these to a separate file
+ */
+
+ /* Define the light color scheme */
+ $bartificer-colors-light: (
+  background:      #fff,
+  header:          #000,
+  subheader:       #5f5f5b,
+  accent:          #ff7626,
+  note:            #9c968c,
+  handwriting:     #5f5f5b,
+  text:            #000,
+  code-text:       #fff,
+  code-background: #5f5f5b,
+  action:          #1da6e5,
+  secondary:       #8c9daf,
+  success:         #78a046,
+  warning:         #f0c600,
+  error:           #dc5a3c
+);
+
+/* import the Bartificer fonts */
+// https://fonts.google.com/share?selection.family=Exo+2:ital,wght@0,100..900;1,100..900|Georama:ital,wght@0,100..900;1,100..900|Reenie+Beanie|Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900|Saira:ital,wght@0,100..900;1,100..900|Victor+Mono:ital,wght@0,100..700;1,100..700
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Georama:ital,wght@0,100..900;1,100..900&family=Reenie+Beanie&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*
+ === Bootstrap Overrides and Imports ===
+ */
+
+/* Override Bootstrap Colour Variables */
+/* $body-bg: White; */
+$body-color:   map-get($bartificer-colors-light, text);
+$body-bg:      map-get($bartificer-colors-light, background);
+$primary:      map-get($bartificer-colors-light, action);
+$secondary:    map-get($bartificer-colors-light, secondary);
+$success:      map-get($bartificer-colors-light, success);
+$info:         map-get($bartificer-colors-light, note); /* note sure anout this! */
+$warning:      map-get($bartificer-colors-light, warning);
+$danger:       map-get($bartificer-colors-light, error);
+$light:        map-get($bartificer-colors-light, note);
+$dark:         map-get($bartificer-colors-light, subheader);
+
+/* Override the Bootstrap monospace font */
+$font-family-monospace: "Victor Mono", monospace;
+
+/** import Bootstrap styles **/
 @import "bootstrap/bootstrap";
+
+/*
+ === Custom Styles ===
+ */
+
+/* custom classes */
+.bartificer-logo-font {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+}
+.bartificer-accent {
+  font-family: "Georama", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: map-get($bartificer-colors-light, accent);
+}
+.bartificer-handwriting {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: map-get($bartificer-colors-light, handwriting);
+}
+
+/* Set the base font family */
+body {
+  font-family: "Georama", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/** Set the heading font families */
+h1{
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-weight: 700;
+}
+h2, h3, h4, h5, h6 {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+.display-1, .display-2, .display-3, .display-4 {
+  @extend .bartificer-logo-font;
+}
+
+/* Style code blocks */
+code, pre {
+  font-family: "Victor Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
