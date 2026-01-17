@@ -20,8 +20,13 @@
           <p class="small">
             Guests:
             {%- for guest in page.guests %}
+              {%- if forloop.first == false %}{% if forloop.last %} & {% else %}, {% endif %}{% endif %}
               {%- assign guest_profile = site.contributors | where: "slug", guest | first %}
-              <a href="{{ guest_profile.url | relative_url }}">{{ guest_profile.title }}</a>{%- if forloop.last == false %}, {% endif %}
+              {%- if guest_profile %}
+              <a href="{{ guest_profile.url | relative_url }}">{{ guest_profile.title }}</a>
+              {%- else %}
+              <span style="text-transform: capitalize;">{{ guest | replace: "_", " " }}</span>
+              {%- endif %}
             {%- endfor %}
           </p>
         {%- endif %}
