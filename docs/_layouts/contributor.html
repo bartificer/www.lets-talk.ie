@@ -25,10 +25,24 @@ layout: default_base
           {{ content }}
         </div>
       </div>
+      {%- assign contributor_slug = page.slug %}
+      {%- assign lta_host_episodes = site.lta | where: "host", contributor_slug %}
+      {%- assign lta_guest_episodes = site.lta | where_exp: "item", "item.guests contains contributor_slug" %}
+      {%- assign ltp_host_episodes = site.ltp | where: "host", contributor_slug %}
+      {%- assign ltp_guest_episodes = site.ltp | where_exp: "item", "item.guests contains contributor_slug" %}
+      {%- assign num_lta_host_episodes = lta_host_episodes | size %}
+      {%- assign num_lta_guest_episodes = lta_guest_episodes | size %}
+      {%- assign num_ltp_host_episodes = ltp_host_episodes | size %}
+      {%- assign num_ltp_guest_episodes = ltp_guest_episodes | size %}
+      {%- assign num_lta_appearances = num_lta_host_episodes | plus: num_lta_guest_episodes %}
+      {%- assign num_ltp_appearances = num_ltp_host_episodes | plus: num_ltp_guest_episodes %}
+      {%- assign num_appearances = num_lta_appearances | plus: num_ltp_appearances %}
+      {%- if num_appearances > 0 %}
       <div class="row">
         <div class="col-12">
           <h1>Appearances</h1>
           <ul>
+            {%- if num_lta_appearances > 0 -%}
             <li> Let's Talk Apple Episodes:
               <ul>
                 {%- assign contributor_slug = page.slug %}
@@ -36,25 +50,26 @@ layout: default_base
                 {%- for episode in lta_host_episodes %}
                 <li>Host: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
                 {%- endfor %}
-                {%- assign lta_guest_episodes = site.lta | where_exp: "item", "item.guests contains contributor_slug" %}
                 {%- for episode in lta_guest_episodes %}
                 <li>Guest: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
                 {%- endfor %}
               </ul>
             </li>
+            {%- endif -%}
+            {%- if num_ltp_appearances > 0 -%}
             <li> Let's Talk Photography Episodes:
               <ul>
-                {%- assign ltp_host_episodes = site.ltp | where: "host", contributor_slug %}
                 {%- for episode in ltp_host_episodes %}
                 <li>Host: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
                 {%- endfor %}
-                {%- assign ltp_guest_episodes = site.ltp | where_exp: "item", "item.guests contains contributor_slug" %}
                 {%- for episode in ltp_guest_episodes %}
                 <li>Guest: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
                 {%- endfor %}
               </ul>
             </li>
+            {%- endif -%}
           </ul>
         </div>
       </div>
+      {%- endif %}
     </main>
