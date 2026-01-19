@@ -1,6 +1,7 @@
 ---
 title: Bart Busschots
 slug: bart
+sort_name: Busschots Bart
 date: 2026-01-14
 links:
   - url: https://bartb.ie/

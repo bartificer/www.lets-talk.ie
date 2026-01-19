@@ -1,6 +1,7 @@
 ---
 title: Adam Christianson
 slug: adam_christianson
+sort_name: Christianson Adam
 date: 2026-01-14
 links:
   - url: https://www.maccast.com/

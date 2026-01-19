@@ -17,7 +17,7 @@ collections:
   contributors:
     output: true
     permalink: /contributor/:title
-    sort_by: slug
+    sort_by: sort_name
   podcasts:
     output: true
     permalink: /:title

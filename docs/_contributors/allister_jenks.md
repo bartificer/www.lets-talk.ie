@@ -1,6 +1,7 @@
 ---
 title: Allister Jenks
 slug: allister_jenks
+sort_name: Jenks Allister
 date: 2026-01-14
 links:
   - url: https://zkarj.me/

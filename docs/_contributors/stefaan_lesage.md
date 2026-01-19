@@ -1,6 +1,7 @@
 ---
 title: Stefaan Lesage
 slug: stefaan_lesage
+sort_name: Lesage Stefaan
 date: 2026-01-14
 links:
   - url: https://www.tech45.eu/

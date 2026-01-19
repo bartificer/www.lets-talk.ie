@@ -3,7 +3,14 @@ title: Credits
 slug: credits
 date: 2026-01-18
 ---
-While Bart is the creative force driving the shows content, he relied on the help of many other creatives for the other assets that support the content. Bart and Bartificer Creations wholeheartedly endorse all these creative professionals — if you need to commission some creative work, plesae consider engaging any of them with the relevant skills!
+
+# Producer, Editor & Host — Bart Busschot
+
+In every sense, [Bart]({{ '/contributor/bart' | relative_url }}) authors the Let's Talk podcasts. He conceived them, writes each episode, hosts the shows, and edits the audio files.
+
+However, to do so he relies on help and services from many other create people and organisations. Bart personally and Bartificer Creations wholeheartedly recommend the volunteers and creative professionals listed on this page.
+
+<span class="bartificer-accent">If you need to commission some creative work, plesae consider engaging any of them with the relevant skills!</span>
 
 # Music — Brendan Finan
 
@@ -26,6 +33,13 @@ The Icon Factory also created the avatars and banners used for the show's social
 
 Finaly, the Icon Factory also developed the style guide used for all Bartificer Creations publications, including this website.
 
-# Contributors
+# Guests
 
-*Coming Soon*
+These kind and generous people donated their time contribute their time to appear on one or more episodes.
+
+{% assign guests = site.contributors | sort: "sort_name" %}
+{%- for guest in guests %}
+{%- unless guest.slug == 'bart' %}
+* [{{ guest.title }}]({{ guest.url | relative_url }})
+{%- endunless %}
+{%- endfor %}

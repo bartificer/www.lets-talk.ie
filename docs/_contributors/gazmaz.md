@@ -1,6 +1,7 @@
 ---
 title: Gazmaz
 slug: gazmaz
+sort_name: Gazmaz
 date: 2026-01-14
 links:
   - url: https://www.mymacpodcast.com/

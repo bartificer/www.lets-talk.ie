@@ -1,6 +1,7 @@
 ---
 title: Kenny Lee
 slug: kenny_lee
+sort_name: Lee Kenny
 date: 2026-01-14
 social_media_profiles:
   - platform: Flickr

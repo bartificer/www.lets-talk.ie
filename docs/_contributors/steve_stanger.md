@@ -1,6 +1,7 @@
 ---
 title: Steve Stanger
 slug: steve_stanger
+sort_name: Stanger Steve
 date: 2026-01-14
 links:
   - url: https://www.macroundtable.com

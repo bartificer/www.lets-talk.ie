@@ -1,6 +1,7 @@
 ---
 title: Guy Serle
 slug: guy_serle
+sort_name: Serle Guy
 date: 2026-01-14
 links:
   - url: https://www.mymacpodcast.com/

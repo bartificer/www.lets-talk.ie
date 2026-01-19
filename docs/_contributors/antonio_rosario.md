@@ -1,6 +1,7 @@
 ---
 title: Antonio M. Rosario
 slug: antonio_rosario
+sort_name: Rosario Antonio
 date: 2026-01-14
 links:
   - url: https://streetshots.photography/

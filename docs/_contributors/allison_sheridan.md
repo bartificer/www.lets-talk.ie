@@ -1,6 +1,7 @@
 ---
 title: Allison Sheridan
 slug: alison_sheridan
+sort_name: Sheridan Allison
 date: 2026-01-14
 links:
   - url: https://www.podfeet.com/

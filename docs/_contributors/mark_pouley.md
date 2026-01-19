@@ -1,6 +1,7 @@
 ---
 title: Mark Pouley
 slug: mark_pouley
+sort_name: Pouley Mark
 date: 2026-01-14
 links:
   - url: https://twinlakesimages.com/
