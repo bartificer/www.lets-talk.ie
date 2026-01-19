@@ -11,8 +11,15 @@
   <div class="container">
     {%- comment %}The page header region{% endcomment %}
     <header class="row">
-      <div class="col-12 my-3">
-        <a class="display-1" href="{{ '/' | relative_url }}">{{ page.title }}</a>
+      <div class="col-12">
+        <div class="d-flex flex-row">
+          <div class="p-1">
+            <img src="{{ '/assets/graphics/LetsTalk-Podcasts-Square-512px.png' | relative_url }}" alt="{{ site.title }} logo" class="float-start" style="height: 100px" />
+          </div>
+          <div>
+            <h1>{{ page.title }}</h1>
+            <h2>Let's Talk Podcasts from Bartificer Creations</h2>
+          </div>
       </div>
     </header>
 

@@ -3,8 +3,8 @@
 ; /* stop VS Code kvetching about the front matter */
 
 /*
- === Define Bartificer Theme Variables ===
- TO DO: Move these to a separate file
+ * === Define Bartificer Theme Variables ===
+ * TO DO: Move these to a separate file
  */
 
  /* Define the light color scheme */
@@ -30,7 +30,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Georama:ital,wght@0,100..900;1,100..900&family=Reenie+Beanie&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 /*
- === Bootstrap Overrides and Imports ===
+ * === Bootstrap Overrides and Imports ===
  */
 
 /* Override Bootstrap Colour Variables */
@@ -53,7 +53,7 @@ $font-family-monospace: "Victor Mono", monospace;
 @import "bootstrap/bootstrap";
 
 /*
- === Custom Styles ===
+ * === Custom Styles ===
  */
 
 /* custom classes */
@@ -99,4 +99,21 @@ code, pre {
   font-family: "Victor Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
+}
+
+/*
+ * --- Page Layout Styles ---
+ */
+
+/* Style the site header */
+header{
+  h1 {
+    @extend .display-1;
+  }
+  h2 {
+    @extend .bartificer-logo-font;
+    font-weight: 100;
+    color: map-get($bartificer-colors-light, subheader);
+    @extend .fs-4;
+  }
 }
