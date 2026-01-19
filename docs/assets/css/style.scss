@@ -7,6 +7,10 @@
  * TO DO: Move these to a separate file
  */
 
+ /* Define the logo colours */
+ $bartificer-logo-green:   #93c01f;
+ $bartificer-logo-orange:  #f29100;
+
  /* Define the light color scheme */
  $bartificer-colors-light: (
   background:      #fff,
@@ -73,6 +77,15 @@ $font-family-monospace: "Victor Mono", monospace;
   font-style: normal;
   color: map-get($bartificer-colors-light, handwriting);
 }
+.bartificer-header-font {
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-weight: 700;
+}
+.bartificer-subheader-font {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
 
 /* Set the base font family */
 body {
@@ -82,13 +95,10 @@ body {
 
 /** Set the heading font families */
 h1{
-  font-family: "Saira Semi Condensed", sans-serif;
-  font-weight: 700;
+  @extend .bartificer-header-font;
 }
 h2, h3, h4, h5, h6 {
-  font-family: "Saira", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
+  @extend .bartificer-subheader-font;
 }
 .display-1, .display-2, .display-3, .display-4 {
   @extend .bartificer-logo-font;
@@ -115,5 +125,21 @@ header{
     font-weight: 100;
     color: map-get($bartificer-colors-light, subheader);
     @extend .fs-4;
+  }
+
+  /* Style the nav bar */
+  nav.navbar{
+    @extend .rounded-1;
+    background-color: $bartificer-logo-green;
+    @extend .bartificer-subheader-font;
+
+    .navbar-brand{
+      @extend .bartificer-header-font;
+
+      img{
+        @extend .rounded-1;
+        height: 32px;
+      }
+    }
   }
 }

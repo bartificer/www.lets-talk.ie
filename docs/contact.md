@@ -1,6 +1,7 @@
 ---
 title: Contact Us
 slug: contact
+sort_order: 30
 date: 2026-01-18
 ---
 You can contact the show via social media:

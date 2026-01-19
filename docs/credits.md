@@ -1,6 +1,7 @@
 ---
 title: Credits
 slug: credits
+sort_order: 20
 date: 2026-01-18
 ---
 

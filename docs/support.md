@@ -1,6 +1,7 @@
 ---
 title: Support the Shows
 slug: support
+sort_order: 10
 date: 2026-01-18
 ---
 Please consider supporting the shows directly with:

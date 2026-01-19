@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: front_page
+sort_order: 0
 ---
 # Welcome
 
