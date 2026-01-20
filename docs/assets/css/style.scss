@@ -53,6 +53,9 @@ $dark:         map-get($bartificer-colors-light, subheader);
 /* Override the Bootstrap monospace font */
 $font-family-monospace: "Victor Mono", monospace;
 
+/* Set a custom breadcrumb divider */
+$breadcrumb-divider: quote("≫");
+
 /** import Bootstrap styles **/
 @import "bootstrap/bootstrap";
 
@@ -142,4 +145,13 @@ header{
       }
     }
   }
+}
+
+/* Style the breadcrumbs */ 
+nav .breadcrumb{
+  --bs-breadcrumb-item-active-color: #{map-get($bartificer-colors-light, subheader)};
+  --bs-breadcrumb-divider-color: #{map-get($bartificer-colors-light, note)};
+  @extend .bartificer-subheader-font;
+  @extend .fs-6;
+  font-weight: 300;
 }
