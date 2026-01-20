@@ -33,18 +33,19 @@
     {%- comment %}The main content region{% endcomment %}
     <main>
       <div class="row mt-3 mb-0">
-        <div class="col-12 mx-2 episode_title">
+        <div class="col-12 mx-2 episode_heading">
           <h1>{{ page.slug | upcase }}: {{ page.title }}</h1>
-        </div>
-      </div>
-      <div class="row mt-0 mb-2">
-        <div class="col-12 mx-2 episode_metadata d-flex">
-          <p>Published: {{ page.date | date: "%b %e %Y" }}</p>
-          {%- assign host_profile = site.contributors | where: "slug", page.host | first -%}
-          <p>Host: <a href="{{ host_profile.url | relative_url }}">{{ host_profile.title }}</a></p>
-          {% if page.guests -%}
-          <p>
-            Guests:
+          <dl class="episode_metadata d-flex">
+            <dt>Published:</dt>
+            <dd>{{ page.date | date: "%e %b %Y" }}</dd>
+            
+            {%- assign host_profile = site.contributors | where: "slug", page.host | first -%}
+            <dt>Host:</dt>
+            <dd><a href="{{ host_profile.url | relative_url }}">{{ host_profile.title }}</a></dd>
+
+            {% if page.guests -%}
+            <dt>Guests:</dt>
+            <dd>
             {%- for guest in page.guests %}
               {%- if forloop.first == false %}{% if forloop.last %} & {% else %}, {% endif %}{% endif %}
               {%- assign guest_profile = site.contributors | where: "slug", guest | first %}
@@ -54,13 +55,14 @@
               <span style="text-transform: capitalize;">{{ guest | replace: "_", " " }}</span>
               {%- endif %}
             {%- endfor %}
-          </p>
-          {%- endif %}
+            </dd>
+            {%- endif %}
+          </dl>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 mx-2">
-          <p>{{ page.blurb | markdownify }}</p>
+        <div class="col-12 mx-2 episode_notes">
+          <p class="lead episode_blurb">{{ page.blurb | markdownify }}</p>
 
           <p><audio controls preload="metadata" src="{{ page.mp3_url }}"></audio> (<a href="{{ page.mp3_url }}">Download MP3</a>)</p>
 

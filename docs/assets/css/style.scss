@@ -155,3 +155,41 @@ nav .breadcrumb{
   @extend .fs-6;
   font-weight: 300;
 }
+
+/* style podcast episodes */
+.episode_heading{
+  .episode_metadata{
+    color: map-get($bartificer-colors-light, note);
+    margin-bottom: 0px;
+
+    dt{
+      @extend .me-1;
+      @extend .bartificer-subheader-font;
+      font-weight: 500;
+    }
+    dd{
+      @extend .me-3;
+    }
+  }
+
+  h1{
+    margin-bottom: 0px;
+  }
+}
+.episode_notes{
+  h1{
+    @extend .fs-2;
+  }
+  h2{
+    @extend .fs-3;
+  }
+  h3{
+    @extend .fs-4;
+  }
+  h4{
+    @extend .fs-5;
+  }
+  h5{
+    @extend .fs-6;
+  }
+}
