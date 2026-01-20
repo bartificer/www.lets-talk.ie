@@ -43,11 +43,15 @@ defaults:
       type: lta
     values:
       layout: podcast_episode
+      podcast_title: "Let's Talk Apple"
+      podcast_slug: "lta"
   - scope:
       path: ""
       type: ltp
     values:
       layout: podcast_episode
+      podcast_title: "Let's Talk Photography"
+      podcast_slug: "ltp"
   - scope:
       path: ""
       type: contributors

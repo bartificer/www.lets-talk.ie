@@ -11,43 +11,11 @@
   <div class="container">
     {%- comment %}The page header region{% endcomment %}
     <header class="row">
-      <div class="col-12">
-        <div class="d-flex flex-row">
-          <div class="p-1">
-            <img src="{{ '/assets/graphics/LetsTalk-Podcasts-MicOnly-512px.png' | relative_url }}" alt="{{ site.title }} logo" class="float-start mx-3" style="height: 100px" />
-          </div>
-          <div>
-            <h1>{{ page.title }}</h1>
-            <h2>Let's Talk Podcasts from Bartificer Creations</h2>
-          </div>
-      </div>
-      <div class="col-12">
-        {%- comment %}The navigation bar across the very top of the page{% endcomment %}
-        <nav class="navbar navbar-expand-sm" data-bs-theme="dark">
-          <div class="container-fluid">
+      {%- comment %}Include the standard page title with custom text{% endcomment %}
+      {%- include standard_page_header_title.html %}
 
-            {%- comment %}The site branding part of the nav bar{% endcomment %}
-            <a class="navbar-brand" href="#">
-              <img src="{{ '/assets/graphics/BartificerCreations-BOnly-White-64px.png' | relative_url }}" alt="Bartificer Creations Logo">
-            </a>
-
-            {%- comment %}The expand toggle that will appear on the right of the nav bar when the navigation below is collapsed{% endcomment %}
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            {%- comment %}The collapsing list of pages{% endcomment %}
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                {%- assign nav_pages = site.html_pages | sort: "sort_order" %}
-                {%- for p in nav_pages %}
-                <a class="nav-link {%- if p.url == page.url %} active{% endif %}" {%- if p.url == page.url %} aria-current="page"{% endif %} href="{{ p.url | relative_url }}">{{ p.title }}</a>
-                {%- endfor %}
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
+      {%- comment %}Include the standard Nav Bar{% endcomment %}
+      {%- include standard_page_navbar.html %}
     </header>
 
     {%- comment %}The main content region{% endcomment %}

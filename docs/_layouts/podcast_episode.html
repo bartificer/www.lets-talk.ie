@@ -11,13 +11,39 @@
   <div class="container">
     {%- comment %}The page header region{% endcomment %}
     <header class="row">
-      <div class="col-12 my-3">
-        <h1 class="display-1"><a href="{{ '/' | relative_url }}">{{ page.slug | upcase }}: {{ page.title }}</a></h1>
-        <p class="small">Published: {{ page.date | date: "%b %e %Y" }}</p>
-        {%- assign host_profile = site.contributors | where: "slug", page.host | first -%}
-        <p class="small">Host: <a href="{{ host_profile.url | relative_url }}">{{ host_profile.title }}</a></p>
-        {% if page.guests -%}
-          <p class="small">
+      {%-  comment %}Include the standard page title but with custom text{% endcomment %}
+      {%- capture page_title %}{{ page.slug | upcase }} Show Notes{% endcapture %}
+      {%- include standard_page_header_title.html page_title=page_title %}
+
+      {%- comment %}Include the standard Nav Bar{% endcomment %}
+      {%- include standard_page_navbar.html %}
+    </header>
+
+    {%- comment %}Include the standard breadcrumbs with needed customisations{% endcomment %}
+    <div class-="row">
+      <div class="col-12 mx-1">
+        {%- capture intermediate_pages %}
+        <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}{{ page.podcast_slug }}">{{ page.podcast_title }}</a></li>
+        {%- endcapture %}
+        {%- capture page_title %}{{ page.slug | upcase }}: {{ page.title }}{% endcapture %}
+        {%- include standard_page_breadcrumbs.html intermediate_pages=intermediate_pages page_title=page_title %}
+      </div>
+    </div>
+
+    {%- comment %}The main content region{% endcomment %}
+    <main>
+      <div class="row mt-3 mb-0">
+        <div class="col-12 mx-2 episode_title">
+          <h1>{{ page.slug | upcase }}: {{ page.title }}</h1>
+        </div>
+      </div>
+      <div class="row mt-0 mb-2">
+        <div class="col-12 mx-2 episode_metadata d-flex">
+          <p>Published: {{ page.date | date: "%b %e %Y" }}</p>
+          {%- assign host_profile = site.contributors | where: "slug", page.host | first -%}
+          <p>Host: <a href="{{ host_profile.url | relative_url }}">{{ host_profile.title }}</a></p>
+          {% if page.guests -%}
+          <p>
             Guests:
             {%- for guest in page.guests %}
               {%- if forloop.first == false %}{% if forloop.last %} & {% else %}, {% endif %}{% endif %}
@@ -29,20 +55,15 @@
               {%- endif %}
             {%- endfor %}
           </p>
-        {%- endif %}
-      </div>
-    </header>
-
-    {%- comment %}The main content region{% endcomment %}
-    <main>
-      <div class="row">
-        <div class="col-12">
-          <p>{{ page.blurb | markdownify }}</p>
-          <p><audio controls preload="metadata" src="{{ page.mp3_url }}"></audio> (<a href="{{ page.mp3_url }}">Download MP3</a>)</p>
+          {%- endif %}
         </div>
       </div>
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 mx-2">
+          <p>{{ page.blurb | markdownify }}</p>
+
+          <p><audio controls preload="metadata" src="{{ page.mp3_url }}"></audio> (<a href="{{ page.mp3_url }}">Download MP3</a>)</p>
+
           {{ content }}
         </div>
       </div>
