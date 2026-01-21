@@ -63,6 +63,12 @@ $breadcrumb-divider: quote("≫");
  * === Custom Styles ===
  */
 
+/* custom variables */
+:root {
+  --bartificer-lta-accent-colour: #{$bartificer-logo-orange};
+  --bartificer-ltp-accent-colour: #{$bartificer-logo-green};
+}
+
 /* custom classes */
 .bartificer-logo-font {
   font-family: "Exo 2", sans-serif;
@@ -112,6 +118,11 @@ code, pre {
   font-family: "Victor Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
+}
+
+/* Style form elemenmts */
+.btn-primary, .btn-secondary, .btn-success, .btn-danger, .btn-warning, .btn-dark {
+  color: map-get($bartificer-colors-light, background);
 }
 
 /*
