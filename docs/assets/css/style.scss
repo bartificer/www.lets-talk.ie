@@ -13,20 +13,25 @@
 
  /* Define the light color scheme */
  $bartificer-colors-light: (
-  background:      #fff,
-  header:          #000,
-  subheader:       #5f5f5b,
-  accent:          #ff7626,
-  note:            #9c968c,
-  handwriting:     #5f5f5b,
-  text:            #000,
-  code-text:       #fff,
-  code-background: #5f5f5b,
-  action:          #1da6e5,
-  secondary:       #8c9daf,
-  success:         #78a046,
-  warning:         #f0c600,
-  error:           #dc5a3c
+  background:          #fff,
+  header:              #000,
+  subheader:           #5f5f5b,
+  accent:              #ff7626,
+  note:                #9c968c,
+  handwriting:         #5f5f5b,
+  text:                #000,
+  code-text:           #fff,
+  code-background:     #5f5f5b,
+  action:              #1da6e5,
+  action-background:   #dff1fa,
+  secondary:           #8c9daf,
+  secondary-background:#e6ebf2,
+  success:             #78a046,
+  success-background:  #dcf0c1,
+  warning:             #f0c600,
+  warning-background:  #fff2b6,
+  error:               #dc5a3c,
+  error-background:    #f5cdc2
 );
 
 /* import the Bartificer fonts */
@@ -44,7 +49,7 @@ $body-bg:      map-get($bartificer-colors-light, background);
 $primary:      map-get($bartificer-colors-light, action);
 $secondary:    map-get($bartificer-colors-light, secondary);
 $success:      map-get($bartificer-colors-light, success);
-$info:         map-get($bartificer-colors-light, note); /* note sure anout this! */
+$info:         map-get($bartificer-colors-light, secondary-background);
 $warning:      map-get($bartificer-colors-light, warning);
 $danger:       map-get($bartificer-colors-light, error);
 $light:        map-get($bartificer-colors-light, note);
@@ -120,9 +125,14 @@ code, pre {
   font-weight: 500;
 }
 
-/* Style form elemenmts */
+/* Style form elements */
 .btn-primary, .btn-secondary, .btn-success, .btn-danger, .btn-warning, .btn-dark {
   color: map-get($bartificer-colors-light, background);
+}
+
+/* Style Bootstrap cards */
+.card-header {
+  @extend .bartificer-subheader-font;
 }
 
 /*

@@ -6,7 +6,7 @@ Gather needed page data:
 3. slug_human = the episode's own slug formatted for human readability
 {%- endcomment -%}
 {%- assign podcast_slug = page.collection -%}
-{%- assign podcast= site.podcasts | where: "slug", podcast_slug | first -%}
+{%- assign podcast = site.podcasts | where: "slug", podcast_slug | first -%}
 {%- capture slug_human %}{% include human_episode_slug.html slug=page.slug %}{% endcapture -%}
 <!DOCTYPE HTML>
 <html>
@@ -70,12 +70,12 @@ Gather needed page data:
           </dl>
         </div>
       </div>
-      <div class="row episode_notes">
+      <div class="row episode_notes mb-5">
         <div class="col-12 col-md-7 col-lg-8 col-xl-9">
           <p class="lead episode_blurb">{{ page.blurb | markdownify }}</p>
         </div>
         <div class="col-12 col-md-5 col-lg-4 col-xl-3">
-          <div class="card episode_player mx-auto" style="border-color: var(--bartificer-{{ podcast_slug }}-accent-colour); max-width: 256px;">
+          <div class="card episode_player" style="border-color: var(--bartificer-{{ podcast_slug }}-accent-colour);">
             <img src="{{ podcast.graphics.itunes_cover | relative_url }}" class="card-img-top" alt="Let's Talk Apple Logo">
             <div class="card-body">
               <p class="card-text"><audio controls src="{{ page.mp3_url }}" class="w-100"></audio></p>
@@ -83,8 +83,28 @@ Gather needed page data:
             </div>
           </div>
         </div>
-        <div class="col-12 mt-3">
+        <div class="col-12 col-md-7 col-lg-8 col-xl-9 mt-3">
           {{ content }}
+        </div>
+        <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-3">
+          <div class="card text-bg-info support">
+            <div class="card-header">Support the Show</div>
+            <div class="card-body">
+              <p class="card-text">This episode is free for you to enjoy, free from ads, and free from sponsors, but it's not free to produce. This podcast is 100% listener supported, without the support of people like you, it would not exist. Please consider supporting our work.</p>
+              {%- for support_link in site.support_links %}
+              <p class="card-text"><a class="btn btn-primary w-100" href="{{ support_link.url }}" target="_blank"><i class="{{ support_link.icon }}" aria-hidden="true"></i> {{ support_link.button_text }}</a></p>
+              {%- endfor %}
+              <a class="card-link" href="{{ '/support' | relative_url }}">More Options …</a>
+            </div>
+          </div>
+          <div class="card text-bg-info subscribe mt-3">
+            <div class="card-header">Subscribe</div>
+            <div class="card-body">
+              <p class="card-text"><a class="btn btn-secondary w-100" href="{{ podcast.subscription_links.rss }}" target="_blank"><i class="fa-solid fa-rss" aria-hidden="true"></i> RSS Feed</a></p>
+              <p class="card-text"><a class="btn btn-secondary w-100" href="{{ podcast.subscription_links.apple_podcasts }}" target="_blank"><i class="fa-brands fa-apple" aria-hidden="true"></i> Apple Podcasts</a></p>
+              <p class="card-text"><a class="btn btn-secondary w-100" href="{{ podcast.subscription_links.podcast_index }}" target="_blank"><i class="fa-solid fa-podcast" aria-hidden="true"></i> Podcast Index</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </main>

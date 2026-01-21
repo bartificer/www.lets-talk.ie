@@ -1,5 +1,16 @@
 # Site Settings
 title: "Let's Talk Podcasts"
+support_links:
+  - title: "Patreon"
+    button_text: "Monthly Patreon Pledge"
+    support_page_text: "A monthly Subscription on"
+    url: "https://www.patreon.com/ltpod"
+    icon: "fa-brands fa-patreon"
+  - title: "PayPal"
+    button_text: "One-Time PayPal Donation"
+    support_page_text: "A one-time donation via"
+    url: "https://www.paypal.com/donate/?hosted_button_id=HEYHNGKY8EASE"
+    icon: "fa-brands fa-paypal"
 
 # Build Settings
 plugins:

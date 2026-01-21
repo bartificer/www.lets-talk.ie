@@ -6,8 +6,9 @@ date: 2026-01-18
 ---
 Please consider supporting the shows directly with:
 
-* A monthly Subscription on [Patreon](https://www.patreon.com/ltpod)
-* A one-off donation via [PayPal](https://www.paypal.com/donate/?hosted_button_id=HEYHNGKY8EASE)
+{%- for support_link in site.support_links %}
+* {{ support_link.support_page_text }} [{{ support_link.title }}]({{ support_link.url }})
+{%- endfor %}
 
 You can also support the shows by making use of the following afflilate links:
 
