@@ -1,0 +1,9 @@
+{%- comment -%}
+Use slice to take and uppercase the first three characers, then use slice again to capture the rest.
+
+Notes:
+------
+1. slice works with zero‑based indexes: slice(start, length)
+2. this supports the rare episides with trailing letters, e.g. lta5a
+{%- endcomment -%}
+{{ include.slug | slice: 0,3 | upcase }} {{ include.slug | slice: 3,include.slug.size }}

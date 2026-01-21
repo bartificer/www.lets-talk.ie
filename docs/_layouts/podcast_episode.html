@@ -1,3 +1,13 @@
+{%- comment -%}
+Gather needed page data:
+------------------------
+1. podcast_slug = the episode's parent podcast slug (assumed to always be the episode's collection name)
+2. podcast = the episode's parent podcast entry from the sites.podcasts collection (based on the episode's collection name)
+3. slug_human = the episode's own slug formatted for human readability
+{%- endcomment -%}
+{%- assign podcast_slug = page.collection -%}
+{%- assign podcast= site.podcasts | where: "slug", podcast_slug | first -%}
+{%- capture slug_human %}{% include human_episode_slug.html slug=page.slug %}{% endcapture -%}
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -5,14 +15,14 @@
   {%  include html_head_common.html %}
 
   {%- comment %}Default to a title consisting of the page title and site title{% endcomment %}
-  <title>{{ page.slug }}: {{ page.title }}</title>
+  <title>{{ slug_human }}: {{ page.title }}</title>
 </head>
 <body>
   <div class="container">
     {%- comment %}The page header region{% endcomment %}
     <header class="row">
       {%-  comment %}Include the standard page title but with custom text{% endcomment %}
-      {%- capture page_title %}{{ page.slug | upcase }} Show Notes{% endcapture %}
+      {%- capture page_title %}{{ slug_human }} Show Notes{% endcapture %}
       {%- include standard_page_header_title.html page_title=page_title %}
 
       {%- comment %}Include the standard Nav Bar{% endcomment %}
@@ -23,9 +33,9 @@
     <div class-="row">
       <div class="col-12 mx-1">
         {%- capture intermediate_pages %}
-        <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}{{ page.podcast_slug }}">{{ page.podcast_title }}</a></li>
+        <li class="breadcrumb-item"><a href="{{ podcast.url | relative_url }}">{{ podcast.title }}</a></li>
         {%- endcapture %}
-        {%- capture page_title %}{{ page.slug | upcase }}: {{ page.title }}{% endcapture %}
+        {%- capture page_title %}{{ slug_human }}: {{ page.title }}{% endcapture %}
         {%- include standard_page_breadcrumbs.html intermediate_pages=intermediate_pages page_title=page_title %}
       </div>
     </div>
@@ -34,7 +44,7 @@
     <main>
       <div class="row mt-3 mb-0">
         <div class="col-12 mx-2 episode_heading">
-          <h1>{{ page.slug | upcase }}: {{ page.title }}</h1>
+          <h1>{{ slug_human }}: {{ page.title }}</h1>
           <dl class="episode_metadata d-flex">
             <dt>Published:</dt>
             <dd>{{ page.date | date: "%e %b %Y" }}</dd>
@@ -60,12 +70,21 @@
           </dl>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 mx-2 episode_notes">
+      <div class="row episode_notes">
+        <div class="col-12 mx-2">
+          <p>Debug: <code>podcast_slug={{ podcast_slug }}, podcast.title={{ podcast.title }}, slug_human={{ slug_human }}</code></p>
           <p class="lead episode_blurb">{{ page.blurb | markdownify }}</p>
-
-          <p><audio controls preload="metadata" src="{{ page.mp3_url }}"></audio> <a href="{{ page.mp3_url }}" class="btn btn-success"><i class="fa-solid fa-download"></i> Download MP3</a></p>
-
+        </div>
+        <div class="col-12 mx-2">
+          <div class="card episode_player w-75 mx-auto">
+            <img src="{{ '/assets/graphics/LetsTalk-Apple-iTunes-256.png' | relative_url }}" class="card-img-top" alt="Let's Talk Apple Logo">
+            <div class="card-body">
+              <p class="card-text"><audio controls preload="metadata" src="{{ page.mp3_url }}"></audio></p>
+              <a href="{{ page.mp3_url }}" class="btn btn-secondary w-100"><i class="fa-solid fa-download" aria-hidden="true"></i> Download MP3</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mx-2">
           {{ content }}
         </div>
       </div>
