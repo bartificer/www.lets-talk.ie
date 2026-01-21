@@ -64,7 +64,7 @@
         <div class="col-12 mx-2 episode_notes">
           <p class="lead episode_blurb">{{ page.blurb | markdownify }}</p>
 
-          <p><audio controls preload="metadata" src="{{ page.mp3_url }}"></audio> (<a href="{{ page.mp3_url }}">Download MP3</a>)</p>
+          <p><audio controls preload="metadata" src="{{ page.mp3_url }}"></audio> <a href="{{ page.mp3_url }}" class="btn btn-success"><i class="fa-solid fa-download"></i> Download MP3</a></p>
 
           {{ content }}
         </div>
