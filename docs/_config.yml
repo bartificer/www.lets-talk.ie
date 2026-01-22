@@ -11,6 +11,16 @@ support_links:
     support_page_text: "A one-time donation via"
     url: "https://www.paypal.com/donate/?hosted_button_id=HEYHNGKY8EASE"
     icon: "fa-brands fa-paypal"
+subscription_types:
+  - title: "RSS Feed"
+    type: rss
+    icon: "fa-solid fa-rss"
+  - title: "Apple Podcasts"
+    type: apple_podcasts
+    icon: "fa-brands fa-apple"
+  - title: "Podcast Index"
+    type: podcast_index
+    icon: "fa-solid fa-podcast"
 
 # Build Settings
 plugins:

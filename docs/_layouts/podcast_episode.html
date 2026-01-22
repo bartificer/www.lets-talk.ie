@@ -100,9 +100,9 @@ Gather needed page data:
           <div class="card text-bg-info subscribe mt-3">
             <div class="card-header">Subscribe</div>
             <div class="card-body">
-              <p class="card-text"><a class="btn btn-secondary w-100" href="{{ podcast.subscription_links.rss }}" target="_blank"><i class="fa-solid fa-rss" aria-hidden="true"></i> RSS Feed</a></p>
-              <p class="card-text"><a class="btn btn-secondary w-100" href="{{ podcast.subscription_links.apple_podcasts }}" target="_blank"><i class="fa-brands fa-apple" aria-hidden="true"></i> Apple Podcasts</a></p>
-              <p class="card-text"><a class="btn btn-secondary w-100" href="{{ podcast.subscription_links.podcast_index }}" target="_blank"><i class="fa-solid fa-podcast" aria-hidden="true"></i> Podcast Index</a></p>
+              {%- for subscription_type in site.subscription_types %}
+              <p class="card-text"><a class="btn btn-secondary w-100" href="{{ podcast.subscription_links[subscription_type.type] }}" target="_blank"><i class="{{ subscription_type.icon }}" aria-hidden="true"></i> {{ subscription_type.title }}</a></p>
+              {%- endfor %}
             </div>
           </div>
         </div>
