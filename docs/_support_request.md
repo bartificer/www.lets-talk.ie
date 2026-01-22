@@ -1,0 +1,1 @@
+These shows are free for you to enjoy, free of ads, free of trackers, and free from the conflicts of interest that come with sponsors. In short, these podcasts are **100% listener supported**. Without the support of listeners like you, the shows simply could not exist.

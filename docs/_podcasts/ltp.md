@@ -7,5 +7,6 @@ subscription_links:
   podcast_index: https://podcastindex.org/podcast/4702827
 graphics:
   itunes_cover: /assets/graphics/LetsTalk-Photo-iTunes-512px.png
+  card_banner: /assets/graphics/LetsTalk-Photo-1024px.png
 ---
 A monthly discussion on a topic somehow related to the art and craft of photography.

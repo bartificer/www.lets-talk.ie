@@ -72,6 +72,12 @@ $breadcrumb-divider: quote("≫");
 :root {
   --bartificer-lta-accent-colour: #{$bartificer-logo-orange};
   --bartificer-ltp-accent-colour: #{$bartificer-logo-green};
+  --bartificer-note-colour: #{map-get($bartificer-colors-light, note)};
+}
+
+/* style HTML elements */
+small {
+  color: map-get($bartificer-colors-light, note);
 }
 
 /* custom classes */
@@ -182,6 +188,11 @@ nav .breadcrumb{
   @extend .bartificer-subheader-font;
   @extend .fs-6;
   font-weight: 300;
+}
+
+/* Style the front page */
+.frontpage-body-text p{
+  @extend .lead
 }
 
 /* style podcast episodes */
