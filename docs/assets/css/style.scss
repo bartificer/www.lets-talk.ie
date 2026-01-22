@@ -134,6 +134,13 @@ code, pre {
 .card-header {
   @extend .bartificer-subheader-font;
 }
+h1.card-title{
+  @extend .bartificer-subheader-font;
+  @extend .fs-2;
+}
+.card-body.renderd-markdown p{
+  @extend .card-text;
+}
 
 /*
  * --- Page Layout Styles ---

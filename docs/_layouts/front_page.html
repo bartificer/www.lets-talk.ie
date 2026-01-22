@@ -10,16 +10,45 @@
 <body>
   <div class="container">
     {%- comment %}The page header region{% endcomment %}
-    <header class="row">
-      <div class="col-12 my-3">
-        <h1 class="display-1">{{ site.title }}</h1>
+    <header>
+      <div class="row">
+        {%- comment %}Include the standard Nav Bar row{% endcomment %}
+        {%- include standard_page_navbar.html %}
+      </div>
+      <div class="row mt-5">
+        {%- comment %}The front page banner image{% endcomment %}
+        <div class="col-12">
+          <img src="{{ '/assets/graphics/LetsTalk-Podcasts.png' | relative_url }}" class="img-fluid" alt="{{ site.title }}">
+        </div>
       </div>
     </header>
 
     {%- comment %}The main content region{% endcomment %}
     <main>
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-12">
+          <div class="card mb-5">
+            <div class="row g-0">
+              <div class="col-12 col-lg-7 col-xl-8">
+                <div class="card-body renderd-markdown">
+                  <h1 class="card-title">Welcome</h1>
+                  {%- comment %}Include the welcome message from the _welcome.md file{% endcomment %}
+                  {%- capture welcome_markdown %}{% include_relative _welcome.md %}{% endcapture %}
+                  <figure>
+                    <blockquote class="blockquote">
+                      {{ welcome_markdown | markdownify }}
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                      Bart Busschots — Host & Producer
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-12 d-none col-lg-5 col-xl-4 d-lg-block">
+                <img src="{{ '/assets/graphics/Bart-Portrait.jpeg' | relative_url }}" class="img-fluid rounded-end" alt="Portrait of Bart Busschots">
+              </div>
+            </div>
+          </div>
           {{ content }}
         </div>
       </div>
