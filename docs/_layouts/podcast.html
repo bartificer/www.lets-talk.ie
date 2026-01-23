@@ -1,30 +1,80 @@
----
-layout: default_base
----
-    <main>
+<!DOCTYPE HTML>
+<html>
+<head>
+  {%- comment %}Include the snippet with the standard content for the head tag{% endcomment %}
+  {%  include html_head_common.html %}
+
+  {%- comment %}Just use the page title (podcast name){% endcomment %}
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <div class="container">
+    {%- comment %}The page header region{% endcomment %}
+    <header>
       <div class="row">
+        {%- comment %}Include the standard Nav Bar row{% endcomment %}
+        {%- include standard_page_navbar.html %}
+      </div>
+      <div class="row  mx-1">
         <div class="col-12">
+          {%- comment %}Include the standard breadcrumbs with no intermediate levels and the default current page title{% endcomment %}
+          {%- include standard_page_breadcrumbs.html %}
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        {%- comment %}The front page banner image{% endcomment %}
+        <div class="col-12">
+          <img src="{{ page.graphics.banner | relative_url }}" class="img-fluid" alt="{{ page.title }}">
+        </div>
+      </div>
+    </header>
+
+    {%- comment %}Main content area{% endcomment %}
+    <main>
+      <div class="row mt-5">
+        {%- comment %}The podcast description — format like the front-page main content{%- endcomment %}
+        <div class="col-12 col-lg-8 col-xl-6 frontpage-body-text">
           {{ content }}
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <h1>Subscribe</h1>
-          <a href="{{ page.subscription_links.rss }}" class="btn btn-outline-primary">RSS Feed</a>
-          <a href="{{ page.subscription_links.apple_podcasts }}" class="btn btn-outline-primary">Apple Podcasts</a>
-          <a href="{{ page.subscription_links.podcast_index }}" class="btn btn-outline-primary">Podcast Index</a>
+        <div class="col-12 col-lg-4 col-xl-6">
+          {%- comment %}Subscription links{% endcomment %}
+          <div class="card">
+            <div class="card text-bg-info">
+              <div class="card-header">
+                Subscribe
+              </div>
+              <div class="card-body">
+                <div class="card-text d-flex flex-wrap justify-content-around">
+                  {%- for subscription_type in site.subscription_types %}
+                  <div class="p-lg-1">
+                    <a href="{{ subscription_type.url }}" target="_blank" class="btn btn-outline-primary bg-white"><i class="{{ subscription_type.icon }}" aria-hidden="true"></i> {{ subscription_type.title }}</a>
+                  </div>
+                  {%- endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
+      
+      {%- comment %}The full episide list, in reverse order{% endcomment %}
+      <div class="row mt-5">
         <div class="col-12">
           <h1>All Episodes</h1>
           {%- assign podcast_slug = page.slug %}
           {%- assign podcast_collection = site.collections | where: "label", podcast_slug | first %}
           <ul>
             {%- for p in podcast_collection.docs reversed %}
-            <li><a href="{{ p.url | relative_url }}">{{ p.slug | upcase }} — {{ p.title }}</a> ({{ p.date | date: "%b %e %Y" }})</li>
+            <li><a href="{{ p.url | relative_url }}">{% include human_episode_slug.html slug=p.slug %}: {{ p.title }}</a> ({{ p.date | date: "%b %e %Y" }})</li>
             {%- endfor %}
           </ul>
         </div>
       </div>
     </main>
+  </div>
+
+  {%- comment %}Include the standard body-end snippet{% endcomment %}
+  {% include html_body_end.html %}
+</body>
+</html>
