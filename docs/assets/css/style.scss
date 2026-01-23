@@ -190,9 +190,19 @@ nav .breadcrumb{
   font-weight: 300;
 }
 
+/* Style the footer */
+footer{
+  background-color: map-get($bartificer-colors-light, secondary-background);
+  /* border-color: map-get($bartificer-colors-light, secondary); */
+  @extend .border;
+  @extend .border-secondary;
+  @extend .rounded-1;
+  @extend .text-secondary;
+}
+
 /* Style the front page */
 .frontpage-body-text p{
-  @extend .lead
+  @extend .lead;
 }
 
 /* style podcast episodes */
