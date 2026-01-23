@@ -193,7 +193,7 @@ nav .breadcrumb{
 /* Style the footer */
 footer{
   background-color: map-get($bartificer-colors-light, secondary-background);
-  /* border-color: map-get($bartificer-colors-light, secondary); */
+  font-size: 0.75rem;
   @extend .border;
   @extend .border-secondary;
   @extend .rounded-1;

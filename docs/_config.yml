@@ -95,13 +95,17 @@ defaults:
       type: lta
     values:
       layout: podcast_episode
+      show_github_contribute: true
   - scope:
       path: ""
       type: ltp
     values:
       layout: podcast_episode
+      show_github_contribute: true
   - scope:
       path: ""
       type: contributors
     values:
       layout: contributor
+      show_github_contribute: true
+      show_revision_date: true

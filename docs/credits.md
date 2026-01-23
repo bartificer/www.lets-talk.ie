@@ -3,6 +3,8 @@ title: Credits
 slug: credits
 sort_order: 20
 date: 2026-01-18
+show_revision_date: true
+show_github_contribute: true
 ---
 
 # Producer, Editor & Host — Bart Busschot

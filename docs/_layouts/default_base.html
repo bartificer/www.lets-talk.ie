@@ -21,22 +21,9 @@
     {%- comment %}The main content region{% endcomment %}
     {{ content }}
 
-    <div class="row px-3 mt-4">
-      <footer class="col-12 d-flex justify-content-between">
-        {%- if page.show_github_footer %}
-        <div>
-          Test left
-        </div>
-        {%- endif %}
-        <div>
-          {% include license.html %}
-        </div>
-        {%- if page.show_revision_date %}
-        <div>
-          Revised {{ page.date | date: "%b %e %Y" }}
-        </div>
-        {%- endif %}
-      </footer>
+    <div class="row px-3 mt-4 mb-2">
+      {%- comment %}Include the standard footer{% endcomment %}
+      {%- include standard_page_footer.html %}
     </div>
   </div>
 
