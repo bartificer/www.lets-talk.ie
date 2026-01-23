@@ -59,17 +59,27 @@
       </div>
       
       {%- comment %}The full episide list, in reverse order{% endcomment %}
+      {%- assign podcast_slug = page.slug %}
+      {%- assign podcast_collection = site.collections | where: "label", podcast_slug | first %}
       <div class="row mt-5">
         <div class="col-12">
           <h1>All Episodes</h1>
-          {%- assign podcast_slug = page.slug %}
-          {%- assign podcast_collection = site.collections | where: "label", podcast_slug | first %}
-          <ul>
-            {%- for p in podcast_collection.docs reversed %}
-            <li><a href="{{ p.url | relative_url }}">{% include human_episode_slug.html slug=p.slug %}: {{ p.title }}</a> ({{ p.date | date: "%b %e %Y" }})</li>
-            {%- endfor %}
-          </ul>
         </div>
+      </div>
+      <div class="row g-0 row-cols-2 row-cols-lg-3 row-cols-xl-4">
+        {%- capture podcast_accent_colour %}var(--bartificer-{{ podcast_slug }}-accent-colour){% endcapture %}
+        {%- for p in podcast_collection.docs reversed %}
+        <div class="col p-1">
+          <div class="card" style="border-color: {{ podcast_accent_colour }};">
+            <div class="list-group list-group-flush">
+              <a class="list-group-item list-group-item-action" href="{{ p.url | relative_url }}">
+                {% if page.quote_episode_titles %}<em>"{% endif %}{{ p.title }}{% if page.quote_episode_titles %}"</em>{% endif %}
+                <br/><small>{% include human_episode_slug.html slug=p.slug %} published {{ p.date | date: "%b %e %Y" }}</small>
+              </a>
+            </div>
+          </div>
+        </div>
+        {%- endfor %}
       </div>
     </main>
   </div>
