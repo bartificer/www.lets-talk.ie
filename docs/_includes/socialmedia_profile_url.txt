@@ -1,0 +1,24 @@
+{%- comment %}
+Geneate a URL for a social media profile.
+
+Required Parameters:
+- platform: the slug for the social media platform as defined in site.socialmedia_platforms
+- handle: the user's handle on the platform
+{%- endcomment -%}
+{%- if include.platform and include.handle -%}
+  {%- assign socialmedia_platform = site.socialmedia_platforms[include.platform] -%}
+  {%- if socialmedia_platform -%}
+    {%- if socialmedia_platform.profile_url_prefix -%}
+      {{- socialmedia_platform.profile_url_prefix -}}
+      {%- if socialmedia_platform.handle_prefix -%}
+        {{- include.handle | remove_first: socialmedia_platform.handle_prefix -}}
+      {%- else -%}
+        {{- include.handle -}}
+      {%- endif -%}
+    {%- elsif include.platform == "mastodon" -%}
+      {%- assign trimmed_handle = include.handle | remove_first: "@" -%}
+      {%- assign handle_parts = trimmed_handle | split: "@" -%}
+      https://{{ handle_parts[1] }}/@{{ handle_parts[0] }}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}

@@ -1,0 +1,25 @@
+{%- comment %}
+Geneate a link to a social media profile.
+
+Required Parameters:
+- platform: the slug for the social media platform as defined in site.socialmedia_platforms
+- handle: the user's handle on the platform
+
+Optional Parameters:
+- class: a string to use as the link's class HTML attribute
+- no_handle: any truthy value to suppress the display of the handle
+- no_icon: any truthy value to suppress the display of the icon
+{%- endcomment -%}
+{%- if include.platform and include.handle -%}
+  {%- assign socialmedia_platform = site.socialmedia_platforms[include.platform] -%}
+  {%- if socialmedia_platform -%}
+    {%- capture hover_text -%}{{ include.handle }} on {{ socialmedia_platform.title }}{%- endcapture -%}
+    <a href="{% include socialmedia_profile_url.txt platform=include.platform handle=include.handle %}" title="{{ hover_text }}"{% if include.class %} class="{{ include.class }}"{% endif %}>
+    {%- unless include.no_icon -%}<i class="{{ socialmedia_platform.icon }}" aria-label="{% if include.no_handle %}{{ hover_text }}{% else %}{{ socialmedia_platform.title }}{% endif %}"></i>{% endunless -%}
+    {%- unless include.no_handle -%}
+      {%- unless include.no_icon %} {% endunless %}<code>{{ include.handle }}</code>
+      {%- if include.no_icon %} on {{ socialmedia_platform.title }}{% endif -%}
+    {%- endunless -%}
+    </a>
+  {%- endif -%}
+{%- endif -%}

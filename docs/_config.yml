@@ -21,6 +21,32 @@ subscription_types:
   - title: "Podcast Index"
     type: podcast_index
     icon: "fa-solid fa-podcast"
+socialmedia_platforms:
+  x:
+    title: X
+    icon: "fa-brands fa-square-x-twitter"
+    profile_url_prefix: "https://x.com/"
+    handle_prefix: "@"
+  flickr:
+    title: Flickr
+    icon: "fa-brands fa-flickr"
+    profile_url_prefix: "https://flickr.com/photos/"
+  bluesky:
+    title: Bluesky
+    icon: "fa-brands fa-square-bluesky"
+    profile_url_prefix: "https://bsky.app/profile/"
+    handle_prefix: "@"
+  mastodon:
+    title: Mastodon
+    icon: "fa-brands fa-mastodon"
+  glass:
+    title: Glass
+    icon: "fa-solid fa-images"
+    profile_url_prefix: "https://glass.photo/"
+  github:
+    title: GitHub
+    icon: "fa-brands fa-square-github"
+    profile_url_prefix: "https://github.com/"
 
 # Build Settings
 plugins:
