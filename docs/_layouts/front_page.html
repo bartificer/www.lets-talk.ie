@@ -62,7 +62,7 @@
         {%- assign lta_recent_episodes = site.lta | reverse | slice: 0, 3 %}
         <div class="col-12 col-md-6 col-xl-4 mb-3">
           <div class="card" style="border-color: var(--bartificer-lta-accent-colour);">
-            <img src="{{ lta.graphics.card_banner | relative_url }}" class="card-img-top p-2" alt="Let's Talk Apple Podcast Logo">
+            <a href="{{ lta.url | relative_url }}"><img src="{{ lta.graphics.card_banner | relative_url }}" class="card-img-top p-2" alt="Let's Talk Apple Podcast Logo"></a>
             <div class="card-body pt-1">
               <small class="card-text">{{ lta.content | strip_html }}</small>
             </div>
@@ -83,7 +83,7 @@
         {%- assign ltp_recent_episodes = site.ltp | reverse | slice: 0, 3 %}
         <div class="col-12 col-md-6 col-xl-4 mb-3">
           <div class="card" style="border-color: var(--bartificer-ltp-accent-colour);">
-            <img src="{{ ltp.graphics.card_banner | relative_url }}" class="card-img-top p-2" alt="Let's Talk Photography Podcast Logo">
+            <a href="{{ ltp.url | relative_url }}"><img src="{{ ltp.graphics.card_banner | relative_url }}" class="card-img-top p-2" alt="Let's Talk Photography Podcast Logo"></a>
             <div class="card-body pt-1">
               <small class="card-text" style="color: var(--bartificer-note-colour);">{{ ltp.content | strip_html }}</small>
             </div>
