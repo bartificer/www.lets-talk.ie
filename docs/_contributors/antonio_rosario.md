@@ -10,11 +10,11 @@ links:
   - url: https://www.amrosario.com/
     title: Personal Site
 social_media_profiles:
-  - platform: X
+  - platform: x
     handle: '@amrosario'
-  - platform: Flickr
+  - platform: flickr
     handle: AMRosario
-  - platform: Bluesky
+  - platform: bluesky
     handle: '@amrosario.bsky.social'
 ---
 Antonio cut his teeth as a stock photographer in New York. His first podcast was the now defunct Switch to Manaul, and he now produces and co-hosts the Street Shots podcast with Ward Rosin.

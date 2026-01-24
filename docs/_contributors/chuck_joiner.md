@@ -11,11 +11,11 @@ links:
     title: The Mac Roundtable Podcast
     role: Contributor
 social_media_profiles:
-  - platform: X
+  - platform: x
     handle: '@macvoices'
-  - platform: Mastodon
+  - platform: mastodon
     handle: '@chuckjoiner@mastodon.cloud'
-  - platform: Bluesky
+  - platform: bluesky
     handle: '@chuckjoiner.bsky.social'
 ---
 Chuck is the long-time the producer and host of the many Mac Voices shows.

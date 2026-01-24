@@ -8,9 +8,9 @@ links:
     title: The Mac Roundtable Podcast
     role: Contributor
 social_media_profiles:
-  - platform: X
+  - platform: x
     handle: '@tmasteve'
-  - platform: Flickr
+  - platform: flickr
     handle: tmasteve
 ---
 Steve was a member of the Mac Roundtable.

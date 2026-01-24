@@ -72,7 +72,7 @@
         <div class="col p-1">
           <div class="card" style="border-color: {{ podcast_accent_colour }};">
             <div class="list-group list-group-flush">
-              <a class="list-group-item list-group-item-action" href="{{ p.url | relative_url }}">
+              <a class="list-group-item list-group-item-action" href="{{ p.url | relative_url }}" style="--bs-list-group-action-color: {{ podcast_accent_colour }};">
                 {% if page.quote_episode_titles %}<em>"{% endif %}{{ p.title }}{% if page.quote_episode_titles %}"</em>{% endif %}
                 <br/><small>{% include human_episode_slug.html slug=p.slug %} published {{ p.date | date: "%b %e %Y" }}</small>
               </a>

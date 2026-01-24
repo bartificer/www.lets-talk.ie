@@ -7,13 +7,13 @@ links:
   - url: https://zkarj.me/
     title: Personal Site
 social_media_profiles:
-  - platform: Mastodon
+  - platform: mastodon
     handle: '@zkarj@mastodon.nz'
-  - platform: Flickr
+  - platform: flickr
     handle: zkarj
-  - platform: GitHub
+  - platform: github
     handle: zkarj735
-  - plarform: Glass
+  - plarform: glass
     handle: zkarj
 ---
 Allister is an ellogent New Zealand IT professional, keep amateur photographer, and regular podcast contributor.

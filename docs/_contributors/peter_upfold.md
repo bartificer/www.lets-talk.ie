@@ -7,9 +7,9 @@ links:
   - url: https://peter.upfold.org.uk/
     title: Personal Site
 social_media_profiles:
-  - platform: Mastodon
+  - platform: mastodon
     handle: '@PeterUpfold@fosstodon.org'
-  - platform: GitHub
+  - platform: github
     handle: peterupfold
 ---
 Peter is an eloquent British IT professional.

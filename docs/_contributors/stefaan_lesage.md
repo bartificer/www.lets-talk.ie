@@ -14,9 +14,9 @@ links:
     title: Whisky With Friends Blog (Dutch)
     role: Contributor
 social_media_profiles:
-  - platform: X
+  - platform: x
     handle: '@StefaanLesage'
-  - platform: Flickr
+  - platform: flickr
     handle: lesagestefaan
 ---
 Stefaan is a Belgian IT professional and one-time regular contributor to the Dutch-language Tech4 podcast. Stefaan is also a regular contributor to the Belgian Whiskey with Friends blog (also in Dutch).

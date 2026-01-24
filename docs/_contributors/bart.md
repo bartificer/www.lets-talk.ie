@@ -13,15 +13,15 @@ links:
     title: The NosillaCast Podcast
     role: Contributor
 social_media_profiles:
-  - platform: Mastodon
+  - platform: mastodon
     handle: '@bbusschots@mstdn.social'
-  - platform: Bluesky
+  - platform: bluesky
     handle: '@bartb.ie'
-  - platform: Glass
+  - platform: glass
     handle: bbusschots
-  - platform: Flickr
+  - platform: flickr
     handle: bbusschots
-  - platform: GitHub
+  - platform: github
     handle: bbusschots
 ---
 Bart is the host and executive producer of the Let's Talk Podcasts and regular contributor to the NosillaCast podcast. Bart was also a member of the now defunct Mac Roundtable.

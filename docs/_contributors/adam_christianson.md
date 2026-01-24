@@ -14,7 +14,7 @@ links:
     title: The Mac Roundtable Podcast
     role: Contributor
 social_media_profiles:
-  - platform: X
+  - platform: x
     handle: '@maccast'
 ---
 Adam was the long-time host and producer of the Maccast, one of the earliest and longest running Apple podcasts. The Maccast ran from 2004 to 2023. Adam has since joined the Mac Geek Gab as a regular co-host.

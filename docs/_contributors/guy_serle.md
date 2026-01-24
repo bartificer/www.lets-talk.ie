@@ -8,7 +8,7 @@ links:
     title: The My Mac Podcast
     role: Co-host
 social_media_profiles:
-  - platform: X
+  - platform: x
     handle: '@Macparrot'
 ---
 Guy is a long-time co-host of the My Mac Podcast with Gazmaz.

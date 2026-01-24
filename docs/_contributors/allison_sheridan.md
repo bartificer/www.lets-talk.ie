@@ -1,6 +1,6 @@
 ---
 title: Allison Sheridan
-slug: alison_sheridan
+slug: allison_sheridan
 sort_name: Sheridan Allison
 date: 2026-01-14
 links:
@@ -11,11 +11,11 @@ links:
     title: The Mac Roundtable Podcast
     role: Contributor
 social_media_profiles:
-  - platform: Mastodon
+  - platform: mastodon
     handle: '@podfeet@chaos.social'
-  - platform: Bluesky
+  - platform: bluesky
     handle: '@podfeet.bsky.social'
-  - platform: Flickr
+  - platform: flickr
     handle: nosillacast
 ---
 Allison produces and hosts the NosillaCast, **the** longest running Apple podcast.

@@ -1,75 +1,90 @@
 ---
 layout: default_base
 ---
-    <main>
-      <div class="row">
-        <div class="col-6">
-          <h1>Links</h1>
-          <ul>
-            {%- for link in page.links %}
-            <li><a href="{{ link.url }}">{{ link.title }}</a>{% if link.role %} ({{ link.role }}){% endif %}</li>
-            {%- endfor %}
-          </ul>
-        </div>
-        <div class="col-6">
-          <h1>Social Media</h1>
-          <ul>
-            {%- for profile in page.social_media_profiles %}
-            <li>{{ profile.platform }}: <code>{{ profile.handle }}</code></li>
-            {%- endfor %}
-          </ul>
-        </div>
+    {%- comment %}Include the standard breadcrumbs with needed customisations{% endcomment %}
+    <div class="row px-1">
+      <div class="col-12">
+        {%- capture intermediate_pages %}
+        <li class="breadcrumb-item">Contributor</li>
+        {%- endcapture %}
+        {%- capture page_title %}{{ slug_human }}: {{ page.title }}{% endcapture %}
+        {%- include standard_page_breadcrumbs.html intermediate_pages=intermediate_pages page_title=page_title %}
       </div>
-      <div class="row">
-        <div class="col-12">
+    </div>
+
+    {%- comment %}Main content area{% endcomment %}
+    <main>
+      <div class="row mt-3 mx-1">
+
+        {%- comment %}Include the page content as the contributor biography{% endcomment %}
+        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+          <h1>Biography</h1>
           {{ content }}
         </div>
-      </div>
-      {%- assign contributor_slug = page.slug %}
-      {%- assign lta_host_episodes = site.lta | where: "host", contributor_slug %}
-      {%- assign lta_guest_episodes = site.lta | where_exp: "item", "item.guests contains contributor_slug" %}
-      {%- assign ltp_host_episodes = site.ltp | where: "host", contributor_slug %}
-      {%- assign ltp_guest_episodes = site.ltp | where_exp: "item", "item.guests contains contributor_slug" %}
-      {%- assign num_lta_host_episodes = lta_host_episodes | size %}
-      {%- assign num_lta_guest_episodes = lta_guest_episodes | size %}
-      {%- assign num_ltp_host_episodes = ltp_host_episodes | size %}
-      {%- assign num_ltp_guest_episodes = ltp_guest_episodes | size %}
-      {%- assign num_lta_appearances = num_lta_host_episodes | plus: num_lta_guest_episodes %}
-      {%- assign num_ltp_appearances = num_ltp_host_episodes | plus: num_ltp_guest_episodes %}
-      {%- assign num_appearances = num_lta_appearances | plus: num_ltp_appearances %}
-      {%- if num_appearances > 0 %}
-      <div class="row">
-        <div class="col-12">
-          <h1>Appearances</h1>
-          <ul>
-            {%- if num_lta_appearances > 0 -%}
-            <li> Let's Talk Apple Episodes:
-              <ul>
-                {%- assign contributor_slug = page.slug %}
-                {%- assign lta_host_episodes = site.lta | where: "host", contributor_slug %}
-                {%- for episode in lta_host_episodes %}
-                <li>Host: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
-                {%- endfor %}
-                {%- for episode in lta_guest_episodes %}
-                <li>Guest: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
-                {%- endfor %}
-              </ul>
-            </li>
-            {%- endif -%}
-            {%- if num_ltp_appearances > 0 -%}
-            <li> Let's Talk Photography Episodes:
-              <ul>
-                {%- for episode in ltp_host_episodes %}
-                <li>Host: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
-                {%- endfor %}
-                {%- for episode in ltp_guest_episodes %}
-                <li>Guest: <a href="{{ episode.url | relative_url }}">{{ episode.slug | upcase }} — {{ episode.title }}</a> ({{ episode.date | date: "%b %e %Y" }})</li>
-                {%- endfor %}
-              </ul>
-            </li>
-            {%- endif -%}
-          </ul>
+
+        {%- comment %}Add the contact cards{% endcomment %}
+        <div class="col-12 col-md-4 col-lg-5 col-xl-4">
+
+          {%- comment %}If there are any, add the social media card{% endcomment %}
+          {%- if page.social_media_profiles %}
+          <div class="card text-bg-info mb-3">
+            <div class="card-header">Social Media</div>
+            <div class="list-group list-group-flush">
+              {%- for profile in page.social_media_profiles %}
+              {% include socialmedia_profile_link.html platform=profile.platform handle=profile.handle class="list-group-item list-group-item-action" %}
+              {%- endfor %}
+            </div>
+          </div>
+          {%- endif %}
+
+          {%- comment %}If there are any, add the links card{% endcomment %}
+          {%- if page.links %}
+          <div class="card text-bg-info">
+            <div class="card-header">Links</div>
+            <div class="list-group list-group-flush">
+              {%- for link in page.links %}
+              {%- assign url_text = link.url | split: "//" | last | split: "/" | first %}
+              <a href="{{ link.url }}" target="_blank" class="list-group-item list-group-item-action">
+                {{ link.title }}{% if link.role %} <small>({{ link.role }})</small>{% endif %}<br/>
+                <small class="font-monospace">{{ url_text }}/…</small>
+              </a>
+              {%- endfor %}
+            </div>
+          </div>
+          {%- endif %}
+
         </div>
       </div>
-      {%- endif %}
+      
+      {%- comment %}List the contributor's shows{% endcomment %}
+      {%- assign contributor_slug = page.slug %}
+      {%- assign episodes = "" | split: "" %}{% comment %}creates an empty array{% endcomment %}
+      {%- for podcast in site.podcasts %}
+        {%- assign host_episodes = site[podcast.slug] | where: "host", contributor_slug %}
+        {%- assign episodes = episodes | concat: host_episodes %}
+        {%- assign guest_episodes = site[podcast.slug] | where_exp: "item", "item.guests contains contributor_slug" %}
+        {%- assign episodes = episodes | concat: guest_episodes %}
+      {%- endfor %}
+      <div class="row mt-3">
+        <div class="col-12">
+          <h1>Appearances</h1>
+        </div>
+      </div>
+      <div class="row g-0 row-cols-2 row-cols-lg-3 row-cols-xl-4">
+        {%- assign episodes_by_date = episodes | sort: "date" %}
+        {%- for episode in episodes_by_date %}
+        {%- assign podcast = site.podcasts | where: "slug", episode.collection | first %}
+        {%- capture podcast_accent_colour %}var(--bartificer-{{ podcast.slug }}-accent-colour){% endcapture %}
+        <div class="col p-1">
+          <div class="card" style="border-color: {{ podcast_accent_colour }};">
+            <div class="list-group list-group-flush" >
+              <a class="list-group-item list-group-item-action" href="{{ episode.url | relative_url }}" style="--bs-list-group-action-color: {{ podcast_accent_colour }};">
+                {% include human_episode_slug.html slug=episode.slug %}: {% if podcast.quote_episode_titles %}<em>"{% endif %}{{ episode.title }}{% if podcast.quote_episode_titles %}"</em>{% endif %}
+                <br/><small>published {{ episode.date | date: "%b %e %Y" }}</small>
+              </a>
+            </div>
+          </div>
+        </div>
+        {%- endfor %}
+      </div>
     </main>
