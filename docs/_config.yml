@@ -39,6 +39,10 @@ socialmedia_platforms:
   mastodon:
     title: Mastodon
     icon: "fa-brands fa-mastodon"
+  threads:
+    title: Threads
+    icon: "fa-brands fa-square-threads"
+    profile_url_prefix: "https://www.threads.com/"
   glass:
     title: Glass
     icon: "fa-solid fa-images"
