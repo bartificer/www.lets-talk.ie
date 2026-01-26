@@ -7,6 +7,12 @@ links:
   - url: https://www.podfeet.com/
     title: The NosillaCast
     role: Host & Producer
+  - url: "https://www.screencastsonline.com/search/?s=Allison+Sheridan"
+    title: ScreenCasts Online
+    role: Screen Cast Creator
+  - url: https://www.relay.fm/people/nosilla
+    title: The Clockwise Podcast
+    role: Regular Guest
   - url: https://www.macroundtable.com
     title: The Mac Roundtable Podcast
     role: Contributor
