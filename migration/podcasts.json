@@ -1,0 +1,13 @@
+[
+    {
+        "slug": "lta",
+        "feed_url": "https://feeds.lets-talk.ie/lta.xml",
+        "wordpress_export_path": "./wordpressExports/lta_WordPressExport_2026-01-26.xml"
+    },
+    {
+        "slug": "ltp",
+        "feed_url": "https://feeds.lets-talk.ie/ltp.xml",
+        "wordpress_export_path": "./wordpressExports/ltp_WordPressExport_2026-01-26.xml"
+    }
+
+]
