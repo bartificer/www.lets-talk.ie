@@ -9,3 +9,7 @@ _site/
 
 !/docs/_sass/bootstrap/vendor/
 migration/node_modules/
+
+migration/lta-rss.json
+
+migration/ltp-rss.json
