@@ -11,7 +11,7 @@ import { resolve } from 'node:path'; // for resolving paths
 import { parseFeedToJson } from "@sesamy/podcast-parser"; // RSS to JSON parser
 import { writeFile } from 'node:fs/promises'; // for writtig files
 
-// define the podcasts to build the RSS JSON files for
+// read the podcast list
 const podcastListPath = resolve('./podcasts.json');
 console.log(`Loading podcast definitions from ${podcastListPath} ...`);
 const podcastsJSONString = await readFile(podcastListPath, 'utf8');
@@ -50,7 +50,7 @@ for(const podcast of podcasts){
     const wpExportObject = (await parseFeedToJson(wpExportXMLString)).rss;
     console.log('Done');
 
-    // with the JSON file
+    // write the JSON file
     const wpJSONExportPath = `./generatedJSON/${podcast.slug}-wp.json`;
     console.log(`Saving RSS JSON to '${wpJSONExportPath}'`);
     await writeFile(wpJSONExportPath, JSON.stringify(wpExportObject, null, 2));
