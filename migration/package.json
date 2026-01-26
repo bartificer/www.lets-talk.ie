@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@sesamy/podcast-parser": "^1.11.0"
+  }
+}

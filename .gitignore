@@ -8,3 +8,4 @@ _site/
 .env
 
 !/docs/_sass/bootstrap/vendor/
+migration/node_modules/
