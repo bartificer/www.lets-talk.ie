@@ -48,7 +48,7 @@
                 <div class="card-text d-flex flex-wrap justify-content-around">
                   {%- for subscription_type in site.subscription_types %}
                   <div class="p-lg-1">
-                    <a href="{{ subscription_type.url }}" target="_blank" class="btn btn-outline-primary bg-white"><i class="{{ subscription_type.icon }}" aria-hidden="true"></i> {{ subscription_type.title }}</a>
+                    <a href="{{ page.subscription_links[subscription_type.type] }}" target="_blank" class="btn btn-outline-primary bg-white"><i class="{{ subscription_type.icon }}" aria-hidden="true"></i> {{ subscription_type.title }}</a>
                   </div>
                   {%- endfor %}
                 </div>
