@@ -5,7 +5,7 @@ sort_name: Sheridan Allison
 date: 2026-01-25
 links:
   - url: https://www.podfeet.com/
-    title: The Nosillacast
+    title: The NosillaCast
     role: Host & Producer
   - url: https://www.macroundtable.com
     title: The Mac Roundtable Podcast
