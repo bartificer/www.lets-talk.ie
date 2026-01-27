@@ -11,3 +11,5 @@ _site/
 migration/node_modules/
 
 migration/generatedJSON/
+
+migration/staging/

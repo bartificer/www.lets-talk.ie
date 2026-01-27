@@ -1,6 +1,8 @@
 {
   "type": "module",
   "dependencies": {
-    "@sesamy/podcast-parser": "^1.11.0"
+    "@sesamy/podcast-parser": "^1.11.0",
+    "mustache": "^4.2.0",
+    "yaml": "^2.8.2"
   }
 }

@@ -17,7 +17,7 @@ const podcastListPath = resolve('./podcasts.json');
 console.log(`Loading podcast definitions from ${podcastListPath} ...`);
 const podcastsJSONString = await readFile(podcastListPath, 'utf8');
 const podcasts = JSON.parse(podcastsJSONString); 
-console.log(`Done - got ${podcasts.length}`);
+console.log(`Done - got ${podcasts.length} podcasts`);
 
 // process each podcast
 //console.log('WIP - hard-coding podcast list to just LTP');
@@ -171,9 +171,14 @@ for(const podcast of podcasts){
         const episode = {
             slug: item.slug,
             title: item.base_title,
-            date: (new Date(item.pubDate)).toISOString(),
+            date_wp: item.pubDate,
             audio_url: item.enclosure[0]['@_url']
         };
+
+        // convert the date to all useful formats
+        const dateObject = new Date(item.pubDate);
+        episode.date_iso = dateObject.toISOString();
+        episode.date = episode.date_iso.replace(/^(\d{4}-\d{2}-\d{2}).*$/, '$1');
 
         // sanitise and store the blurb
         if(item['itunes:summary']){
@@ -200,4 +205,6 @@ for(const podcast of podcasts){
     console.log(`Saving episode data to '${episodeDataExportPath}' ...`);
     await writeFile(episodeDataExportPath, JSON.stringify(episodeData, null, 2));
     console.log('Done');
+
+    console.log(`Finished podcast ${podcast.slug}`);
 }

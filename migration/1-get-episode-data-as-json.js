@@ -16,7 +16,7 @@ const podcastListPath = resolve('./podcasts.json');
 console.log(`Loading podcast definitions from ${podcastListPath} ...`);
 const podcastsJSONString = await readFile(podcastListPath, 'utf8');
 const podcasts = JSON.parse(podcastsJSONString); 
-console.log(`Done - got ${podcasts.length}`);
+console.log(`Done - got ${podcasts.length} podcasts`);
 
 // process each podcast
 for(const podcast of podcasts){
@@ -55,4 +55,6 @@ for(const podcast of podcasts){
     console.log(`Saving RSS JSON to '${wpJSONExportPath}'`);
     await writeFile(wpJSONExportPath, JSON.stringify(wpExportObject, null, 2));
     console.log('Done');
+
+    console.log(`Finished podcast ${podcast.slug}`);
 }
