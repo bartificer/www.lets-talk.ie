@@ -35,7 +35,7 @@ for(const podcast of podcasts){
     console.log(`Done - Loaded ${wpPosts.length} posts`);
 
     // try resolve the slugs
-    console.log('Resolving episode slugs ...');
+    console.log('Resolving episode slugs in posts ...');
     for(const post of wpPosts){
         // hard-coded skips
         if(post.title.match(/^LTP143-/)){
@@ -69,8 +69,63 @@ for(const podcast of podcasts){
             console.log(`matched slug: ${slug}`);
         }else{
             console.warn(`skipping post with title: ${post.title}`);
+            continue;
         }
+
+        // inject the slug into the object
+        post.slug = slug;
     }
+
+    // load the RSS data
+    const RSSPath = resolve(`./generatedJSON/${podcast.slug}-rss.json`);
+    console.log(`Loading RSS data from '${RSSPath}'`);
+    const RSSJSONString = await readFile(RSSPath, 'utf8');
+    console.log(`Read ${RSSJSONString.length} characters ...`);
+    const RSSItems = JSON.parse(RSSJSONString).channel.item;
+    console.log(`Done - Loaded ${RSSItems.length} feed items`);
+
+    // try resolve the slugs
+    console.log('Resolving episode slugs in items ...');
+    for(const item of RSSItems){
+        // hard-coded skips
+        //if(post.title.match(/^LTP143-/)){
+        //    console.log(`hard-coded skip: ${post.title}`);
+        //    continue;
+        //}
+
+        // assemble the needed RE
+        const slugRE = new RegExp(
+            '^' +
+
+            // all possible prefixes
+            '(?:' +
+            "(?:Let's[ ]Talk[ ](?:Apple|Photography)[ ](?:[-—][ ])?Ep[.])|" +
+            '(?:LT[AP])' +
+            ')[ ]?' +
+
+            // the base of the slug
+            '(?<base_slug>[0-9]+[a-z]?)' +
+
+            // the end of the slug
+            '',
+            '' // add any flags here
+        );
+
+        // try match the slug
+        const slugMatch = slugRE.exec(item.title);
+        let slug ='';
+        if(slugMatch && slugMatch.groups){
+            slug = `${podcast.slug}${slugMatch.groups.base_slug}`;
+            console.log(`matched slug: ${slug}`);
+        }else{
+            console.warn(`skipping item with title: ${item.title}`);
+            continue;
+        }
+
+        // inject the slug into the object
+        item.slug = slug;
+    }
+
 
     // convert to JSON
     //console.log('Converting WP Export XML to JSON ...');
