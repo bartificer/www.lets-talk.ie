@@ -5,6 +5,7 @@
 // 1 — determines the episode slug for each RSS entry
 // 2 - determines the episode slug for each blog post
 // 3 - assembles the relevant fields from both sources into a master JSON file
+// Note: the final data file is keyed of the feed and augmented from the wordpress export.
 
 // import the needed modules
 import { readFile } from 'node:fs/promises'; // for reading files
@@ -20,7 +21,6 @@ console.log(`Done - got ${podcasts.length}`);
 
 // process each podcast
 //console.log('WIP - hard-coding podcast list to just LTP');
-const resolvedPosts = [];
 for(const podcast of podcasts){
     //if( podcast.slug != 'ltp') continue; // TEMP
 
@@ -36,6 +36,7 @@ for(const podcast of podcasts){
 
     // try resolve the slugs
     console.log('Resolving episode slugs in posts ...');
+    const resolvedPostsLookup = {}; // wp posts indexed by episode slug
     for(const post of wpPosts){
         // hard-coded skips
         if(post.title.match(/^LTP143-/)){
@@ -72,9 +73,11 @@ for(const podcast of podcasts){
             continue;
         }
 
-        // inject the slug into the object
+        // inject the slug into the object and add to the lookup
         post.slug = slug;
+        resolvedPostsLookup[slug] = post;
     }
+    console.log(`Done - resolved slugs for ${Object.keys(resolvedPostsLookup).length} posts`);
 
     // load the RSS data
     const RSSPath = resolve(`./generatedJSON/${podcast.slug}-rss.json`);
@@ -84,16 +87,11 @@ for(const podcast of podcasts){
     const RSSItems = JSON.parse(RSSJSONString).channel.item;
     console.log(`Done - Loaded ${RSSItems.length} feed items`);
 
-    // try resolve the slugs
-    console.log('Resolving episode slugs in items ...');
+    // try resolve the slugs and titles
+    console.log('Resolving episode slugs & base titles in items ...');
     for(const item of RSSItems){
-        // hard-coded skips
-        //if(post.title.match(/^LTP143-/)){
-        //    console.log(`hard-coded skip: ${post.title}`);
-        //    continue;
-        //}
 
-        // assemble the needed RE
+        // assemble the slug RE
         const slugRE = new RegExp(
             '^' +
 
@@ -122,19 +120,84 @@ for(const podcast of podcasts){
             continue;
         }
 
-        // inject the slug into the object
+        // resolve the best possible title, starting with the full title
+        let baseTitle = item.title;
+
+        // assemble the base title RE
+        const baseTitleRE = new RegExp(
+            // possible finaly separators
+            '[-:][ ]' +
+
+            // the base title
+            "(?<base_title>[0-9a-zA-Zö &.,'?!()-/;]+)" +
+
+            // the end of the string
+            '$',
+            '' // add any flags here
+        );
+
+        // match the base title
+        const baseTitleMatch = baseTitleRE.exec(item.title);
+        if(baseTitleMatch){
+            baseTitle = baseTitleMatch.groups.base_title;
+            console.log(`Extracted base title '${baseTitle}'`);
+        }else{
+            // apply hard-coded fixes
+            if(podcast.slug == 'ltp'){
+                baseTitle = item.title.replace(/^LTP[ ]?[0-9]+[ ]?[:—][ ]/, '');
+                console.log(`Falling back to hard-coded title fix: ${baseTitle}`);
+            }else if(podcast.slug == 'lta'){
+                baseTitle = item.title.replace(/^LTA[ ][0-9]+[ ][—][ ]/, '');
+                console.log(`Falling back to hard-coded title fix: ${baseTitle}`);
+            }else{
+                // fall back to the full title
+                console.warn(`Falling back to full original title: ${item.title}`);
+            }
+        }
+
+        // inject the slug and base title into the object
         item.slug = slug;
+        item.base_title = baseTitle;
     }
 
+    // loop over the feed to assemble the final datastructure
+    console.log('Assembling the consolidated data structure (based off the feed)');
+    const episodeData = [];
+    for(const item of RSSItems){
+        // skip any item without a slug
+        if(!item.slug) continue;
 
-    // convert to JSON
-    //console.log('Converting WP Export XML to JSON ...');
-    //const wpExportObject = (await parseFeedToJson(wpExportXMLString)).rss;
-    //console.log('Done');
+        // start with the basic episode data
+        const episode = {
+            slug: item.slug,
+            title: item.base_title,
+            date: (new Date(item.pubDate)).toISOString(),
+            audio_url: item.enclosure[0]['@_url']
+        };
 
-    // write the JSON file
-    //const wpJSONExportPath = `./generatedJSON/${podcast.slug}-wp.json`;
-    //console.log(`Saving RSS JSON to '${wpJSONExportPath}'`);
-    //await writeFile(wpJSONExportPath, JSON.stringify(wpExportObject, null, 2));
-    //console.log('Done');
+        // sanitise and store the blurb
+        if(item['itunes:summary']){
+            episode.blurb = item['itunes:summary'].replace(/\s+/g, ' ').trim(); // regularise all blank space to single spaces
+        }else{
+            episode.blurb = '';
+        }
+
+        // resolve the matching blog post
+        const post = resolvedPostsLookup[item.slug];
+
+        // inject the relevant post data if possible
+        if(post){
+            episode.shownotes_wp_raw = post['content:encoded'];
+        }
+
+        // save the post data
+        episodeData.push(episode);
+    }
+    console.log(`Done - ${episodeData.length} data structures generated`);
+
+    // export the data to a JSON file
+    const episodeDataExportPath = `./generatedJSON/${podcast.slug}-episode-data.json`;
+    console.log(`Saving episode data to '${episodeDataExportPath}' ...`);
+    await writeFile(episodeDataExportPath, JSON.stringify(episodeData, null, 2));
+    console.log('Done');
 }
