@@ -11,7 +11,6 @@ import { readFile } from 'node:fs/promises'; // for reading files
 import { resolve } from 'node:path'; // for resolving paths
 import { writeFile } from 'node:fs/promises'; // for writtig files
 import { stringify } from 'yaml'; // for converting objects to YAML
-import mustache from 'mustache'; // for building the posts using templates
 
 // read the podcast list
 const podcastListPath = resolve('./podcasts.json');
@@ -19,15 +18,6 @@ console.log(`Loading podcast definitions from ${podcastListPath} ...`);
 const podcastsJSONString = await readFile(podcastListPath, 'utf8');
 const podcasts = JSON.parse(podcastsJSONString); 
 console.log(`Done - got ${podcasts.length} podcasts`);
-
-// Define the episode template
-// Note: move to external file if it gets complicated
-const episodeTemplate = `
----
-{{ frontmatter }}
----
-{{ content }}
-`;
 
 // process each podcast
 //console.log('WIP - hard-coding podcast list to just LTP');
@@ -77,10 +67,7 @@ for(const podcast of podcasts){
         console.log('Assembled frontmatter');
 
         // build the page
-        const episodeMarkdown = mustache.render(episodeTemplate, {
-            frontmatter: frontmatterYAML,
-            content: episode.shownotes_wp_raw
-        });
+        const episodeMarkdown = `---\n${frontmatterYAML}\n---\n${episode.shownotes_wp_raw}`;
         console.log('Generated episode page')
 
         // write page to staging folder
