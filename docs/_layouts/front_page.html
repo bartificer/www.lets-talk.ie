@@ -73,7 +73,7 @@
                 <br /><small>{% include human_episode_slug.html slug=p.slug %} published {{ p.date | date: "%b %e %Y" }}</small>
               </a>
               {%- endfor %}
-              <a class="list-group-item list-group-item-action" href="{{ lta.url | relative_url }}">More …</a>
+              <a class="list-group-item list-group-item-action fw-bolder" href="{{ lta.url | relative_url }}">More …</a>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@
                 <br/><small>{% include human_episode_slug.html slug=p.slug %} published {{ p.date | date: "%b %e %Y" }}</small>
               </a>
               {%- endfor %}
-              <a class="list-group-item list-group-item-action" href="{{ ltp.url | relative_url }}">More …</a>
+              <a class="list-group-item list-group-item-action fw-bolder" href="{{ ltp.url | relative_url }}">More …</a>
             </div>
           </div>
         </div>
