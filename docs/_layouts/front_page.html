@@ -112,7 +112,7 @@
               {%- for support_link in site.support_links %}
               <p class="card-text"><a class="btn btn-primary w-100" href="{{ support_link.url }}"><i class="{{ support_link.icon }}" aria-hidden="true"></i> {{ support_link.title }}</a></p>
               {%- endfor %}
-              <a class="card-link" href="{{ '/support' | relative_url }}">More Options …</a>
+              <a class="card-link link-underline link-underline-opacity-0" href="{{ '/support' | relative_url }}">More Options …</a>
             </div>
           </div>
         </div>
