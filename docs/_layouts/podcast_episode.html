@@ -72,6 +72,7 @@ Gather needed page data:
       </div>
       <div class="row episode_notes mb-5">
         <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+          {%- include standard_warnings_podcast_episode_intro.html %}
           <p class="lead episode_blurb">{{ page.blurb | markdownify }}</p>
         </div>
         <div class="col-12 col-md-5 col-lg-4 col-xl-3">
@@ -84,6 +85,7 @@ Gather needed page data:
           </div>
         </div>
         <div class="col-12 col-md-7 col-lg-8 col-xl-9 mt-3">
+          {%- include standard_warnings_podcast_episode_notes.html %}
           {{ content }}
         </div>
         <div class="col-12 col-md-5 col-lg-4 col-xl-3 mt-3">

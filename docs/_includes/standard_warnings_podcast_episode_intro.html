@@ -1,0 +1,26 @@
+          {%- if page.warnings.metadata or page.warnings.blurb %}
+          <div class="alert alert-warning d-flex align-items-center">
+            <div class="flex-shrink-0 fs-1 me-3"><i class="fa-solid fa-person-digging" aria-hidden="true"></i></div>
+            <div>
+              <p>Automatically migrated, checks & updates pending:</p>
+              <ul>
+                {%- for warning in page.warnings.metadata %}
+                {%- case warning %}
+                {% when "unreviewed" %}
+                <li>Review metadata in frontmatter</li>
+                {% when "unchecked_guests" %}
+                <li>Add guests (if needed)</li>
+                {%- endcase %}
+                {%- endfor %}
+                {%- for warning in page.warnings.blurb %}
+                {%- case warning %}
+                {% when "no_blurb" %}
+                <li>Add blurb</li>
+                {% when "unreviewed" %}
+                <li>Review blurb</li>
+                {%- endcase %}
+                {%- endfor %}
+              </ul>
+            </div>
+          </div>
+          {%- endif %}
