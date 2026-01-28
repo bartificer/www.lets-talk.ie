@@ -10,6 +10,7 @@
  /* Define the logo colours */
  $bartificer-logo-green:   #93c01f;
  $bartificer-logo-orange:  #f29100;
+ $bartificer-logo-background: #faf8f0;
 
  /* Define the light color scheme */
  $bartificer-colors-light: (
@@ -200,8 +201,11 @@ footer{
   @extend .text-secondary;
 }
 
-/* Style the front page */
-.frontpage-body-text p{
+/* Style the landing pages (front page and podcast pages) */
+body.landingpage{
+  background-color: $bartificer-logo-background;
+}
+.landingpage-body-text p{
   @extend .lead;
 }
 
