@@ -1,5 +1,6 @@
 ---
 title: Contact Us
+menu_title: Contact
 slug: contact
 sort_order: 30
 date: 2026-01-18
