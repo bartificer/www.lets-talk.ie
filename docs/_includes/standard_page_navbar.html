@@ -16,9 +16,27 @@
             {%- comment %}The collapsing list of pages{% endcomment %}
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
+                {%- comment %}Hard-code in the home page link and then skip it in the later for loop — allows the shows dropdown be inserted{% endcomment %}
+                <a class="nav-link {%- if page.slug == 'home' %} active{% endif %}" {%- if page.slug == 'home' %} aria-current="page"{% endif %} href="{{ '/' | relative_url }}">Home</a>
+
+                {%- comment %}Add the shows dropdown{% endcomment %}
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Podcasts
+                  </a>
+                  <ul class="dropdown-menu">
+                    {%- for podcast in site.podcasts %}
+                    <li><a class="dropdown-item" href="{{ podcast.url | relative_url }}">{{ podcast.title }}</a></li>
+                    {%- endfor %}
+                  </ul>
+                </li>
+
+                {%- comment %}Add the static pages (but skip the front page){% endcomment %}
                 {%- assign nav_pages = site.html_pages | sort: "sort_order" %}
                 {%- for p in nav_pages %}
+                {%- if p.slug != 'home' %}
                 <a class="nav-link {%- if p.url == page.url %} active{% endif %}" {%- if p.url == page.url %} aria-current="page"{% endif %} href="{{ p.url | relative_url }}">{{ p.title }}</a>
+                {%- endif %}
                 {%- endfor %}
               </div>
             </div>
