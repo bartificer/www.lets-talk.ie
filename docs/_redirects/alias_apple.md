@@ -1,0 +1,4 @@
+---
+permalink: /apple
+destination: /lta
+---

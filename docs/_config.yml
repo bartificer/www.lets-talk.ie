@@ -86,6 +86,8 @@ collections:
     output: true
     permalink: /:title
     sort_by: slug
+  redirects:
+    output: true;
 
 # Configure front matter defaults
 defaults:
@@ -113,3 +115,8 @@ defaults:
       layout: contributor
       show_github_contribute: true
       show_revision_date: true
+  - scope:
+      path: ""
+      type: redirects
+    values:
+      layout: redirect

@@ -1,0 +1,28 @@
+{%- comment %}
+A simple layout to implement a redirected
+
+Required Frontmatter:
+- permalink:       the relative URL within the site to redirect from
+- destination:     the URL to redirect to
+
+Optional Frontmatter:
+- canonical:       a true value to indicate that the destination URL should be
+                   treated as canonical by search engines etc.
+
+Note: adapted from https://github.com/jekylltools/jekyll-redirect-layout (substantially simplified)
+{%- endcomment %}
+{%- assign destination = page.destination | absolute_url -%}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% if page.canonical == true -%}
+    <link rel="canonical" href="{{ destination }}">
+    {% endif -%}
+    <meta http-equiv="refresh" content="0; url={{ destination }}">
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <a href="{{ destination }}">Follow this link if you are not redirected automatically.</a>
+  </body>
+</html>

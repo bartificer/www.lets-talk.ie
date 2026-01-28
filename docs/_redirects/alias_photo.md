@@ -1,0 +1,4 @@
+---
+permalink: /photo
+destination: /ltp
+---
