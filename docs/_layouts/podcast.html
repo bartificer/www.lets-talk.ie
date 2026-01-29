@@ -2,9 +2,11 @@
 <html>
 <head>
   {%- comment %}Include the snippet with the standard content for the head tag{% endcomment %}
-  {%  include html_head_common.html %}
+  {%- capture og_description %}{{ page.content | markdownify | strip_html }}{% endcapture %}
+  {%- include html_head_common.html og_description=og_description %}
 
   {%- comment %}Just use the page title (podcast name){% endcomment %}
+  <meta property="og:title" content="{{ page.title }}">
   <title>{{ page.title }}</title>
 </head>
 <body class="landingpage">

@@ -5,6 +5,8 @@
   {%  include html_head_common.html %}
 
   {%- comment %}Default to a title consisting of the page title and site title{% endcomment %}
+  {%- capture default_og_title %}{{ page.title }} ({{ site.title }}){% endcapture %}
+  <meta property="og:title" content="{{ page.og_title | default: default_og_title }}" >
   <title>{{ page.title }} | {{ site.title }}</title>
 </head>
 <body>

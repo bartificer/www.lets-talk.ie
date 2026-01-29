@@ -5,6 +5,8 @@ slug: support
 sort_order: 10
 date: 2026-01-18
 show_revision_date: true
+opengraph:
+  description: "Support the Let's Talk Podcasts team."
 ---
 Please consider supporting the shows directly with:
 

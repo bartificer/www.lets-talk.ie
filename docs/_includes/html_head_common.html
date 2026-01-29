@@ -8,4 +8,23 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   {%- comment %}Include Fontawesome 7{% endcomment %}
-  <link href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}" rel="stylesheet" />
+  <link href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}" rel="stylesheet">
+
+  {%- comment %}
+    Define the Common Open Graph Headers:
+    -------------------------------------
+    Spec at https://ogp.me
+
+    Customisable standard headers:
+    - og:description:  only included if one of the following is defined (tried in the given order):
+                        1. include.og_description
+                        2. page.opengraph.description
+
+    In addition to the headers below, consider the following additional headers in every layout:
+    - og:title:        be sure every layout defines this header!
+
+  {%- endcomment %}
+  {%- capture og_description %}{{ include.og_description | default: page.opengraph.description | default: '' }}{% endcapture %}
+  {%- if og_description %}
+  <meta property="og:description" content="{{ og_description | normalize_whitespace }}">
+  {%- endif %}

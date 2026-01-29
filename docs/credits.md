@@ -5,6 +5,8 @@ sort_order: 20
 date: 2026-01-18
 show_revision_date: true
 show_github_contribute: true
+opengraph:
+  description: "Shout-outs to the many people and organisations who help make the Let's Talk podcasts."
 ---
 
 # Producer, Editor & Host — Bart Busschot
