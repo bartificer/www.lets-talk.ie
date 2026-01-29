@@ -15,15 +15,28 @@
     -------------------------------------
     Spec at https://ogp.me
 
-    Customisable standard headers:
-    - og:description:  only included if one of the following is defined (tried in the given order):
+    REQUIRED additonal headers: ADD TO EVERY LAYOUT!
+    - og:title
+
+    Customisable headers:
+    - og:image:       A Required header, so defaults to the podcast network's
+                      banner, can be overridden by the following (in order):
+                        1. include.og_image
+                        2. page.opengraph.image
+    - og:description: OPTIONAL - only included if one of the following is defined (tried in the given order):
                         1. include.og_description
                         2. page.opengraph.description
 
-    In addition to the headers below, consider the following additional headers in every layout:
-    - og:title:        be sure every layout defines this header!
-
+    Additional Optional headers:  add to appropriate layouts
+    - og:audio:       The URL to an audio file — vital for the podcast episode layout!
   {%- endcomment %}
+  {%- comment %}REQUIRED OpenGraph headers{% endcomment %}
+  <meta property="og:type" content="website">{% comment %}as of January 2026 there is no vertical for podcasts, so using the generic vertical{% endcomment %}
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ include.og_image | default: page.opengraph.image | default: '/assets/graphics/LetsTalk-Podcasts-OpenGraph.png' | absolute_url }}">
+  {%- comment %}OPTIONAL OpenGraph headers{% endcomment %}
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="en_GB">
   {%- capture og_description %}{{ include.og_description | default: page.opengraph.description | default: '' }}{% endcapture %}
   {%- if og_description %}
   <meta property="og:description" content="{{ og_description | normalize_whitespace }}">

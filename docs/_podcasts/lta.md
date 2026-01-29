@@ -9,5 +9,7 @@ graphics:
   banner: /assets/graphics/LetsTalk-Apple.png
   itunes_cover: /assets/graphics/LetsTalk-Apple-iTunes-512px.png
   card_banner: /assets/graphics/LetsTalk-Apple-1024px.png
+opengraph:
+  image: /assets/graphics/LetsTalk-Apple-OpenGraph.png
 ---
 A monthly overview of the most important news affecting Apple and Apple users.
