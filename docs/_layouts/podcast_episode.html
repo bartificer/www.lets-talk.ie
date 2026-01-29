@@ -76,6 +76,12 @@ Gather needed page data:
           <div class="lead episode_blurb text-justify">
             {{ page.blurb | markdownify }}
           </div>
+          <div class="text-center mt-5">
+            <nav class="btn-group btn-group-sm" role="group" aria-label="episode navigation">
+              <a{% if page.previous %} href="{{ page.previous.url | relative_url }}"{% endif %} class="btn btn-outline-secondary{% unless page.previous %} disabled{% endunless %}" role="button"{% unless page.previous %} aria-disabled="true"{% endunless %} style="min-width: 20ch;"><i class="fa-regular fa-circle-left" aria-hidden="true"></i> Previous Episode</a>
+              <a{% if page.next %} href="{{ page.next.url | relative_url }}"{% endif %} class="btn btn-outline-secondary{% unless page.next %} disabled{% endunless %}" role="button"{% unless page.next %} aria-disabled="true"{% endunless %} style="min-width: 20ch;">Next Episode <i class="fa-regular fa-circle-right" aria-hidden="true"></i></a>
+            </nav>
+          </div>
         </div>
         <div class="col-12 col-md-5 col-lg-4 col-xl-3">
           <div class="card episode_player" style="border-color: var(--bartificer-{{ podcast_slug }}-accent-colour);">
