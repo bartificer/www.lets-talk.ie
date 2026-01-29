@@ -137,6 +137,11 @@ code, pre {
   color: map-get($bartificer-colors-light, background);
 }
 
+/* Replicate the old text-justify from earlier bootstrap versions */
+.text-justify {
+  text-align: justify !important;
+}
+
 /* Style Bootstrap cards */
 .card-header {
   @extend .bartificer-subheader-font;

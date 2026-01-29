@@ -70,10 +70,12 @@ Gather needed page data:
           </dl>
         </div>
       </div>
-      <div class="row episode_notes mb-5">
+      <div class="row episode_notes align-items-center">
         <div class="col-12 col-md-7 col-lg-8 col-xl-9">
           {%- include standard_warnings_podcast_episode_intro.html %}
-          <p class="lead episode_blurb">{{ page.blurb | markdownify }}</p>
+          <div class="lead episode_blurb text-justify">
+            {{ page.blurb | markdownify }}
+          </div>
         </div>
         <div class="col-12 col-md-5 col-lg-4 col-xl-3">
           <div class="card episode_player" style="border-color: var(--bartificer-{{ podcast_slug }}-accent-colour);">
@@ -84,6 +86,8 @@ Gather needed page data:
             </div>
           </div>
         </div>
+      </div>
+      <div class="row episode_notes mb-5">
         <div class="col-12 col-md-7 col-lg-8 col-xl-9 mt-3">
           {%- include standard_warnings_podcast_episode_notes.html %}
           {{ content }}
