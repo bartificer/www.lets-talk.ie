@@ -42,6 +42,11 @@ Finaly, the Icon Factory also developed the style guide used for all Bartificer 
 
 These kind and generous people donated their time contribute their time to appear on one or more episodes.
 
+<div class="alert alert-warning d-flex align-items-center">
+  <div class="flex-shrink-0 fs-1 me-3"><i class="fa-solid fa-person-digging" aria-hidden="true"></i></div>
+  <p>Until all podcast episodes have had their metadata reviewed and updated, this list will remain incomplete.</p>
+</div>
+
 {% assign guests = site.contributors | sort: "sort_name" %}
 {%- for guest in guests %}
 {%- unless guest.slug == 'bart' %}
