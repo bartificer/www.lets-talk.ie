@@ -11,6 +11,18 @@
   <link href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}" rel="stylesheet">
 
   {%- comment %}
+  A reasonable suite of favicons:
+  -------------------------------
+  - Sizes as recommended by https://faviconhelper.com/favicon-sizes-guide
+  - Actual files generated from original using Mac App Iconology (https://apps.apple.com/ie/app/iconology/id1463452867?mt=12)
+  {%- endcomment %}
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/graphics/LetsTalk-Podcasts-Favicon.ico' | relative_url }}">{% comment %}Legacy Favicon{% endcomment %}
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/graphics/LetsTalk-Podcasts-Favicon-16px.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/graphics/LetsTalk-Podcasts-Favicon-32px.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="128x128" href="{{ '/assets/graphics/LetsTalk-Podcasts-Favicon-128px.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/graphics/LetsTalk-Podcasts-Favicon-180px.png' | relative_url }}">{% comment %}iOS Homescreen icon{% endcomment %}
+
+  {%- comment %}
     Define the Common Open Graph Headers:
     -------------------------------------
     Spec at https://ogp.me
