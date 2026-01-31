@@ -19,6 +19,10 @@
       <td>A link to <strong>audio content</strong>, probably a podcast.</td>
     </tr>
     <tr>
+      <th scope="row" class="text-center">🎦 </th>
+      <td>A link to <strong>video content</strong>.</td>
+    </tr>
+    <tr>
       <th scope="row" class="text-center"><em class="fw-normal">flag</em></th>
       <td>The story is particularly relevant to people living in a <strong>specific country</strong>, or, the organisation the story is about is affiliated with the government of a specific country.</td>
     </tr>
@@ -33,6 +37,10 @@
     <tr>
       <th scope="row" class="text-center">📌</th>
       <td>A <strong>pinned</strong> story, i.e. one to keep an eye on that&#39;s likely to develop into something significant in the future.</td>
+    </tr>
+    <tr>
+      <th scope="row" class="text-center">📆</th>
+      <td>A <strong>date</strong> for your diary.</td>
     </tr>
   </tbody>
 </table>
