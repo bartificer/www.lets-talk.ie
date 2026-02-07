@@ -1,0 +1,11 @@
+{%- comment %}
+Insert a figure (image with caption).
+
+Required Parameters:
+- img: the URL for the image
+- alt: the alternative text for the image
+
+Optional Parameters:
+- caption: The text to appear under the caption in Markdown format
+{%- endcomment -%}
+<figure class="figure text-center"><img src="{{ include.img | absolute_url }}" class="figure-img rounded border border-secondary" style="max-width: 80%; height: auto;" alt="{{ include.alt }}">{% if include.caption %}<figcaption class="figure-caption" style="color: var(--bartificer-note-colour);">{{ include.caption | markdownify | normalize_whitespace | trim }}</figcaption>{% endif %}</figure>
