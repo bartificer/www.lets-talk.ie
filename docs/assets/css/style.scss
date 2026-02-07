@@ -250,4 +250,13 @@ body.landingpage{
   h5{
     @extend .fs-6;
   }
+  blockquote{
+    @extend .blockquote;
+    @extend .p-4;
+    @extend .border-start;
+    @extend .border-primary;
+    @extend .border-5;
+    background-color: map-get($bartificer-colors-light, action-background);
+    font-size: 1rem;
+  }
 }
