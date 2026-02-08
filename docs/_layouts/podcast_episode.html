@@ -53,7 +53,7 @@ Gather needed page data:
             
             {%- assign host_profile = site.contributors | where: "slug", page.host | first -%}
             <dt>Host:</dt>
-            <dd><a href="{{ host_profile.url | relative_url }}">{{ host_profile.title }}</a></dd>
+            <dd><a href="{{ host_profile.url | relative_url }}" class="link-underline link-underline-opacity-0">{{ host_profile.title }}</a></dd>
 
             {% if page.guests -%}
             <dt>Guests:</dt>
@@ -62,7 +62,7 @@ Gather needed page data:
               {%- if forloop.first == false %}{% if forloop.last %} & {% else %}, {% endif %}{% endif %}
               {%- assign guest_profile = site.contributors | where: "slug", guest | first %}
               {%- if guest_profile %}
-              <a href="{{ guest_profile.url | relative_url }}">{{ guest_profile.title }}</a>
+              <a href="{{ guest_profile.url | relative_url }}" class="link-underline link-underline-opacity-0">{{ guest_profile.title }}</a>
               {%- else %}
               <span style="text-transform: capitalize;">{{ guest | replace: "_", " " }}</span>
               {%- endif %}
@@ -108,7 +108,7 @@ Gather needed page data:
               {%- for support_link in site.support_links %}
               <p class="card-text"><a class="btn btn-primary w-100" href="{{ support_link.url }}" target="_blank"><i class="{{ support_link.icon }}" aria-hidden="true"></i> {{ support_link.button_text }}</a></p>
               {%- endfor %}
-              <a class="card-link" href="{{ '/support' | relative_url }}">More Options …</a>
+              <a class="card-link link-underline link-underline-opacity-0" href="{{ '/support' | relative_url }}">More Options …</a>
             </div>
           </div>
           <div class="card text-bg-info subscribe mt-3">
