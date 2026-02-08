@@ -259,4 +259,9 @@ body.landingpage{
     background-color: map-get($bartificer-colors-light, action-background);
     font-size: 1rem;
   }
+  table{
+    @extend .table;
+    @extend .table-striped;
+    @extend .mb-4;
+  }
 }
