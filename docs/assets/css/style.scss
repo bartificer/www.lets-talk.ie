@@ -194,6 +194,10 @@ nav .breadcrumb{
   @extend .bartificer-subheader-font;
   @extend .fs-6;
   font-weight: 300;
+  .breadcrumb-item a{
+    @extend .link-underline;
+    @extend .link-underline-opacity-0;
+  }
 }
 
 /* Style the footer */
