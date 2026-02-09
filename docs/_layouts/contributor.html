@@ -7,8 +7,7 @@ layout: default_base
         {%- capture intermediate_pages %}
         <li class="breadcrumb-item">Contributor</li>
         {%- endcapture %}
-        {%- capture page_title %}{{ slug_human }}: {{ page.title }}{% endcapture %}
-        {%- include standard_page_breadcrumbs.html intermediate_pages=intermediate_pages page_title=page_title %}
+        {%- include standard_page_breadcrumbs.html intermediate_pages=intermediate_pages %}
       </div>
     </div>
 
