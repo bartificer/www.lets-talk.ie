@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 {%- comment %}Hard-code in the home page link and then skip it in the later for loop — allows the shows dropdown be inserted{% endcomment %}
-                <a class="nav-link {%- if page.slug == 'home' %} active{% endif %}" {%- if page.slug == 'home' %} aria-current="page"{% endif %} href="{{ '/' | relative_url }}">Home</a>
+                <a class="nav-link {%- if page.slug == 'home' and !page.hidden %} active{% endif %}" {%- if page.slug == 'home' %} aria-current="page"{% endif %} href="{{ '/' | relative_url }}">Home</a>
 
                 {%- comment %}Add the shows dropdown{% endcomment %}
                 <li class="nav-item dropdown">
