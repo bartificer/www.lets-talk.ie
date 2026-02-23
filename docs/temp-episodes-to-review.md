@@ -1,6 +1,5 @@
 ---
 title: TEMP — Episodes to Review
-menu_title: Support
 slug: temp-to-review
 hidden: true
 ---
