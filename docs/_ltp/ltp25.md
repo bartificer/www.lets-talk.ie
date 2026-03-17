@@ -16,8 +16,8 @@ guests: [ antonio_rosario, gazmaz ]
         <a href="https://www.flickr.com/photos/10268117@N05/sets/72157660164544625/" target="_blank">Gaz's Fungus shots</a>
       </li>
       <li>
-        Bart's Fungus shots:
-        <a data-flickr-embed="true"  href="https://www.flickr.com/photos/bbusschots/9130096718/" title="Scruffy Twiglet Mushrooms"><img src="https://farm8.staticflickr.com/7438/9130096718_d3459d6037.jpg" width="500" height="500" alt="Scruffy Twiglet Mushrooms"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        Bart's Fungus shots:<br />
+        <a data-flickr-embed="true"  href="https://www.flickr.com/photos/bbusschots/9130096718/" title="Scruffy Twiglet Mushrooms"><img src="https://farm8.staticflickr.com/7438/9130096718_d3459d6037.jpg" width="500" height="500" alt="Scruffy Twiglet Mushrooms"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>><br />
         <a data-flickr-embed="true"  href="https://www.flickr.com/photos/bbusschots/9130097104/" title="Club Foot Toadstool"><img src="https://farm3.staticflickr.com/2871/9130097104_e1d465a4a5.jpg" width="500" height="333" alt="Club Foot Toadstool"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
       </li>
     </ul>
@@ -38,7 +38,7 @@ guests: [ antonio_rosario, gazmaz ]
     <ul>
       <li>Photography the same shot four times - once in Spring, Summer, Autumn and Winter, then assemble into a 2x2 collage.</li>
       <li>
-        A half-done example (just 2 seasons):
+        A half-done example (just 2 seasons):<br />
         <a data-flickr-embed="true"  href="https://www.flickr.com/photos/bbusschots/4441352869/" title="The Changing of the Seasons"><img src="https://farm5.staticflickr.com/4003/4441352869_43108606db.jpg" width="500" height="236" alt="The Changing of the Seasons"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
       </li>
     </ul>

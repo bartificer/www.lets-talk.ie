@@ -13,6 +13,10 @@ guests: [ steve_stanger, antonio_rosario, gazmaz ]
 ---
 # Episode Resources
 
+## Links
+
 - [The Film Ferrania Project](http://www.filmferrania.it) Antonio talked about.
-- Antonio's Film cameras:
-  {% include figure.html img="https://media.lets-talk.ie/episodeResources/LTP40-Image1.jpeg" alt="a collection of film cameras as described in the caption below" caption="Clockwise from bottom left: Nikon FM2, Nikon F3, Minolta Autocord Twin Lens Reflex 120 film camera, Fujifilm GA-645 6cmx4.5cm medium format point and shoot camera" %}
+
+## Antonio's Film cameras
+
+{% include figure.html img="https://media.lets-talk.ie/episodeResources/LTP40-Image1.jpg" alt="A collection of film cameras as described in the caption below" caption="Clockwise from bottom left: Nikon FM2, Nikon F3, Minolta Autocord Twin Lens Reflex 120 film camera, Fujifilm GA-645 6cmx4.5cm medium format point and shoot camera" %}
