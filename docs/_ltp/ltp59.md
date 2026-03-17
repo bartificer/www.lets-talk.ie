@@ -3,38 +3,14 @@ slug: ltp59
 title: Projects
 date: 2018-08-29
 mp3_url: https://media.lets-talk.ie/ltp/ltp59.mp3
-blurb: ""
+blurb: "In this month's solo show Bart gives a detailed answer to a question friend of the show Antonio Rosario posed on episode 209 of the Shutter Time podcast — 'do you shoot photographic projects?' The short answer is 'yes', but there's much more to it than that!"
 host: bart
-warnings:
-  metadata:
-    - unreviewed
-    - unchecked_guests
-  blurb:
-    - no_blurb
-  notes:
-    - crude_import
-
 ---
-<h4>Panel</h4>
-<ul>
-	<li><a title="Bart Busschots" href="http://www.bartb.ie/" target="_blank">Bart Busschots</a> (host) - <a title="Bart's Twitter" href="http://twitter.com/bbusschots" target="_blank">@bbusschots</a> - <a href="http://www.flickr.com/photos/bbusschots/" target="_blank">Flickr</a></li>
-</ul>
-
-In this month's solo show Bart gives a detailed answer to a question friend of the show <a href="http://switchtomanual.com" rel="noopener" target="_blank">Antonio Rosario</a> posed on <a href="https://shuttertimewithsidandmac.com/2018/08/26/episode-209-projects-series-with-antonio-m-rosario/" rel="noopener" target="_blank">episode 209 of the Shutter Time podcast</a> — do you shoot photographic projects? The short answer is 'yes', but there's much more to it than that!
-
-While this podcast is free for you to enjoy, it's not free for Bart to create. Please consider supporting the show by becoming <a href="http://www.patreon.com/ltpod" target="_blank">a patron on Patreon</a>.
-
-Reminder - you can submit questions for future Q &amp; A shows at <a href="http://lets-talk.ie/photoq">http://lets-talk.ie/photoq</a>
-
-<a href="http://www.mymac.com/podcast/ltp/LetsTalkPhotographgy-EP59-Projects.mp3" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-MP3.png" alt="MP3 Download" style="border-width: 0px; display: inline-block; margin-width: 10px;"></a><a href="http://www.mymac.com/ltp.xml" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-RSS.png" alt="RSS Feed" style="border-width: 0px; display: inline-block; margin-width: 10px;"></a><a href="https://itunes.apple.com/ie/podcast/lets-talk-photography/id725271225?mt=2" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-iTunes.png" alt="iTunes" style="border-width: 0px; display: inline-block; margin-width: 10px;"></a>
-
-[audio mp3="http://www.mymac.com/podcast/ltp/LetsTalkPhotographgy-EP59-Projects.mp3"]
-
-<h4>Bart's Shownotes</h4>
+# Introduction
 
 <p>In <a href="https://shuttertimewithsidandmac.com/2018/08/26/episode-209-projects-series-with-antonio-m-rosario/">Episode 209 of Shutter Time</a> Antonio &amp; Mac discussed shooting photos as part of series or larger project. At one point Antonio mused that judging by my Flickr stream I was probably an example of someone who did <em>project work</em>. Then he just straight up called me out and asked me if he was right. The very short answer is <strong>yes</strong>, but there&#8217;s more to it than that!</p>
 
-<h5>What is a Project?</h5>
+# What is a Project?
 
 <p>My best attempt at a definition would be:</p>
 
@@ -56,7 +32,7 @@ Reminder - you can submit questions for future Q &amp; A shows at <a href="http:
 
 <p>A project doesn&#8217;t always go through the stages linearly, you can go from planning to shooting to processing back to more planning and shooting and so on, but you can&#8217;t really plan without having done your research, you can&#8217;t really shoot without having done some planning, you obviously can&#8217;t process photos you haven&#8217;t shot yet, and you equally can&#8217;t pick and choose the best out of a collection of non-existent photos!</p>
 
-<h5>Types of Project</h5>
+# Types of Project
 
 <p>My definition of a project is very broad, it leaves room for many different kinds of projects. Some are very clearly defined like my <a href="https://www.flickr.com/photos/bbusschots/4441352869/"><em>changing of the seasons</em> diptych</a>. Others are completely open-ended like my on-going project to capture life along the Royal Canal.</p>
 
@@ -66,7 +42,7 @@ Reminder - you can submit questions for future Q &amp; A shows at <a href="http:
 
 <p>Then I got interested in wild flowers so I spent hundreds of hours seeking out as many different habitats as I could find within cycling distance and visiting them at many different times of the year to try capture as wide a variety of wild flowers in bloom as I could.</p>
 
-<h5>Inspiration/Ideas?</h5>
+# Inspiration/Ideas?
 
 <p>The starting point is often my nerdy curiosity. I love trains, and always have. I love learning about how they were designed, how signalling works, how all the different types of loco differ, and so on. That passion inspired me to first try get a photo of every type of train in Ireland and Belgium, and then, to re-think and switch from trying to capture trains, to trying to capture railways, and and how they interact with the world around them. So, what started as a Pokémon-style collection project morphed into a much more philosophical project. That results in moving from simple documentary shots of trains like <a href="https://www.flickr.com/photos/bbusschots/4607043265/">this one of an NMBS/SNCB class AM75 EMU</a>, to what I call <em>railway landscapes</em> like <a href="https://www.flickr.com/photos/bbusschots/8312250000/">this one</a> where the train is just a few pixels tall.</p>
 
@@ -80,7 +56,7 @@ Reminder - you can submit questions for future Q &amp; A shows at <a href="http:
 
 <p>On a few occasions my inspiration has been simply life. The year before last I lost both of my grand fathers within a year, and it really made me stop and think about death. My default style is strong vibrant colours and particularly lots of lush Irish greens and blues. Instead I decided to shoot contrasty monochromes of ruined cemeteries for a year. It was a complete departure from my comfort zone, and it involved a lot of research and planning to find good places to shoot, and a lot of experimentation in Lightroom afterwards to find a monochrome look that resonated with me. Because this was such a personal project I&#8217;ve shared very few images from it publicly.</p>
 
-<h5>Projects Change Your Photography</h5>
+# Projects Change Your Photography
 
 <p>Hero images designed to be printed big and to stand alone are very different creatures to the individual shots that make up a well rounded project. This point really hit home to me when I was working on my monochrome cemeteries project. Closeups of carvings on headstones are not very compelling on their own, but when combined with wider angle shots the resulting whole is so much more powerful than the sum of its parts. It&#8217;s very hard to capture both the big-picture feel of a place and the subtle details and textures in one shot, but when you know you&#8217;re not trying to shoot hero images you can take the time to work a place at different focal lengths, from different distances, and from different points of view. You can also re-visit the same place at different times of the year and in different weather and light.</p>
 
@@ -96,6 +72,6 @@ Reminder - you can submit questions for future Q &amp; A shows at <a href="http:
 
 <p>Why did I buy the lens-correction software PTLens? Because when you point a wide-angle lens upwards you get horrible key-stoning that really needs correcting if you want to show the interaction of the sky and the land like <a href="https://www.flickr.com/photos/bbusschots/8981853971/">this shot of the ISS flying over a ruined church</a>.</p>
 
-<h5>Final Thoughts</h5>
+# Final Thoughts
 
 <p>Projects in all their forms, large and small, well defined and fuzzy, short-lived and open-ended, inspired by passions, by emotions, or just by a desire to master a technique, are the driving force behind my photography. If you&#8217;ve never thought to shoot projects before, I hope I&#8217;ve inspired you to at least consider it!</p>

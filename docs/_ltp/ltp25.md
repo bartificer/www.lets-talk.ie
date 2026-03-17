@@ -3,36 +3,11 @@ slug: ltp25
 title: Projects
 date: 2015-10-21
 mp3_url: https://media.lets-talk.ie/ltp/ltp25.mp3
-blurb: ""
+blurb: "It's easy to run out of inspiration, so in this show the panel suggest some photo projects that might inspire people to get back out there shooting."
 host: bart
-warnings:
-  metadata:
-    - unreviewed
-    - unchecked_guests
-  blurb:
-    - no_blurb
-  notes:
-    - crude_import
-
+guests: [ antonio_rosario, gazmaz ]
 ---
-<h4>Panel:</h4>
-<ul>
-	<li><a title="Bart Busschots" href="http://www.bartb.ie/" target="_blank">Bart Busschots</a> (host) - <a title="Bart's Twitter" href="http://twitter.com/bbusschots" target="_blank">@bbusschots</a> - <a href="http://www.flickr.com/photos/bbusschots/" target="_blank">Flickr</a></li>
-<li><a title="Antonio Rosario" href="http://amrosario.com/" target="_blank">Antonio Rosario</a> from <a title="Switch to Manual" href="http://switchtomanual.com/" target="_blank">Switch to Manual</a> - <a title="Switch to Manual on Twitter" href="http://twitter.com/switch2manual" target="_blank">@switch2manual</a></li>
-<li><a title="Gaz's Home Page" href="http://www.gazmaz.com/" target="_blank">Gazmaz</a> from the <a title="The My Mac Podcast" href="http://www.mymacpodcast.com/" target="_blank">My Mac Podcast</a> - <a title="Gaz's Twitter" href="http://twitter.com/gazmaz" target="_blank">@gazmaz</a> - <a title="Gaz's Flickr" href="http://www.flickr.com/photos/10268117@N05/" target="_blank">Flickr</a></li>
-</ul>
-
-<p>It's easy to run out of inspiration, so in this show the panel suggest some photo projects that might inspire people to get back out there shooting.</p>
-
-<p>You'll find detailed show notes below the fold.</p>
-
-<p>Reminder - you can submit questions for future Q & A shows at <a href="http://lets-talk.ie/photoq">http://lets-talk.ie/photoq</a></p>
-
-<p><a href="http://www.mymac.com/podcast/ltp/LetsTalkPhotographgy-EP25-Projects.mp3" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-MP3.png" alt="MP3 Download" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="http://www.mymac.com/ltp.xml" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-RSS.png" alt="RSS Feed" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="https://itunes.apple.com/ie/podcast/lets-talk-photography/id725271225?mt=2" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-iTunes.png" alt="iTunes" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a></p>
-
-<p>[audio mp3="http://www.mymac.com/podcast/ltp/LetsTalkPhotographgy-EP25-Projects.mp3"]</p>
-
-<!--more-->
+# Episode Resources
 
 <ul>
   <li><strong>Suggestion 1: Fungi (from Gaz)</strong>
