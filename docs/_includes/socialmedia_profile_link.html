@@ -7,6 +7,7 @@ Required Parameters:
 
 Optional Parameters:
 - class: a string to use as the link's class HTML attribute
+- icon_extra_classes: a string of extra classes to add to the icon element (e.g. for sizing)
 - no_handle: any truthy value to suppress the display of the handle
 - no_icon: any truthy value to suppress the display of the icon
 {%- endcomment -%}
@@ -15,7 +16,7 @@ Optional Parameters:
   {%- if socialmedia_platform -%}
     {%- capture hover_text -%}{{ include.handle }} on {{ socialmedia_platform.title }}{%- endcapture -%}
     <a href="{% include socialmedia_profile_url.txt platform=include.platform handle=include.handle %}" target="_blank" title="{{ hover_text }}"{% if include.class %} class="{{ include.class }}"{% endif %}>
-    {%- unless include.no_icon -%}<i class="{{ socialmedia_platform.icon }}" aria-label="{% if include.no_handle %}{{ hover_text }}{% else %}{{ socialmedia_platform.title }}{% endif %}"></i>{% endunless -%}
+    {%- unless include.no_icon -%}<i class="{{ socialmedia_platform.icon }}{% if include.icon_extra_classes %} {{ include.icon_extra_classes }}{% endif %}" aria-label="{% if include.no_handle %}{{ hover_text }}{% else %}{{ socialmedia_platform.title }}{% endif %}"></i>{% endunless -%}
     {%- unless include.no_handle -%}
       {%- unless include.no_icon %} {% endunless %}<code>{{ include.handle }}</code>
       {%- if include.no_icon %} on {{ socialmedia_platform.title }}{% endif -%}

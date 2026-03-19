@@ -44,7 +44,7 @@
             {%- comment %}The static social media links{% endcomment %}
             <span class="navbar-text">
               {%- for profile in site.socialmedia_profiles %}
-              {% include socialmedia_profile_link.html platform=profile.platform handle=profile.handle no_handle=true %}
+              {% include socialmedia_profile_link.html platform=profile.platform handle=profile.handle no_handle=true icon_extra_classes='fa-xl' %}
               {%- endfor %}
             </span>
           </div>
