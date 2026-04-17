@@ -51,6 +51,11 @@ socialmedia_platforms:
     title: GitHub
     icon: "fa-brands fa-square-github"
     profile_url_prefix: "https://github.com/"
+  youtube:
+    title: YouTube
+    icon: "fa-brands fa-square-youtube"
+    profile_url_prefix: "https://www.youtube.com/c/"
+    handle_prefix: "@"
 socialmedia_profiles:
   - platform: mastodon
     handle: "@ltpod@social.bartificer.ie"

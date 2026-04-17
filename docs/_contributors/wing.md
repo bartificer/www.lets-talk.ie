@@ -1,8 +1,8 @@
 ---
 title: Wing Kearns
 slug: wing
-sort_name: Wing
-date: 2026-04-16
+sort_name: Wing Kearns
+date: 2026-04-17
 links:
   - url: https://cuannan.ie/gallery/
     title: Photo Gallery
