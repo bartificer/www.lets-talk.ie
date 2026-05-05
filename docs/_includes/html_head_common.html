@@ -23,6 +23,31 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/graphics/LetsTalk-Podcasts-Favicon-180px.png' | relative_url }}">{% comment %}iOS Homescreen icon{% endcomment %}
 
   {%- comment %}
+    Define the traditional metadata/SEO headers:
+    --------------------------------------------
+    Spec at https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name
+
+    REQUIRED additonal headers: ADD TO EVERY LAYOUT!
+    - NONE YET
+
+    Customisable headers: 
+    - author:       OPTIONAL - Only inluced if one of the following is defined (tried in the given order):
+                     1. include.meta_author
+                     2. page.meta.author
+                     3. site.meta.author
+    - description:  OPTIONAL - Only inluced if one of the following is defined (tried in the given order):
+                     1. include.meta_description
+                     2. page.meta.description
+                     3. page.description
+    - keywords:     TO DO
+    - creator:      TO DO (org that created the content)
+    TO DO — ADD THE HEADERS
+
+    Additional Optional headers:  add to appropriate layouts
+    - og:audio:       The URL to an audio file — vital for the podcast episode layout!
+  {%- endcomment %}
+
+  {%- comment %}
     Define the Common Open Graph Headers:
     -------------------------------------
     Spec at https://ogp.me
@@ -39,6 +64,7 @@
     - og:description: OPTIONAL - only included if one of the following is defined (tried in the given order):
                         1. include.og_description
                         2. page.opengraph.description
+                        3. page.description — TO DO
 
     Additional Optional headers:  add to appropriate layouts
     - og:audio:       The URL to an audio file — vital for the podcast episode layout!
