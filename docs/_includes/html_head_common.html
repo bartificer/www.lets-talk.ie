@@ -35,17 +35,29 @@
                      1. include.meta_author
                      2. page.meta.author
                      3. site.meta.author
+    - creator:      OPTIONAL - the organisastion responsible for the content. Only inluced if one of the following is defined (tried in the given order):
+                     1. include.meta_creator
+                     2. page.meta.creator
+                     3. site.meta.creator
     - description:  OPTIONAL - Only inluced if one of the following is defined (tried in the given order):
                      1. include.meta_description
                      2. page.meta.description
                      3. page.description
     - keywords:     TO DO
-    - creator:      TO DO (org that created the content)
-    TO DO — ADD THE HEADERS
-
-    Additional Optional headers:  add to appropriate layouts
-    - og:audio:       The URL to an audio file — vital for the podcast episode layout!
   {%- endcomment %}
+  {%- capture meta_author %}{{ include.meta_author | default: page.meta.author | default: site.meta.author | default: '' |  strip | normalize_whitespace }}{% endcapture %}
+  {%- if meta_author != '' %}
+  <meta name="author" content="{{ meta_author }}">
+  {%- endif %}
+  {%- capture meta_creator %}{{ include.meta_creator | default: page.meta.creator | default: site.meta.creator | default: '' |  strip | normalize_whitespace }}{% endcapture %}
+  {%- if meta_creator != '' %}
+  <meta name="creator" content="{{ meta_creator }}">
+  {%- endif %}
+  {%- capture meta_description %}{{ include.meta_description | default: page.meta.description | default: page.description | default: '' |  strip | normalize_whitespace }}{% endcapture %}
+  {%- if meta_description != '' %}
+  <meta name="description" content="{{ meta_description }}">
+  {%- endif %}
+  {% comment %}TO DO — KEYWORDS HEADER{% endcomment %}
 
   {%- comment %}
     Define the Common Open Graph Headers:
@@ -64,7 +76,7 @@
     - og:description: OPTIONAL - only included if one of the following is defined (tried in the given order):
                         1. include.og_description
                         2. page.opengraph.description
-                        3. page.description — TO DO
+                        3. page.description
 
     Additional Optional headers:  add to appropriate layouts
     - og:audio:       The URL to an audio file — vital for the podcast episode layout!
@@ -76,7 +88,7 @@
   {%- comment %}OPTIONAL OpenGraph headers{% endcomment %}
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="en_GB">
-  {%- capture og_description %}{{ include.og_description | default: page.opengraph.description | default: '' }}{% endcapture %}
-  {%- if og_description %}
-  <meta property="og:description" content="{{ og_description | normalize_whitespace }}">
+  {%- capture og_description %}{{ include.og_description | default: page.opengraph.description | default: page.description | default: '' | strip | normalize_whitespace }}{% endcapture %}
+  {%- if og_description != '' %}
+  <meta property="og:description" content="{{ og_description }}">
   {%- endif %}

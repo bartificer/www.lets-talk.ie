@@ -1,5 +1,8 @@
 # Site Settings
 title: "Let's Talk Podcasts"
+meta:
+  author: Bart Busschots
+  creator: Bartificer Creations Ltd.
 support_links:
   - title: "Patreon"
     button_text: "Monthly Patreon Pledge"
@@ -92,7 +95,7 @@ collections:
     permalink: /:title
     sort_by: slug
   redirects:
-    output: true;
+    output: true
 
 # Configure front matter defaults
 defaults:
