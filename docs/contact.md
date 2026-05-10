@@ -5,8 +5,11 @@ slug: contact
 sort_order: 30
 date: 2026-01-18
 show_revision_date: true
-opengraph:
-  description: "Contact the Let's Talk Podcasts team."
+description: "Contact the Let's Talk Podcasts team."
+meta:
+  keywords:
+    - contact
+    - team
 ---
 You can contact the show via social media:
 

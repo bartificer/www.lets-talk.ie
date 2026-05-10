@@ -10,6 +10,11 @@ graphics:
   itunes_cover: /assets/graphics/LetsTalk-Photo-iTunes-512px.png
   card_banner: /assets/graphics/LetsTalk-Photo-1024px.png
 quote_episode_titles: true
+meta:
+  keywords:
+    - photography
+    - art
+    - craft
 opengraph:
   image: /assets/graphics/LetsTalk-Photo-OpenGraph.png
 ---

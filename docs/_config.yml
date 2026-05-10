@@ -3,6 +3,8 @@ title: "Let's Talk Podcasts"
 meta:
   author: Bart Busschots
   creator: Bartificer Creations Ltd.
+  keywords: # universal keywords for the site, does not override page-specfific keywords, but merged with them if defined
+    - podcast
 support_links:
   - title: "Patreon"
     button_text: "Monthly Patreon Pledge"

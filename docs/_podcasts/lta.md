@@ -9,6 +9,16 @@ graphics:
   banner: /assets/graphics/LetsTalk-Apple.png
   itunes_cover: /assets/graphics/LetsTalk-Apple-iTunes-512px.png
   card_banner: /assets/graphics/LetsTalk-Apple-1024px.png
+meta:
+  keywords:
+  - Apple
+  - news
+  - iOS
+  - macOS
+  - iPhone
+  - iPad
+  - AppleWatch
+  - Mac
 opengraph:
   image: /assets/graphics/LetsTalk-Apple-OpenGraph.png
 ---

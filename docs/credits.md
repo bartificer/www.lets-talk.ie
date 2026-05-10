@@ -5,10 +5,15 @@ sort_order: 20
 date: 2026-01-18
 show_revision_date: true
 show_github_contribute: true
-opengraph:
-  description: "Shout-outs to the many people and organisations who help make the Let's Talk podcasts."
+description: "Shout-outs to the many people and organisations who help make the Let's Talk podcasts."
+meta:
+  keywords:
+    - recommendation
+    - credits
+    - artists
+    - creators
+    - guests
 ---
-
 # Producer, Editor & Host — Bart Busschot
 
 In every sense, [Bart]({{ '/contributor/bart' | relative_url }}) authors the Let's Talk podcasts. He conceived them, writes each episode, hosts the shows, and edits the audio files.

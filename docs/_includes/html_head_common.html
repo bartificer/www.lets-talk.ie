@@ -43,7 +43,11 @@
                      1. include.meta_description
                      2. page.meta.description
                      3. page.description
-    - keywords:     TO DO
+    - keywords:     OPTIONAL — Only included if at least one of the following is defined — if multiple are defined, the superset of keywords will be used:
+                     1. include.meta_keywords
+                     2. layout.meta.keywords
+                     2. page.meta.keywords
+                     3. site.meta.keywords
   {%- endcomment %}
   {%- capture meta_author %}{{ include.meta_author | default: page.meta.author | default: site.meta.author | default: '' |  strip | normalize_whitespace }}{% endcapture %}
   {%- if meta_author != '' %}
@@ -57,7 +61,16 @@
   {%- if meta_description != '' %}
   <meta name="description" content="{{ meta_description }}">
   {%- endif %}
-  {% comment %}TO DO — KEYWORDS HEADER{% endcomment %}
+  {%- comment %}For keywords, we want to merge the various sources if multiple are defined, so we need to do a bit more work to ensure we end up with a unique set of keywords{% endcomment %}
+  {%- assign _empty_array = '' | split: ',' %} {% comment %} create an empty array to use as a default value for the various sources {% endcomment %}
+  {%- assign include_keywords = include.meta_keywords | default: _empty_array %}
+  {%- assign layout_keywords = layout.meta.keywords | default: _empty_array %}
+  {%- assign page_keywords = page.meta.keywords | default: _empty_array %}
+  {%- assign site_keywords = site.meta.keywords | default: _empty_array %}
+  {%- assign keywords = include_keywords | concat: page_keywords | concat: layout_keywords | concat: site_keywords | uniq %}
+  {%- if keywords %}
+  <meta name="keywords" content="{{ keywords | join: ', ' }}">
+  {%- endif %}
 
   {%- comment %}
     Define the Common Open Graph Headers:
