@@ -1,8 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  {%- comment %}Merge all podcast-level keywords into a single array{% endcomment %}
+  {%- assign _empty_array = '' | split: ',' %} {% comment %} create an empty array to use as a default value for the various sources {% endcomment %}
+  {%- assign all_podcast_keywords = _empty_array %}
+  {%- for podcast in site.podcasts %}
+    {%- assign podcast_keywords = podcast.meta.keywords | default: _empty_array %}
+    {%- assign all_podcast_keywords = all_podcast_keywords | concat: podcast_keywords %}
+  {%- endfor %}
+
   {%- comment %}Include the snippet with the standard content for the head tag{% endcomment %}
-  {%  include html_head_common.html %}
+  {%-  include html_head_common.html meta_keywords=all_podcast_keywords %}
 
   {%- comment %}Just use the site title{% endcomment %}
   <meta property="og:title" content="{{ site.title }}" />
