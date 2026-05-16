@@ -27,6 +27,14 @@ subscription_types:
     type: podcast_index
     icon: "fa-solid fa-podcast"
 socialmedia_platforms:
+  500px:
+    title: 500px
+    icon: "fa-brands fa-500px"
+    profile_url_prefix: "https://500px.com/p/"
+  instagram:
+    title: Instagram
+    icon: "fa-brands fa-square-instagram"
+    profile_url_prefix: "https://www.instagram.com/"
   x:
     title: X
     icon: "fa-brands fa-square-x-twitter"

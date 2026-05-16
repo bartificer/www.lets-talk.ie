@@ -8,37 +8,14 @@ blurb: Joining Bart this month are Allison Sheridan from the NosillaCast Mac
   the panel talk about how shutter speed can be used to show us the world in a
   different way. By shooting very fast, or very slow, our photographs can show
   us the world in a way our eyes alone can’t. Both pan and motion blurs play a
-  substantial role in the discussion. Listen, subscribe, and get the show notes
-  at lets-talk.ie/ltp6. This show is ad-free because of the generosity of
-  listeners like you. Please considering supporting the show on Patreon
-  (https://patreon.com/ltpod). Reminder - you can submit questions for future Q
-  & A shows at lets-talk.ie/photoq.
+  substantial role in the discussion.
 host: bart
-warnings:
-  metadata:
-    - unreviewed
-    - unchecked_guests
-  blurb:
-    - unreviewed
-  notes:
-    - crude_import
-
+guests:
+  - allison_sheridan
+  - antonio_rosario
+  - tom_martinez
 ---
-<h4>Panel:</h4>
-<ul>
-	<li><a title="Bart Busschots" href="http://www.bartb.ie/" target="_blank">Bart Busschots</a> (host) - <a title="Bart's Twitter" href="http://twitter.com/bbusschots" target="_blank">@bbusschots</a> - <a href="http://www.flickr.com/photos/bbusschots/" target="_blank">Flickr</a></li>
-	<li>Allison Sheridan from <a title="The NosillaCast" href="http://www.podfeet.com/" target="_blank">the NosillaCast Podcast</a> - <a title="Allison's Twitter" href="http://twitter.com/podfeet" target="_blank">@podfeet</a> - <a title="Allison's Flickr" href="http://www.flickr.com/photos/nosillacast/" target="_blank">Flickr</a></li>
-	<li><a title="Antonio Rosario" href="http://amrosario.com/" target="_blank">Antonio Rosario</a> & Tom Martinez from <a title="Switch to Manual" href="http://switchtomanual.com/" target="_blank">Switch to Manual</a> - <a title="Switch to Manual on Twitter" href="http://twitter.com/switch2manual" target="_blank">@switch2manual</a></li>
-</ul>
-
-<p>Joining Bart this month are Allison Sheridan from the NosillaCast Mac Podcast and Antonio Rosario & Tom Martinez from Switch to Manual. This month the panel talk about how shutter speed can be used to show us the world in a different way. By shooting very fast, or very slow, our photographs can show us the world in a way our eyes alone can't. Both pan and motion blurs play a substantial role in the discussion.</p>
-
-<p><a href="http://www.mymac.com/podcast/ltp/LetsTalkPhotographgy-EP6-PlayingWithTime.mp3" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-MP3.png" alt="MP3 Download" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="http://www.mymac.com/ltp.xml" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-RSS.png" alt="RSS Feed" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="https://itunes.apple.com/ie/podcast/lets-talk-photography/id725271225?mt=2" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-iTunes.png" alt="iTunes" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a></p>
-
-<p>[audio mp3="http://www.mymac.com/podcast/ltp/LetsTalkPhotographgy-EP6-PlayingWithTime.mp3"]</p>
-
-<!--more-->
-
+# Links
 <ul>
   <li><a href="https://www.dropbox.com/s/jil926udrpr5zkk/STM%20Website%20Greenwood%20Greenwood%20Hawk%20in%20Flght%20%20079-Edit.jpg">Tom's Hawk Photo</a></li>
   <li><a href="https://www.dropbox.com/s/ietextowd0c55z3/STM%20Palm%20Card%20Bike%20Blur%20%20011.jpg">Tom's Pan Blurred Bike</a></li>
