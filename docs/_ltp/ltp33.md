@@ -10,5 +10,8 @@ blurb: This month Bart is joined by Antonio Rosario from Switch to Manual, and
   photo editors. She enjoyed the show, but she had questions. Could she come on
   some time to ask them? Absolutely!
 host: bart
+guests:
+  - antonio_rosario
+  - allison_sheridan
 ---
 There are no detailed notes for this episode.
