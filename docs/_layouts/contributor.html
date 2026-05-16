@@ -52,6 +52,18 @@ layout: default_base
           </div>
           {%- endif %}
 
+          {%- comment %}If there are neither links nor profiles, add the standard privacy card{% endcomment %}
+          {% unless page.links or page.social_media_profiles %}
+          <div class="card text-bg-white">
+            <div class="card-header bg-info">Contact</div>
+            <div class="card-body">
+              <div class="card-text">
+                {% include_relative _no_contact_text.md %}
+              </div>
+            </div>
+          </div>
+          {%- endunless %}
+
         </div>
       </div>
       
