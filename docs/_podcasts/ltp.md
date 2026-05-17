@@ -9,6 +9,7 @@ graphics:
   banner: /assets/graphics/LetsTalk-Photo.png
   itunes_cover: /assets/graphics/LetsTalk-Photo-iTunes-512px.png
   card_banner: /assets/graphics/LetsTalk-Photo-1024px.png
+  card_icon: /assets/graphics/LetsTalk-Photo-Icon.png
 quote_episode_titles: true
 meta:
   keywords:

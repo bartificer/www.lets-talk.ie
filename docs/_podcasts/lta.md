@@ -9,6 +9,7 @@ graphics:
   banner: /assets/graphics/LetsTalk-Apple.png
   itunes_cover: /assets/graphics/LetsTalk-Apple-iTunes-512px.png
   card_banner: /assets/graphics/LetsTalk-Apple-1024px.png
+  card_icon: /assets/graphics/LetsTalk-Apple-Icon.png
 meta:
   keywords:
   - Apple
