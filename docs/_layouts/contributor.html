@@ -93,7 +93,7 @@ layout: default_base
                 {% include human_episode_slug.html slug=episode.slug %}: {% if podcast.quote_episode_titles %}<em>"{% endif %}{{ episode.title }}{% if podcast.quote_episode_titles %}"</em>{% endif %}
                 <br/><small>published {{ episode.date | date: "%b %e %Y" }}</small>
                 {% if episode.host == contributor_slug %}
-                  <span class="badge text-white fw-medium" style="background-color: {{ podcast_accent_colour }};">Host</span>
+                  <span class="badge rounded-pill text-white fw-medium" style="background-color: {{ podcast_accent_colour }};">Host</span>
                 {% endif %}
               </a>
             </div>
