@@ -89,10 +89,10 @@ layout: default_base
         <div class="col p-1">
           <div class="card" style="border-color: {{ podcast_accent_colour }};">
             <div class="row g-0">
-              <div class="col-2" style="background-color: {{ podcast_accent_colour }};">
-                <img src="{{ podcast.graphics.card_icon | relative_url }}" class="img-fluid p-1 align-middle" alt="{{ podcast.title }} Podcast Logo">
+              <div class="col-2 d-flex align-items-center" style="background-color: {{ podcast_accent_colour }};">
+                <img src="{{ podcast.graphics.card_icon | relative_url }}" class="img-fluid p-2" alt="{{ podcast.title }} Podcast Logo">
               </div>
-              <div class="col-10 p-1">
+              <div class="col-10 pe-1">
                 <div class="list-group list-group-flush" >
                   <a class="list-group-item list-group-item-action" href="{{ episode.url | relative_url }}" style="--bs-list-group-action-color: {{ podcast_accent_colour }};">
                     {% include human_episode_slug.html slug=episode.slug %}: {% if podcast.quote_episode_titles %}<em>"{% endif %}{{ episode.title }}{% if podcast.quote_episode_titles %}"</em>{% endif %}
