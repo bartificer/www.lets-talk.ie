@@ -95,18 +95,21 @@
                         1. include.og_description
                         2. page.opengraph.description
                         3. page.description
-    - profile:first_name: OPTIONAL - only included if one of the following is defined (tried in the given order):
+    - profile:first_name: OPTIONAL - only included if og:type is "profile", and one of the following is defined (tried in the given order):
                         1. include.og_profile_first_name
                         2. page.opengraph.profile_first_name
-    - profile:last_name: OPTIONAL - only included if one of the following is defined (tried in the given order):
+                        3. page.first_name
+    - profile:last_name: OPTIONAL - only included if og:type is "profile", and one of the following is defined (tried in the given order):
                         1. include.og_profile_last_name
                         2. page.opengraph.profile_last_name
+                        3. page.surname
 
     Additional Optional headers:  add to appropriate layouts
     - og:audio:       The URL to an audio file — vital for the podcast episode layout!
   {%- endcomment %}
   {%- comment %}REQUIRED OpenGraph headers{% endcomment %}
-  <meta property="og:type" content="{{ include.og_type | default: layout.opengraph.type | default: page.opengraph.type | default: 'website' }}">
+  {%- capture og_type %}{{ include.og_type | default: layout.opengraph.type | default: page.opengraph.type | default: 'website' }}{% endcapture %}
+  <meta property="og:type" content="{{ og_type }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:image" content="{{ include.og_image | default: page.opengraph.image | default: '/assets/graphics/LetsTalk-Podcasts-OpenGraph.png' | absolute_url }}">
   {%- comment %}OPTIONAL OpenGraph headers{% endcomment %}
@@ -116,11 +119,11 @@
   {%- if og_description != '' %}
   <meta property="og:description" content="{{ og_description }}">
   {%- endif %}
-  {%- capture og_profile_first_name %}{{ include.og_profile_first_name | default: page.opengraph.profile_first_name | default: '' | strip | normalize_whitespace }}{% endcapture %}
-  {%- if og_profile_first_name != '' %}
+  {%- capture og_profile_first_name %}{{ include.og_profile_first_name | default: page.opengraph.profile_first_name | default: page.first_name | default: '' | strip | normalize_whitespace }}{% endcapture %}
+  {%- if og_type == 'profile' and og_profile_first_name != '' %}
   <meta property="profile:first_name" content="{{ og_profile_first_name }}">
   {%- endif %}
-  {%- capture og_profile_last_name %}{{ include.og_profile_last_name | default: page.opengraph.profile_last_name | default: '' | strip | normalize_whitespace }}{% endcapture %}
+  {%- capture og_profile_last_name %}{{ include.og_profile_last_name | default: page.opengraph.profile_last_name | default: page.surname | default: '' | strip | normalize_whitespace }}{% endcapture %}
   {%- if og_profile_last_name != '' %}
   <meta property="profile:last_name" content="{{ og_profile_last_name }}">
   {%- endif %}
