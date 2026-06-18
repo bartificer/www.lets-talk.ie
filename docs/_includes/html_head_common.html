@@ -43,6 +43,7 @@
                      1. include.meta_description
                      2. page.meta.description
                      3. page.description
+                     4. a snippet in a file named ./_description.txt (relative to the markdown file)
     - keywords:     OPTIONAL — Only included if at least one of the following is defined — if multiple are defined, the superset of keywords will be used:
                      1. include.meta_keywords
                      2. layout.meta.keywords
@@ -57,7 +58,8 @@
   {%- if meta_creator != '' %}
   <meta name="creator" content="{{ meta_creator }}">
   {%- endif %}
-  {%- capture meta_description %}{{ include.meta_description | default: page.meta.description | default: page.description | default: '' |  strip | normalize_whitespace }}{% endcapture %}
+  {%- capture meta_description_include %}{% include_relative _description.txt %}{% endcapture %}
+  {%- capture meta_description %}{{ include.meta_description | default: page.meta.description | default: page.description | default: meta_description_include | default: '' |  strip | normalize_whitespace }}{% endcapture %}
   {%- if meta_description != '' %}
   <meta name="description" content="{{ meta_description }}">
   {%- endif %}
