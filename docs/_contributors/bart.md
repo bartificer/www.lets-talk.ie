@@ -2,6 +2,9 @@
 title: Bart Busschots
 slug: bart
 sort_name: Busschots Bart
+opengraph:
+  profile_first_name: Bart
+  profile_last_name: Busschots
 date: 2026-01-14
 links:
   - url: https://bartb.ie/
