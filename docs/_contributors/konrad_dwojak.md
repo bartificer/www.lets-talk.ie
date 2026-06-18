@@ -1,5 +1,7 @@
 ---
 title: Konrad Dwojak
+first_name: Konrad
+surname: Dwojak
 slug: konrad_dwojak
 sort_name: Dwojak Konrad
 date: 2026-05-16

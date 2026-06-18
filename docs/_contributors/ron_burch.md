@@ -1,5 +1,7 @@
 ---
 title: Ron Burch
+first_name: Ron
+surname: Burch
 slug: ron_burch
 sort_name: Burch Ron
 date: 2026-05-16

@@ -1,5 +1,7 @@
 ---
 title: Jill McKinley
+first_name: Jill
+surname: McKinley
 slug: jill_mckinley
 sort_name: McKinley Jill
 date: 2026-02-09

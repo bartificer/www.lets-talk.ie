@@ -1,5 +1,7 @@
 ---
 title: Kenny Lee
+first_name: Kenny
+surname: Lee
 slug: kenny_lee
 sort_name: Lee Kenny
 date: 2026-01-14

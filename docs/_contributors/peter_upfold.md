@@ -1,5 +1,7 @@
 ---
 title: Peter Upfold
+first_name: Peter
+surname: Upfold
 slug: peter_upfold
 sort_name: Upfold Peter
 date: 2026-01-14

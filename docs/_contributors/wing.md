@@ -1,5 +1,6 @@
 ---
 title: Wing Kearns
+first_name: Wing
 slug: wing
 sort_name: Wing Kearns
 date: 2026-04-17

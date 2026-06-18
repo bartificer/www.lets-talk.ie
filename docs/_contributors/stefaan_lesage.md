@@ -1,5 +1,7 @@
 ---
 title: Stefaan Lesage
+first_name: Stefaan
+surname: Lesage
 slug: stefaan_lesage
 sort_name: Lesage Stefaan
 date: 2026-01-14

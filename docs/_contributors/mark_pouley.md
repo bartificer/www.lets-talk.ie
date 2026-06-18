@@ -1,5 +1,7 @@
 ---
 title: Mark Pouley
+first_name: Mark
+surname: Pouley
 slug: mark_pouley
 sort_name: Pouley Mark
 date: 2026-01-14

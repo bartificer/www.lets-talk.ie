@@ -1,5 +1,7 @@
 ---
 title: Scott Willsey
+first_name: Scott
+surname: Willsey
 slug: scott_willsey
 sort_name: Willsey Scott
 date: 2026-03-14

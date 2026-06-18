@@ -1,5 +1,7 @@
 ---
 title: Nick Rodriguez
+first_name: Nick
+surname: Rodriguez
 slug: nick_rodriguez
 sort_name: Rodriguez Nick
 date: 2026-01-14

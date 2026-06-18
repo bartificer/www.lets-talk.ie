@@ -1,5 +1,7 @@
 ---
 title: Victor Cajiao
+first_name: Victor
+surname: Cajiao
 slug: victor_cajiao
 sort_name: Cajiao Victor
 date: 2026-05-16

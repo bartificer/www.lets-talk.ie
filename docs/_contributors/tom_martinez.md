@@ -1,5 +1,7 @@
 ---
 title: Tom Martinez
+first_name: Tom
+surname: Martinez
 slug: tom_martinez
 sort_name: Martinez Tom
 date: 2026-05-16

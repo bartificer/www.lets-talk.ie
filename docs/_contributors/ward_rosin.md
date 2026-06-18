@@ -1,5 +1,7 @@
 ---
 title: Ward Rosin
+first_name: Ward
+surname: Rosin
 slug: ward_rosin
 sort_name: Ward Rosin
 date: 2026-04-17
