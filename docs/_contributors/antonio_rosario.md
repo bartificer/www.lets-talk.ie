@@ -1,5 +1,7 @@
 ---
 title: Antonio M. Rosario
+first_name: Antonio
+surname: Rosario
 slug: antonio_rosario
 sort_name: Rosario Antonio
 date: 2026-01-14

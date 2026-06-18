@@ -1,5 +1,6 @@
 ---
 title: Gazmaz
+first_name: Gazmaz
 slug: gazmaz
 sort_name: Gazmaz
 date: 2026-01-14

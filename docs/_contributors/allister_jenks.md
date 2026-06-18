@@ -1,5 +1,7 @@
 ---
 title: Allister Jenks
+first_name: Allister
+surname: Jenks
 slug: allister_jenks
 sort_name: Jenks Allister
 date: 2026-01-14

@@ -1,5 +1,7 @@
 ---
 title: Chuck Joiner
+first_name: Chuck
+surname: Joiner
 slug: chuck_joiner
 sort_name: Joiner Chuck
 date: 2026-01-14

@@ -1,5 +1,7 @@
 ---
 title: Elaine Giles
+first_name: Elaine
+surname: Giles
 slug: elaine_giles
 sort_name: Giles Elaine
 date: 2026-03-14

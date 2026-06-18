@@ -1,5 +1,7 @@
 ---
 title: Clay Daly
+first_name: Clay
+surname: Daly
 slug: clay_daly
 sort_name: Daly Clay
 date: 2026-05-16

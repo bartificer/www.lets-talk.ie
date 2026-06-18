@@ -1,5 +1,7 @@
 ---
 title: Adam Christianson
+first_name: Adam
+surname: Christianson
 slug: adam_christianson
 sort_name: Christianson Adam
 date: 2026-01-14

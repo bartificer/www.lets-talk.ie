@@ -1,5 +1,7 @@
 ---
 title: Allison Sheridan
+first_name: Allison
+surname: Sheridan
 slug: allison_sheridan
 sort_name: Sheridan Allison
 date: 2026-01-25
