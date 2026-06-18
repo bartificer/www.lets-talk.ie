@@ -43,7 +43,7 @@
                      1. include.meta_description
                      2. page.meta.description
                      3. page.description
-                     4. a snippet in a file named ./_description.txt (relative to the markdown file)
+                     4. a snippet in a file named ./_description.txt (relative to the markdown file), but only if layout.enable_description_snippet is true (default false)
     - keywords:     OPTIONAL — Only included if at least one of the following is defined — if multiple are defined, the superset of keywords will be used:
                      1. include.meta_keywords
                      2. layout.meta.keywords
@@ -58,7 +58,7 @@
   {%- if meta_creator != '' %}
   <meta name="creator" content="{{ meta_creator }}">
   {%- endif %}
-  {%- capture meta_description_include %}{% include_relative _description.txt %}{% endcapture %}
+  {%- capture meta_description_include %}{% if layout.enable_description_snippet == true %}{% include_relative _description.txt %}{% endif %}{% endcapture %}
   {%- capture meta_description %}{{ include.meta_description | default: page.meta.description | default: page.description | default: meta_description_include | default: '' |  strip | normalize_whitespace }}{% endcapture %}
   {%- if meta_description != '' %}
   <meta name="description" content="{{ meta_description }}">
@@ -97,6 +97,7 @@
                         1. include.og_description
                         2. page.opengraph.description
                         3. page.description
+                        4. a snippet in a file named ./_description.txt (relative to the markdown file), but only if layout.enable_description_snippet is true (default false)
     - profile:first_name: OPTIONAL - only included if og:type is "profile", and one of the following is defined (tried in the given order):
                         1. include.og_profile_first_name
                         2. page.opengraph.profile_first_name
@@ -117,7 +118,8 @@
   {%- comment %}OPTIONAL OpenGraph headers{% endcomment %}
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="en_GB">
-  {%- capture og_description %}{{ include.og_description | default: page.opengraph.description | default: page.description | default: '' | strip | normalize_whitespace }}{% endcapture %}
+  {%- capture og_description_include %}{% if layout.enable_description_snippet == true %}{% include_relative _description.txt %}{% endif %}{% endcapture %}
+  {%- capture og_description %}{{ include.og_description | default: page.opengraph.description | default: page.description | default: og_description_include | default: '' | strip | normalize_whitespace }}{% endcapture %}
   {%- if og_description != '' %}
   <meta property="og:description" content="{{ og_description }}">
   {%- endif %}

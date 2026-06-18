@@ -1,1 +1,1 @@
-The contributor profile for {{ page.title }} on the Let's Talk Podcasts.
+The contributor profile for {{ page.title }} on the Let's Talk podcasts.
