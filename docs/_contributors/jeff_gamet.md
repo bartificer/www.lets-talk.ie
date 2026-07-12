@@ -3,7 +3,7 @@ title: Jeff Gamet
 first_name: Jeff
 surname: Gamet
 slug: jeff_gamet
-sort_name: Jeff Gamet
+sort_name: Gamet Jeff
 date: 2026-04-17
 links:
   - url: https://contextmachine.io/
