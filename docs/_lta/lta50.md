@@ -10,40 +10,14 @@ blurb: "Joining Bart this month are Chuck Joiner from Mac Voices, Mark Chappell
   staffing changes. The four main stories for the month are Apple’s Q4 earnings
   call, the release of the iPhone X, the end of Windows Phone, and a bad month
   for Google. The show finishes with a quick rundown of some shorter
-  Apple-related stories that made the news in October. For detailed show notes
-  visit http://lets-talk.ie/lta50 Please consider supporting the show on
-  Patreon: http://www.patreon.com/ltpod"
+  Apple-related stories that made the news in October."
 host: bart
-warnings:
-  metadata:
-    - unreviewed
-    - unchecked_guests
-  blurb:
-    - unreviewed
-  notes:
-    - crude_import
-
+guests:
+  - mark_chappell
+  - nick_riley
+  - allister_jenks
 ---
-<h4>Panel:</h4>
-<ul>
-	<li><a title="Bart Busschots" href="http://www.bartb.ie/" target="_blank">Bart Busschots</a> (host) - <a title="Bart's Twitter" href="http://twitter.com/bbusschots" target="_blank">@bbusschots</a></li>
-<li>Chuck Joiner from <a href="http://www.macvoices.com" target="_blank">MacVoices</a> - <a title="Chuck's Twitter" href="http://twitter.com/chuckjoiner" target="_blank">@chuckjoiner</a></li>
-<li>Mark chappell from the <a title="Essential Apple Podcast" href="http://essentialapple.com" target="_blank">Essential Apple Podcast</a> - <a title="Mark's Twitter" href="https://twitter.com/oceanspeed" target="_blank">@oceanspeed</a></li>
-<li>Nick Riley - <a title="Nick's Twitter" href="http://twitter.com/spligosh" target="_blank">@spligosh</a></li>
-<li><a title="Allister's Home Page" href="http://about.me/zkarj" target="_blank">Allister Jenks</a> - <a title="Allister's Twitter" href="http://twitter.com/zkarj" target="_blank">@zkarj</a></li>
-</ul>
-
-The show starts with some Apple-related legal stories that made the news in October before moving on to look at some interesting Apple-related statistics and staffing changes. The four main stories for the month are Apple's Q4 earnings call, the release of the iPhone X, the end of Windows Phone, and a bad month for Google. The show finishes with a quick rundown of some shorter Apple-related stories that made the news in October.
-
-<p>You'll find detailed show notes below the fold, and if you enjoy this free show, please consider clicking on the donate button at the top of the left side bar - the show is free for you to listen to, but not for Bart to Produce!</p>
-
-<p><a href="http://www.mymac.com/podcast/lta/LetsTalkApple-EP50-October2017.mp3" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-MP3.png" alt="MP3 Download" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="http://www.mymac.com/lta.xml" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-RSS.png" alt="RSS Feed" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="https://itunes.apple.com/ie/podcast/lets-talk-apple/id717911909?mt=2" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-iTunes.png" alt="iTunes" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a></p>
-
-[audio mp3="http://www.mymac.com/podcast/lta/LetsTalkApple-EP50-October2017.mp3"]
-
-<!--more-->
-
-<h5>Legal Latest</h5>
+# Legal Latest
 
 <ul>
 <li>Apple -v- Qualcomm
@@ -61,7 +35,7 @@ The show starts with some Apple-related legal stories that made the news in Octo
 <li><a href="http://appleinsider.com/articles/17/10/19/apple-sued-over-animoji-trademark-allegedly-tried-to-buy-ip-rights-prior-to-iphone-x-debut">Apple sued over &#8216;Animoji&#8217; trademark, allegedly tried to buy IP rights prior to iPhone X debut — appleinsider.com/…</a></li>
 </ul>
 
-<h5>Notable Numbers</h5>
+# Notable Numbers
 
 <ul>
 <li>Rigorous testing by FutureMark shows what we all knew anyway – iPhones do not get slower over time — <a href="http://www.futuremark.com/pressreleases/is-it-true-that-iphones-get-slower-over-time">www.futuremark.com/…</a></li>
@@ -70,13 +44,13 @@ The show starts with some Apple-related legal stories that made the news in Octo
 <li><a href="https://www.imore.com/apple-pay-three-20-markets-covering-70-payments-4000-issuers">Apple Pay at three: 20 markets covering 70% of payments, 4,000 issuers — www.imore.com/…</a> &amp; <a href="http://social.techcrunch.com/2017/10/23/apple-pay-now-in-20-markets-nabs-90-of-all-contactless-transactions-where-active/">social.techcrunch.com/…</a></li>
 </ul>
 
-<h5>Notable Staffing Changes</h5>
+# Notable Staffing Changes
 
 <ul>
 <li><a href="https://www.macobserver.com/news/apple-poaches-amazon-video-exec-head-international-development/">Apple Poaches Amazon Video Exec to Head International Development — www.macobserver.com/…</a></li>
 </ul>
 
-<h5>Main Stories</h5>
+# Main Stories
 
 <ol>
 <li>Apple&#8217;s Q4 2017 Earnings Call — <a href="https://www.apple.com/newsroom/2017/11/apple-reports-fourth-quarter-results/">www.apple.com/…</a>
@@ -116,7 +90,7 @@ The show starts with some Apple-related legal stories that made the news in Octo
 </ul></li>
 </ol>
 
-<h5>Quick Stories</h5>
+# Quick Stories
 
 <ul>
 <li><a href="https://www.imore.com/apple-ge-predix">Apple and GE bringing Predix apps to iPhone and iPad — www.imore.com/…</a></li>

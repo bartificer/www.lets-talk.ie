@@ -10,45 +10,21 @@ blurb: "Joining Bart for this month are Chuck Joiner from Mac Voices, Allister
   Cook’s visit to India and China, CurrentC gets postponed again, Google’s IO
   Conference, and Microsoft’s streamlining of their phone business. The show
   finishes with a quick rundown of some other shorter stories that made the news
-  in May. For detailed show notes visit http://lets-talk.ie/lta33 Please
-  consider supporting the show on Patreon: http://www.patreon.com/ltpod"
+  in May.
 host: bart
-warnings:
-  metadata:
-    - unreviewed
-    - unchecked_guests
-  blurb:
-    - unreviewed
-  notes:
-    - crude_import
-
+guests:
+  - chuck_joiner
+  - allister_jenks
+  - gazmaz
 ---
-<h4>Panel:</h4>
-<ul>
-	<li><a title="Bart Busschots" href="http://www.bartb.ie/" target="_blank">Bart Busschots</a> (host) - <a title="Bart's Twitter" href="http://twitter.com/bbusschots" target="_blank">@bbusschots</a></li>
-<li>Chuck Joiner from <a href="http://www.macvoices.com" target="_blank">MacVoices</a> - <a title="Chuck's Twitter" href="http://twitter.com/chuckjoiner" target="_blank">@chuckjoiner</a></li>
-<li><a title="Allister's Home Page" href="http://about.me/zkarj" target="_blank">Allister Jenks</a> - <a title="Allister's Twitter" href="http://twitter.com/zkarj" target="_blank">@zkarj</a></li>
-<li><a title="Gaz's Home Page" href="http://www.gazmaz.com/" target="_blank">Gazmaz</a> from the <a title="The My Mac Podcast" href="http://www.mymacpodcast.com/" target="_blank">My Mac Podcast</a> - <a title="Gaz's Twitter" href="http://twitter.com/gazmaz" target="_blank">@gazmaz</a></li>
-</ul>
-
-<p>The show starts with a quick look at some notable numbers that were released in May, followed by a look at some Apple-related legal stories. The four main stories for the month are: Tim Cook's visit to India and China, CurrentC gets postponed again, Google's IO Conference, and Microsoft's streamlining of their phone business. The show finishes with a quick rundown of some other shorter stories that made the news in May.</p>
-
-<p>You'll find detailed show notes below the fold, and if you enjoy this free show, please consider clicking on the donate button at the top of the left side bar - the show is free for you to listen to, but not for Bart to Produce!</p>
-
-<p><a href="http://www.mymac.com/podcast/lta/LetsTalkApple-EP33-May2016.mp3" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-MP3.png" alt="MP3 Download" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="http://www.mymac.com/lta.xml" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-RSS.png" alt="RSS Feed" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="https://itunes.apple.com/ie/podcast/lets-talk-apple/id717911909?mt=2" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-iTunes.png" alt="iTunes" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a></p>
-
-[audio mp3="http://www.mymac.com/podcast/lta/LetsTalkApple-EP33-May2016.mp3"]
-
-<!--more-->
-
-<h5 id="toc_1">Notable Numbers</h5>
+# Notable Numbers
 
 <ul>
 <li>Apple tops JD Power Tablet Customer Satisfaction Survey - <a href="http://www.jdpower.com/press-releases/2016-us-tablet-satisfaction-study-volume-1">www.jdpower.com/...</a></li>
 <li>Despite calling for a boycott of Apple, Donald Trump&#39;s latest financial disclosure reports shows he has at least $1.1M of Apple Stock - <a href="http://www.imore.com/even-after-his-boycott-donald-trump-still-invested-apple">www.imore.com/...</a></li>
 </ul>
 
-<h5 id="toc_2">Legal Latest</h5>
+# Legal Latest
 
 <ul>
 <li>Apple being sued by Patent holding company because the iPhone can make calls! (no, it&#39;s not April 1st, the US patent system really is that broken) - <a href="http://www.macobserver.com/tmo/article/patent-lawsuit-targets-iphone-for-making-phone-calls">www.macobserver.com/...</a></li>
@@ -56,7 +32,7 @@ warnings:
 <li>Apple makes ground in its fight against a $533M verdict against it in favour of Smartflash - two patents  at the centre of the case have been rules invalid - <a href="http://www.bloomberg.com/news/articles/2016-06-01/apple-gets-good-news-in-bid-to-knock-out-533-million-verdict">www.bloomberg.com/...</a> &amp; <a href="http://www.imore.com/apple-may-not-need-pay-533-million-patent-judgement">www.imore.com/...</a></li>
 </ul>
 
-<h5 id="toc_3">Main Stories</h5>
+# Main Stories
 
 <ol>
 <li>Tim Cook Goes to India &amp; China
@@ -97,7 +73,7 @@ warnings:
 </ul></li>
 </ol>
 
-<h5 id="toc_4">Quick stories</h5>
+# Quick stories
 
 <ul>
 <li>Apple teams up with SAP - <a href="http://www.reuters.com/article/us-apple-sap-se-idUSKCN0XW20B">www.reuters.com/...</a></li>

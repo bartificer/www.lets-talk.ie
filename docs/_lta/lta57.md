@@ -15,40 +15,17 @@ blurb: Joining Bart this month are Simon Parnell from the Essential Apple
   a quick rundown of a few other Apple related stories that made the news in
   May.
 host: bart
-warnings:
-  metadata:
-    - unreviewed
-    - unchecked_guests
-  blurb:
-    - unreviewed
-  notes:
-    - crude_import
-
+guests:
+  - simon_parnell
+  - allister_jenks
 ---
-<h4>Panel:</h4>
-<ul>
-	<li><a title="Bart Busschots" href="http://www.bartb.ie/" target="_blank">Bart Busschots</a> (host) - <a title="Bart's Twitter" href="http://twitter.com/bbusschots" target="_blank">@bbusschots</a></li>
-<li>Simon Parnell from the <a title="Essential Apple Podcast" href="http://essentialapple.com" target="_blank">Essential Apple Podcast</a> - <a title="Simon's Twitter" href="https://twitter.com/serenak" target="_blank">@serenak</a></li>
-<li><a title="Allister's Home Page" href="http://about.me/zkarj" target="_blank">Allister Jenks</a> - <a title="Allister's Twitter" href="http://twitter.com/zkarj" target="_blank">@zkarj</a></li>
-</ul>
-
-The show starts with a quick update on the eternal Apple -v- Samsung trial before moving on to the five main stories for the month. First a collection of App Store related stories including government censorship, a developer's union, a whole kerfuffle around the Steam iOS app, and a challenge to Apple's pricing model from Microsoft. Second, the on-going controversy over Apple's so-called <em>Butterfly Keyboards</em>. Third, the release of two long-awaited products, AirPlay 2, and iCloud messages. Fourth, Microsoft's Hub 2. And finally, Google's Duplex 'demo'. The show finishes with a quick rundown of a few other Apple related stories that made the news in May.
-
-<p>You'll find detailed show notes below the fold, and if you enjoy this free show, please consider clicking on the donate button at the top of the left side bar - the show is free for you to listen to, but not for Bart to Produce!</p>
-
-<p><a href="http://www.mymac.com/podcast/lta/LetsTalkApple-EP57-May2018.mp3" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-MP3.png" alt="MP3 Download" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="http://www.mymac.com/lta.xml" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-RSS.png" alt="RSS Feed" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="https://itunes.apple.com/ie/podcast/lets-talk-apple/id717911909?mt=2" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-iTunes.png" alt="iTunes" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a></p>
-
-[audio mp3="http://www.mymac.com/podcast/lta/LetsTalkApple-EP57-May2018.mp3"]
-
-<!--more-->
-
-<h4>Legal Latest</h4>
+# Legal Latest
 
 <ul>
 <li>Apple awarded $533.3M (down from ~$1Bn in the original trial) in the re-trial of the never-ending Apple -v- Samsung case (this is probably still not over, Samsung may very well appeal again) — <a href="https://www.imore.com/apple-wins-539-million-damages-samsung-design-patent-infringement-retrial">www.imore.com/…</a> &amp; <a href="https://www.macobserver.com/columns-opinions/editorial/jury-awards-apple-539-million-samsung-copycat/">www.macobserver.com/…</a></li>
 </ul>
 
-<h4>Main Stories</h4>
+# Main Stories
 
 <ol>
 <li>An eventful month for Apple&#8217;s App Stores
@@ -137,7 +114,7 @@ The show starts with a quick update on the eternal Apple -v- Samsung trial befor
 </ul></li>
 </ol>
 
-<h4>Quick Stories</h4>
+# Quick Stories
 
 <ul>
 <li>The have FBI admitted that they repeatedly over-stated the number of encrypted cellphones they&#8217;re trying to break into by a factor of about six, misleading the US Congress and the public — <a href="https://www.imore.com/fbi-overstates-encryption-stats-theres-no-number-high-enough">www.imore.com/…</a> &amp; <a href="https://nakedsecurity.sophos.com/2018/05/24/fbi-admits-to-inflating-number-of-crime-related-devices-it-cant-crack/">nakedsecurity.sophos.com/…</a></li>
@@ -158,7 +135,7 @@ The show starts with a quick update on the eternal Apple -v- Samsung trial befor
 <li>Google announced and demoed <em>Cloud Anchor</em>, a new cross-platform API for sharing an augmented reality (AR) experience that works between devices running Android and iOS, and the first app using the framework is already out (<em>Just a Line</em>, an app that lets users draw lines in a shared AR environment) — <a href="https://www.imore.com/google-just-made-it-dead-simple-arkit-devs-add-huge-new-feature">www.imore.com/…</a> &amp; <a href="https://www.imore.com/first-cross-platform-ar-app-iphone-and-android-just-launched">www.imore.com/…</a></li>
 </ul>
 
-<h5>Reminder — Apple&#8217;s 2018 WWDC Keynote will be Live-streamed on the 4th of June</h5>
+# Reminder — Apple&#8217;s 2018 WWDC Keynote will be Live-streamed on the 4th of June
 
 <ul>
 <li><a href="https://www.macobserver.com/news/wwdc-2018-keynote-live-stream/">Here’s How to Watch Apple’s WWDC 2018 Keynote Live Stream — www.macobserver.com/…</a></li>

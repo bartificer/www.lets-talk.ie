@@ -11,35 +11,12 @@ blurb: "Joining Bart for this month are Adam Christianson from the MacCast,
   discrimination law, and some new on Apple News. The show finishes with a quick
   rundown of some other shorter stories that made the news in March."
 host: bart
-warnings:
-  metadata:
-    - unreviewed
-    - unchecked_guests
-  blurb:
-    - unreviewed
-  notes:
-    - crude_import
-
+guests:
+  - adam_christianson
+  - allister_jenks
+  - nick_riley
 ---
-<h4>Panel:</h4>
-<ul>
-	<li><a title="Bart Busschots" href="http://www.bartb.ie/" target="_blank">Bart Busschots</a> (host) - <a title="Bart's Twitter" href="http://twitter.com/bbusschots" target="_blank">@bbusschots</a></li>
-<li>Adam Christianson from <a title="The Mac Cast" href="http://maccast.com" target="_blank">The Mac Cast</a> - <a title="Adam's Twitter" href="https://twitter.com/maccast" target="_blank">@maccast</a></li>
-<li><a title="Allister's Home Page" href="http://about.me/zkarj" target="_blank">Allister Jenks</a> - <a title="Allister's Twitter" href="http://twitter.com/zkarj" target="_blank">@zkarj</a></li>
-<li>Nick Riley - <a title="Nick's Twitter" href="http://twitter.com/spligosh" target="_blank">@spligosh</a></li>
-</ul>
-
-<p>There were no notable numbers month, so the show starts with a quick review of the month's legal news. The six main stories for the month are: Apple's legal battle with the FBI, Apple's March special event, 40 years of Apple and 15 years of OS X, North Carolina's LGBT discrimination law, and some new on Apple News. The show finishes with a quick rundown of some other shorter stories that made the news in March.</p>
-
-<p>You'll find detailed show notes below the fold, and if you enjoy this free show, please consider clicking on the donate button at the top of the left side bar - the show is free for you to listen to, but not for Bart to Produce!</p>
-
-<p><a href="http://www.mymac.com/podcast/lta/LetsTalkApple-EP31-March2016.mp3" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-MP3.png" alt="MP3 Download" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="http://www.mymac.com/lta.xml" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-RSS.png" alt="RSS Feed" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="https://itunes.apple.com/ie/podcast/lets-talk-apple/id717911909?mt=2" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-iTunes.png" alt="iTunes" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a></p>
-
-[audio mp3="http://www.mymac.com/podcast/lta/LetsTalkApple-EP31-March2016.mp3"]
-
-<!--more-->
-
-<h5 id="toc_1">Legal Latest</h5>
+# Legal Latest
 
 <ul>
 <li>Apple lost an important patent case in Germany - it may have to license video technology from a Swiss company, or strip some video streaming services from its products - <a href="http://www.reuters.com/article/us-apple-germany-ruling-idUSKCN0WI32U">www.reuters.com/...</a></li>
@@ -47,7 +24,7 @@ warnings:
 <li>The Apple -v- Samsung damages re-trial that was due to start on March 28th has been put on hold pending the supreme court&#39;s ruling - <a href="http://www.macobserver.com/tmo/article/apple-v-samsung-damages-retrial-officially-on-hold">www.macobserver.com/...</a></li>
 </ul>
 
-<h5 id="toc_2">Main Stories</h5>
+# Main Stories
 
 <ol>
 <li>Apple -v- FBI
@@ -143,7 +120,7 @@ warnings:
 </ul></li>
 </ol>
 
-<h5 id="toc_3">Quick Stories</h5>
+# Quick Stories
 
 <ul>
 <li>Foxconn to buy out Sharp after all, but for $3.5Bn rather than $5Bn - <a href="http://www.macobserver.com/tmo/article/foxconn-buys-sharp-in-3.5b-deal">www.macobserver.com/...</a></li>

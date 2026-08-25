@@ -11,39 +11,14 @@ blurb: "Joining Bart for this month are Allister Jenks, Robert Carter from the
   Pro, a good month for Apple Pay, Amazon coming to the new Apple TV, Adobe’s
   moves away from Flash, and finally Tim Cook’s comments that Apple will not
   merge iOS and OS X. The show finishes with a quick rundown of some other
-  shorter stories that made the news in November. For detailed show notes visit
-  http://lets-talk.ie/lta27 Please consider supporting the show on Patreon:
-  http://www.patreon.com/ltpod"
+  shorter stories that made the news in November.
 host: bart
-warnings:
-  metadata:
-    - unreviewed
-    - unchecked_guests
-  blurb:
-    - unreviewed
-  notes:
-    - crude_import
-
+guests:
+  - allister_jenks
+  - robert_carter
+  - tim_robertson
 ---
-<h4>Panel:</h4>
-<ul>
-	<li><a title="Bart Busschots" href="http://www.bartb.ie/" target="_blank">Bart Busschots</a> (host) - <a title="Bart's Twitter" href="http://twitter.com/bbusschots" target="_blank">@bbusschots</a></li>
-	<li><a title="Allister's Home Page" href="http://about.me/zkarj" target="_blank">Allister Jenks</a> - <a title="Allister's Twitter" href="http://twitter.com/zkarj" target="_blank">@zkarj</a></li>
-<li>Dr. Robert Carter from the <a title="The Tech Doctor Podcast" href="http://dr-carter.com/" target="_blank">Tech Doctor Podcast</a> - <a title="Robert's Twitter" href="http://twitter.com/robert_carter" target="_blank">@robert_carter</a></li>
-<li>Tim Robertson from the <a title="The Tech Fan Podcast" href="http://www.techfanpodcast.com" target="_blank">Tech Fan Podcast</a> - <a title="Tim's Twitter" href="http://twitter.com/mymac" target="_blank">@mymac</a></li>
-</ul>
-
-<p>The show starts with a quick look at some interesting Apple-related numbers released in November before moving on to a quick review of the month's legal news. The five main stories for the month were: The iPad Pro, a good month for Apple Pay, Amazon coming to the new Apple TV, Adobe's moves away from Flash, and finally Tim Cook's comments that Apple will not merge iOS and OS X. The show finishes with a quick rundown of some other shorter stories that made the news in November.</p>
-
-<p>You'll find detailed show notes below the fold, and if you enjoy this free show, please consider clicking on the donate button at the top of the left side bar - the show is free for you to listen to, but not for Bart to Produce!</p>
-
-<p><a href="http://www.mymac.com/podcast/lta/LetsTalkApple-EP27-November2015.mp3" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-MP3.png" alt="MP3 Download" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="http://www.mymac.com/lta.xml" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-RSS.png" alt="RSS Feed" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="https://itunes.apple.com/ie/podcast/lets-talk-apple/id717911909?mt=2" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-iTunes.png" alt="iTunes" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a></p>
-
-[audio mp3="http://www.mymac.com/podcast/lta/LetsTalkApple-EP27-November2015.mp3"]
-
-<!--more-->
-
-<h5 id="toc_1">Notable Numbers</h5>
+# Notable Numbers
 
 <ul>
 <li>Apple&#39;s share of global smartphone profits up from 85% last year to 94%, while only selling 14% of total volume - <a href="http://appleinsider.com/articles/15/11/16/apple-inc-now-inhaling-94-percent-of-global-smartphone-profits-selling-just-145-percent-of-total-volumes">appleinsider.com/...</a></li>
@@ -53,7 +28,7 @@ warnings:
 <li>In a notice to developers about the App Store&#39;s closing dates over the holidays, Apple threw in a sentence to say that the App Store has crossed 100Bn downloads - <a href="https://developer.apple.com/news/?id=11202015c">developer.apple.com/...</a></li>
 </ul>
 
-<h5 id="toc_2">Legal Latest</h5>
+# Legal Latest
 
 <ul>
 <li>A US Federal Judge has dismissed a class-action suit against Apple by Apple Store employees over un-paid time spent on enforced bag searches - <a href="http://www.imore.com/judge-dismisses-lawsuit-against-apple-over-bag-searches-ordered-its-store-employees">www.imore.com/...</a></li>
@@ -64,7 +39,7 @@ warnings:
 <li>Book sellers and authors back Apple in their eBook Price Fixing Appeal - <a href="http://www.macobserver.com/tmo/article/booksellers-authors-back-apple-in-ebook-price-fixing-appeal">www.macobserver.com/...</a></li>
 </ul>
 
-<h5 id="toc_3">Main Stories</h5>
+# Main Stories
 
 <ol>
 <li>the iPad Pros ship
@@ -95,7 +70,7 @@ warnings:
 </ul></li>
 </ol>
 
-<h5 id="toc_4">Quick Stoires</h5>
+# Quick Stoires
 
 <ul>
 <li>Steve Jobs movie is a flop - dropped from cinemas - <a href="http://www.cultofmac.com/396493/steve-jobs-movie-is-unceremoniously-dumped-out-of-theaters/">www.cultofmac.com/...</a></li>

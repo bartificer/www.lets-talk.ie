@@ -12,40 +12,14 @@ blurb: "Joining Bart this month are Victor Cajiao from the Artechulate podcast,
   together, a 14-day trial period for app purchase in the EU, on-going Apple Pay
   momentum, and the business orld’s honouring of Tim Cook. The show finishes
   with a quick rundown of some other Apple related stories that made the news in
-  December. For detailed show notes visit http://lets-talk.ie/lta16 Please
-  consider supporting the show on Patreon: http://www.patreon.com/ltpod"
+  December.
 host: bart
-warnings:
-  metadata:
-    - unreviewed
-    - unchecked_guests
-  blurb:
-    - unreviewed
-  notes:
-    - crude_import
-
+guests:
+  - victor_cajiao
+  - allister_jenks
+  - guy_serle
 ---
-<h4>Panel:</h4>
-<ul>
-	<li><a title="Bart Busschots" href="http://www.bartb.ie/" target="_blank">Bart Busschots</a> (host) - <a title="Bart's Twitter" href="http://twitter.com/bbusschots" target="_blank">@bbusschots</a></li>
-<li>Victor Cajiao from the <a title="Artechulate Podcast" href="http://www.artechulate.info" target="_blank"> Artechulate Podcast</a> - <a title="Victor's Twitter" href="http://twitter.com/victorcajiao" target="_blank">@victorcajiao</a></li>
-<li><a title="Allister's Home Page" href="http://zkarj.me" target="_blank">Allister Jenks</a> - <a title="Allister's Twitter" href="http://twitter.com/zkarj" target="_blank">@zkarj</a></li>
-<li>Guy Serle from the <a title="The My Mac Podcast" href="http://www.mymacpodcast.com/" target="_blank">My Mac Podcast</a> - <a title="Guy's Twitter" href="http://twitter.com/Macparrot" target="_blank">@Macparrot</a></li>
-</ul>
-
-<p>The show starts with a quick update on some stories from November, a run-down of some Apple-related numbers released in December, and an update on some of the legal cases Apple is involved in. The five main topics for the show are the BBC Horizon documentary on Apple's supply chain, Apple & IBM releasing their first apps together, a 14-day trial period for app purchase in the EU, on-going Apple Pay momentum, and the business orld's honouring of Tim Cook. The show finishes with a quick rundown of some other Apple related stories that made the news in December.</p>
-
-<p>You'll find detailed show notes below the fold, and if you enjoy this free show, please consider clicking on the donate button at the top of the left side bar - the show is free for you to listen to, but not for Bart to Produce!</p>
-
-<p><a href="http://www.mymac.com/podcast/lta/LetsTalkApple-EP16-December2014.mp3" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-MP3.png" alt="MP3 Download" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="http://www.mymac.com/lta.xml" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-RSS.png" alt="RSS Feed" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="https://itunes.apple.com/ie/podcast/lets-talk-apple/id717911909?mt=2" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-iTunes.png" alt="iTunes" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a></p>
-
-[audio mp3="http://www.mymac.com/podcast/lta/LetsTalkApple-EP16-December2014.mp3"]
-
-<!--more-->
-
-<h4>Links:</h4>
-
-<h5 id="toc_0">Quick Followups</h5>
+# Quick Followups
 
 <ul>
 <li>GTAT Developments
@@ -57,7 +31,7 @@ warnings:
 <li>Apple raised $20M for product RED with it&#39;s campaigns last month - <a href="http://www.macobserver.com/tmo/article/apple-raises-20m-in-2014-product-red-campaign">www.macobserver.com/...</a></li>
 </ul>
 
-<h5 id="toc_1">Notable Numbers</h5>
+# Notable Numbers
 
 <ul>
 <li>Having stagnated a while, Apple&#39;s dashboard show iOS 8 use on the rise again, now at over 2/3 - <a href="http://arstechnica.com/apple/2014/12/apple-dashboard-says-ios-8-now-runs-on-about-two-thirds-of-devices/">arstechnica.com/...</a></li>
@@ -70,7 +44,7 @@ warnings:
 <li>Business Insider released an interesting infographic showing where Apple makes its money - <a href="http://businessinsider.tumblr.com/post/105352943928/this-is-where-apples-money-comes-from">businessinsider.tumblr.com/...</a></li>
 </ul>
 
-<h5 id="toc_2">Legal Latest</h5>
+# Legal Latest
 
 <ul>
 <li>Apple&#39;s appeal of its eBooks price fixing conviction goes to court - two if the three judges SEEM to see things Apple&#39;s way during questioning - asking why the DOJ did not investigate Amazon with their market dominance - <a href="http://www.macobserver.com/tmo/article/appellate-judge-questions-governments-case-against-apple-for-ibooks">www.macobserver.com/...</a></li>
@@ -85,7 +59,7 @@ warnings:
 <li>Rockstar Consortium will sell off most of its remaining patents in a move seen as a further de-escalation of the on-going patent war in the mobile sector - <a href="http://www.macobserver.com/tmo/article/rockstar-patent-sale-indicates-further-de-escalation-of-mobile-patent-war">www.macobserver.com/...</a></li>
 </ul>
 
-<h5 id="toc_3">Main Stories</h5>
+# Main Stories
 
 <ul>
 <li>The BBC exposes abuses in Apple&#39;s supply chain, Apple Fights Back:
@@ -114,7 +88,7 @@ warnings:
 </ul></li>
 </ul>
 
-<h5 id="toc_4">Quick Stories</h5>
+# Quick Stories
 
 <ul>
 <li>Apple patch NTP bug in OS X automatically - this is the first time Apple have pushed an update to users systems pro-actively - <a href="http://arstechnica.com/apple/2014/12/apple-automatically-patches-macs-to-fix-severe-ntp-security-flaw/">arstechnica.com/...</a></li>
