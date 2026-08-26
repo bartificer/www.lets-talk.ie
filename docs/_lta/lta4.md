@@ -6,7 +6,7 @@ mp3_url: https://media.lets-talk.ie/lta/lta4.mp3
 blurb: This episode starts with some updates to stories from last month including news about the Supreme Court of the US taking up a potentially important patent case, and Google starting the fight back against the Rockstar Consortium. The main topics for this episode are the battle of wills between court-appointed-monitor Michael Bromwich and Apple, some developments in legal war between Apple & Samsung damages retrial, a raft of good numbers for Apple over the holiday season, Apple’s deal with China Mobile, some NSA-related Apple stories, and Tim Cook’s on-going campaigning for equality. The show finishes with a quick run through some other stories from the month that might have important ramifications in future, including a possible change of direction within Microsoft, and our first glimpse at the direction USB 4 is heading.
 host: bart
 guests:
-  - allister_jenks – @zkarj
+  - allister_jenks
   - nick_riley
   - guy_serle
 ---

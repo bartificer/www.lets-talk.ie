@@ -18,4 +18,4 @@ social_media_profiles:
   - plarform: glass
     handle: zkarj
 ---
-Allister is an ellogent New Zealand IT professional, keen amateur photographer, and regular podcast contributor.
+Allister is an eloquent New Zealand IT professional, keen amateur photographer, and regular podcast contributor.
