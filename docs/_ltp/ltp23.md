@@ -7,7 +7,7 @@ blurb: "This month Bart is joined by a bumper panel: Allister Jenks from the
   Sitting Duck podcast, Antonio Rosario from Switch to Manual, Konrad Dwojak,
   Mark Pouley, and Victor Cajiao from the Terra Tech podcast. The topic for this
   show is photographing while on vacation, both to try capture the event of the
-  holiday, and the place being visited.
+  holiday, and the place being visited."
 host: bart
 guests:
   - allister_jenks

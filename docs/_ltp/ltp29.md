@@ -3,11 +3,11 @@ slug: ltp29
 title: Video
 date: 2016-02-20
 mp3_url: https://media.lets-talk.ie/ltp/ltp29.mp3
-blurb: This month Bart is joined by Antonio Rosario from Switch 2 Manual, Mark
+blurb: "This month Bart is joined by Antonio Rosario from Switch 2 Manual, Mark
   Pouley from Twink Lakes Images, Stefaan Lesage from the Tech 45 Podcast, and
   Allister Jenks. The topic is simply ‘video’, something not previously covered
   on the show, even though the vast majority of modern cameras can shoot video
-  as well as photographs.
+  as well as photographs."
 host: bart
 guests:
   - antonio_rosario
