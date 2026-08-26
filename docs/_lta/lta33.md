@@ -10,7 +10,7 @@ blurb: "Joining Bart for this month are Chuck Joiner from Mac Voices, Allister
   Cook’s visit to India and China, CurrentC gets postponed again, Google’s IO
   Conference, and Microsoft’s streamlining of their phone business. The show
   finishes with a quick rundown of some other shorter stories that made the news
-  in May.
+  in May."
 host: bart
 guests:
   - chuck_joiner

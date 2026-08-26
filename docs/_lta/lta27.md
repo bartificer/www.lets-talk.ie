@@ -11,7 +11,7 @@ blurb: "Joining Bart for this month are Allister Jenks, Robert Carter from the
   Pro, a good month for Apple Pay, Amazon coming to the new Apple TV, Adobe’s
   moves away from Flash, and finally Tim Cook’s comments that Apple will not
   merge iOS and OS X. The show finishes with a quick rundown of some other
-  shorter stories that made the news in November.
+  shorter stories that made the news in November."
 host: bart
 guests:
   - allister_jenks

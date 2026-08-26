@@ -3,7 +3,7 @@ slug: lta57
 title: May 2018
 date: 2018-06-04
 mp3_url: https://media.lets-talk.ie/lta/lta57.mp3
-blurb: Joining Bart this month are Simon Parnell from the Essential Apple
+blurb: "Joining Bart this month are Simon Parnell from the Essential Apple
   Podcast, and Allister Jenks. The show starts with a quick update on the
   eternal Apple -v- Samsung trial before moving on to the five main stories for
   the month. First a collection of App Store related stories including
@@ -13,7 +13,7 @@ blurb: Joining Bart this month are Simon Parnell from the Essential Apple
   release of two long-awaited products, AirPlay 2, and iCloud messages. Fourth,
   Microsoft’s Hub 2. And finally, Google’s Duplex ‘demo’. The show finishes with
   a quick rundown of a few other Apple related stories that made the news in
-  May.
+  May."
 host: bart
 guests:
   - simon_parnell

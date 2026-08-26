@@ -3,14 +3,14 @@ slug: lta10
 title: June 2014
 date: 2014-07-06
 mp3_url: https://media.lets-talk.ie/lta/lta10.mp3
-blurb: Joining Bart this month are Allister Jenks, Nick Riley, and Joseph
+blurb: "Joining Bart this month are Allister Jenks, Nick Riley, and Joseph
   Linaschke from Aperture Expert. The show starts with a quick rundown of some
   interesting Apple-related numbers released in June, followed by a quick
   rundown of the month’s developments in some of the many court cases Apple are
   involved in. The main stories the show focuses on are WWDC, the up-coming
   merger of Aperture and iPhoto into Photos, Google’s I/O Conference, and
   Windows ‘threshold’. The show finishes with a few quick stories, including
-  some new products from Amazon and Apple.
+  some new products from Amazon and Apple."
 host: bart
 guests:
   - allister_jenks

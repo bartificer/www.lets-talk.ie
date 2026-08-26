@@ -12,7 +12,7 @@ blurb: "Joining Bart this month are Victor Cajiao from the Artechulate podcast,
   together, a 14-day trial period for app purchase in the EU, on-going Apple Pay
   momentum, and the business orld’s honouring of Tim Cook. The show finishes
   with a quick rundown of some other Apple related stories that made the news in
-  December.
+  December."
 host: bart
 guests:
   - victor_cajiao

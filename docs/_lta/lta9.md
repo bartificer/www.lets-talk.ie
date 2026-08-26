@@ -3,7 +3,7 @@ slug: lta9
 title: May 2014
 date: 2014-06-03
 mp3_url: https://media.lets-talk.ie/lta/lta9.mp3
-blurb: Joining Bart this month are Allister Jenks, Adam Christianson from the
+blurb: "Joining Bart this month are Allister Jenks, Adam Christianson from the
   Mac Cast, and Guy Serle from the My Mac Podcast. The show starts with a quick
   rundown of some interesting numbers released in May, followed by a quick
   rundown of the month’s developments in some of the many court cases Apple are
@@ -11,7 +11,7 @@ blurb: Joining Bart this month are Allister Jenks, Adam Christianson from the
   May, particularly the Beats purchase, the arrival of faux-ransom-ware on iOS,
   Hachette’s struggle with Amazon, and Apple’s new-found transparency in how it
   deals with law enforcement requests. The show finishes with a few quick
-  stories, including the release of Google Glass and the Surface 3.
+  stories, including the release of Google Glass and the Surface 3."
 host: bart
 guests:
   - allister_jenks
