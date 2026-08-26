@@ -7,41 +7,16 @@ blurb: "This month Bart is joined by a bumper panel: Allister Jenks from the
   Sitting Duck podcast, Antonio Rosario from Switch to Manual, Konrad Dwojak,
   Mark Pouley, and Victor Cajiao from the Terra Tech podcast. The topic for this
   show is photographing while on vacation, both to try capture the event of the
-  holiday, and the place being visited. Listen, subscribe, and get the show
-  notes at lets-talk.ie/ltp23. This show is ad-free because of the generosity of
-  listeners like you. Please considering supporting the show on Patreon
-  (https://patreon.com/ltpod). Reminder - you can submit questions for future Q
-  & A shows at lets-talk.ie/photoq."
+  holiday, and the place being visited.
 host: bart
-warnings:
-  metadata:
-    - unreviewed
-    - unchecked_guests
-  blurb:
-    - unreviewed
-  notes:
-    - crude_import
-
+guests:
+  - allister_jenks
+  - antonio_rosario
+  - konrad_dwojak
+  - mark_pouley
+  - victor_cajiao
 ---
-<h4>Panel:</h4>
-<ul>
-	<li><a title="Bart Busschots" href="http://www.bartb.ie/" target="_blank">Bart Busschots</a> (host) - <a title="Bart's Twitter" href="http://twitter.com/bbusschots" target="_blank">@bbusschots</a> - <a href="http://www.flickr.com/photos/bbusschots/" target="_blank">Flickr</a></li>
-<li><a title="Allister's Home Page" href="http://zkarj.me" target="_blank">Allister Jenks</a> from the <a href="http://sittingduckpodcast.com" target="_blank">Sitting Duck podcast</a> - <a title="Allister's Twitter" href="https://twitter.com/zkarj" target="_blank">@zkarj</a> - <a title="Allister's Flickr" href="http://www.flickr.com/photos/zkarj/" target="_blank">Flickr</a></li>
-<li><a title="Antonio Rosario" href="http://amrosario.com/" target="_blank">Antonio Rosario</a> from <a title="Switch to Manual" href="http://switchtomanual.com/" target="_blank">Switch to Manual</a> - <a title="Switch to Manual on Twitter" href="http://twitter.com/switch2manual" target="_blank">@switch2manual</a></li>
-<li><a href="http://www.konraddwojak.com" title="Konrad's Website" target="_blank">Konrad Dwojak</a> - <a title="Konrad's Twitter" href="http://twitter.com/konradphoto" target="_blank">@ konradphoto</a> - <a title="Konrad's Flickr" href="http://www.flickr.com/photos/konradd/" target="_blank">Flickr</a></li>
-<li>Mark Pouley from <a title="Twin Lakes Images" href="http://www.twinlakesimages.com" target="_blank">Twin Lakes Images</a> - <a title="Mark's Twitter" href="http://twitter.com/switcherMark" target="_blank">@switcherMark</a> - <a title="Mark's Flickr" href="http://www.flickr.com/photos/switchermark/" target="_blank">Flickr</a></li>
-<li>Victor Cajiao from the <a title="Terra Tech Podcast" href="http://www.terratech.tech" target="_blank"> Terra Tech Podcast</a> - <a title="Victor's Twitter" href="http://twitter.com/victorcajiao" target="_blank">@victorcajiao</a> - <a title="Victor's Flickr" href="https://www.flickr.com/photos/typicalpcuser/" target="_blank">Flickr</a></li>
-</ul>
-
-<p>The topic for this show is photographing while on vacation, both to try capture the event of the holiday, and the place being visited.</p>
-
-<p>Reminder - you can submit questions for future Q & A shows at <a href="http://lets-talk.ie/photoq">http://lets-talk.ie/photoq</a></p>
-
-<p><a href="http://www.mymac.com/podcast/ltp/LetsTalkPhotographgy-EP23-Vacations.mp3" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-MP3.png" alt="MP3 Download" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="http://www.mymac.com/ltp.xml" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-RSS.png" alt="RSS Feed" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a><a href="https://itunes.apple.com/ie/podcast/lets-talk-photography/id725271225?mt=2" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-iTunes.png" alt="iTunes" style="border-width: 0px; display: inline-block; margin-width: 10px;" /></a></p>
-
-<p>[audio mp3="http://www.mymac.com/podcast/ltp/LetsTalkPhotographgy-EP23-Vacations.mp3"]</p>
-
-<!--more-->
+# Links
 
 <ul>
   <li>

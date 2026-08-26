@@ -3,33 +3,11 @@ slug: ltp44
 title: Aviation Photography
 date: 2017-05-07
 mp3_url: https://media.lets-talk.ie/ltp/ltp44.mp3
-blurb: ""
+blurb: "This month Bart chats with Let's Talk regular Allister Jenks about aviation photography. Allister has been photographing airplanes for as long as he's been photographing, while Bart is just starting to explore the subject."
 host: bart
-warnings:
-  metadata:
-    - unreviewed
-    - unchecked_guests
-  blurb:
-    - no_blurb
-  notes:
-    - crude_import
-
+guests: [ allister_jenks ]
 ---
-<h4>Panel:</h4>
-<ul>
-	<li><a title="Bart Busschots" href="http://www.bartb.ie/" target="_blank">Bart Busschots</a> (host) - <a title="Bart's Twitter" href="http://twitter.com/bbusschots" target="_blank">@bbusschots</a> - <a href="http://www.flickr.com/photos/bbusschots/" target="_blank">Flickr</a></li>
-	<li><a title="Allister's Home Page" href="http://zkarj.me" target="_blank">Allister Jenks</a> from the <a href="http://sittingduckpodcast.com" target="_blank">Sitting Duck podcast</a> - <a title="Allister's Twitter" href="https://twitter.com/zkarj" target="_blank">@zkarj</a> - <a title="Allister's Flickr" href="http://www.flickr.com/photos/zkarj/" target="_blank">Flickr</a></li>
-</ul>
-This month Bart chats with Let's Talk regular Allister Jenks about aviation photography. Allister has been photographing airplanes for as long as he's been photographing, while Bart is just starting to explore the subject.
-
-Reminder - you can submit questions for future Q &amp; A shows at <a href="http://lets-talk.ie/photoq">http://lets-talk.ie/photoq</a>
-
-<a href="http://www.mymac.com/podcast/ltp/LetsTalkPhotographgy-EP44-AviationPhotography.mp3" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-MP3.png" alt="MP3 Download" style="border-width: 0px; display: inline-block; margin-width: 10px;"></a><a href="http://www.mymac.com/ltp.xml" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-RSS.png" alt="RSS Feed" style="border-width: 0px; display: inline-block; margin-width: 10px;"></a><a href="https://itunes.apple.com/ie/podcast/lets-talk-photography/id725271225?mt=2" target="_blank"><img src="http://www.lets-talk.ie/resources/icon-iTunes.png" alt="iTunes" style="border-width: 0px; display: inline-block; margin-width: 10px;"></a>
-
-[audio mp3="http://www.mymac.com/podcast/ltp/LetsTalkPhotographgy-EP44-AviationPhotography.mp3"]
-
-<!--more-->
-<h5>Useful Resources</h5>
+# Useful Resources
 <ul>
 	<li><a href="https://www.flightradar24.com" target="_blank">FlightRadar24</a> (flight tracking site &amp; apps)</li>
 	<li><a href="https://www.liveatc.net" target="_blank">LiveATC</a> (website and apps for listening in to Air Traffic Control for many airports around the world)</li>
