@@ -2,7 +2,7 @@
 title: Tim Robertson
 first_name: Tim
 surname: Robertson
-slug: time_robertson
+slug: tim_robertson
 sort_name: Robertson Tim
 date: 2026-08-26
 ---
