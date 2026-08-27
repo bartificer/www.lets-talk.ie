@@ -68,7 +68,7 @@
       <div class="row mb-5">
         {%- comment %}Include the LTA Card{% endcomment %}
         {%- assign lta = site.podcasts | where: 'slug', 'lta' | first %}
-        {%- assign lta_recent_episodes = site.lta | reverse | slice: 0, 3 %}
+        {%- assign lta_recent_episodes = site.lta | reverse | where_exp: "item", "item.draft != true" | slice: 0, 3 %}
         <div class="col-12 col-md-6 col-xl-4 mb-3">
           <div class="card" style="border-color: var(--bartificer-lta-accent-colour);">
             <a href="{{ lta.url | relative_url }}"><img src="{{ lta.graphics.card_banner | relative_url }}" class="card-img-top p-2" alt="Let's Talk Apple Podcast Logo"></a>
@@ -89,7 +89,7 @@
 
         {%- comment %}Include the LTP Card{% endcomment %}
         {%- assign ltp = site.podcasts | where: 'slug', 'ltp' | first %}
-        {%- assign ltp_recent_episodes = site.ltp | reverse | slice: 0, 3 %}
+        {%- assign ltp_recent_episodes = site.ltp | reverse | where_exp: "item", "item.draft != true" | slice: 0, 3 %}
         <div class="col-12 col-md-6 col-xl-4 mb-3">
           <div class="card" style="border-color: var(--bartificer-ltp-accent-colour);">
             <a href="{{ ltp.url | relative_url }}"><img src="{{ ltp.graphics.card_banner | relative_url }}" class="card-img-top p-2" alt="Let's Talk Photography Podcast Logo"></a>

@@ -79,6 +79,7 @@ opengraph:
         {%- assign guest_episodes = site[podcast.slug] | where_exp: "item", "item.guests contains contributor_slug" %}
         {%- assign episodes = episodes | concat: guest_episodes %}
       {%- endfor %}
+      {%- assign episodes = episodes | where_exp: "item", "item.draft != true" %}
       <div class="row mt-3">
         <div class="col-12">
           <h1>Appearances</h1>

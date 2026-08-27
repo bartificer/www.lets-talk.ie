@@ -60,7 +60,7 @@
         </div>
       </div>
       
-      {%- comment %}The full episide list, in reverse order{% endcomment %}
+      {%- comment %}The full episode list, in reverse order{% endcomment %}
       {%- assign podcast_slug = page.slug %}
       {%- assign podcast_collection = site.collections | where: "label", podcast_slug | first %}
       <div class="row mt-5">
@@ -71,6 +71,7 @@
       <div class="row g-0 row-cols-2 row-cols-lg-3 row-cols-xl-4">
         {%- capture podcast_accent_colour %}var(--bartificer-{{ podcast_slug }}-accent-colour){% endcapture %}
         {%- for p in podcast_collection.docs reversed %}
+        {%- if p.draft != true %}
         <div class="col p-1">
           <div class="card" style="border-color: {{ podcast_accent_colour }};">
             <div class="list-group list-group-flush">
@@ -81,6 +82,7 @@
             </div>
           </div>
         </div>
+        {%- endif -}
         {%- endfor %}
       </div>
     </main>
